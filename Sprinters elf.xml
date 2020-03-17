@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+	<element name="Sprinters elf" type="Race" source="Races of Greystone" id="ID_RACE_SPRINTERS_ELF">
+		<description>
+			<p class="flavor">Elves are a magical people of otherworldly grace, living in the world but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world.</p>
+			<h4>SLENDER AND GRACEFUL</h4>
+			<p>With their unearthly grace and fine features, elves appear hauntingly beautiful to humans and members of many other races. They are slightly shorter than humans on average, ranging from well under 5 feet tall to just over 6 feet. They are more slender than humans, weighing only 100 to 145 pounds. Males and females are about the same height, and males are only marginally heavier than females.</p>
+			<p class="indent">Elves’ coloration encompasses the normal human range and also includes skin in shades of copper, bronze, and almost bluish-white, hair of green or blue, and eyes like pools of liquid gold or silver. Elves have no facial and little body hair. They favor elegant clothing in bright colors, and they enjoy simple yet lovely jewelry.</p>
+			<h4>A TIMELESS PERSPECTIVE</h4>
+			<p>Elves can live well over 700 years, giving them a broad perspective on events that might trouble the shorterlived races more deeply. They are more often amused than excited, and more likely to be curious than greedy. They tend to remain aloof and unfazed by petty happenstance. When pursuing a goal, however, whether adventuring on a mission or learning a new skill or art, elves can be focused and relentless. They are slow to make friends and enemies, and even slower to forget them. They reply to petty insults with disdain and to serious insults with vengeance.</p>
+			<p class="indent">Like the branches of a young tree, elves are flexible in the face of danger. They trust in diplomacy and compromise to resolve differences before they escalate to violence. They have been known to retreat from intrusions into their woodland homes, confident that they can simply wait the invaders out. But when the need arises, elves reveal a stern martial side, demonstrating skill with sword, bow, and strategy.</p>
+			<h4>HIDDEN WOODLAND REALMS</h4>
+			<p>Most elves dwell in small forest villages hidden among the trees. Elves hunt game, gather food, and grow vegetables, and their skill and magic allow them to support themselves without the need for clearing and plowing land. They are talented artisans, crafting finely worked clothes and art objects. Their contact with outsiders is usually limited, though a few elves make a good living by trading crafted items for metals (which they have no interest in mining).</p>
+			<p class="indent">Elves encountered outside their own lands are commonly traveling minstrels, artists, or sages. Human nobles compete for the services of elf instructors to teach swordplay or magic to their children.</p>
+			<h4>EXPLORATION AND ADVENTURE</h4>
+			<p>Elves take up adventuring out of wanderlust. Since they are so long-lived, they can enjoy centuries of exploration and discovery. They dislike the pace of human society, which is regimented from day to day but constantly changing over decades, so they find careers that let them travel freely and set their own pace. Elves also enjoy exercising their martial prowess or gaining greater magical power, and adventuring allows them to do so. Some might join with rebels fighting against oppression, and others might become champions of moral causes.</p>
+			<h4>ELF NAMES</h4>
+			<p>Elves are considered children until they declare themselves adults, some time after the hundredth birthday, and before this period they are called by child names.</p>
+			<p class="indent">On declaring adulthood, an elf selects an adult name, although those who knew him or her as a youngster might continue to use the child name. Each elf’s adult name is a unique creation, though it might reflect the names of respected individuals or other family members. Little distinction exists between male names and female names; the groupings here reflect only general tendencies. In addition, every elf bears a family name, typically a combination of other Elvish words. Some elves traveling among humans translate their family names into Common, but others retain the Elvish version.</p>
+			<p>
+			<span class="feature">Child Names:</span>Ara, Bryn, Del, Eryn, Faen, Innil. Lael, Mella, Naill, Naeris, Phann, Rael, Rinn, Sai, Syllin, Thia, Vall<br />
+			<span class="feature">Male Adult Names:</span>Adran, Aelar, Aramil, Arannis, Aust, Beiro, Berrian, Carric, Enialis, Erdan, Erevan, Galinndan, Hadarai, Heian, Himo, Immeral, Ivellios, Laucian, Mindartis, Paelias, Peren, Quarion, Riardon, Rolen, Soveliss, Thamior, Tharivol, Theren, Varis<br />
+			<span class="feature">Female Adult Names:</span>Adrie, Althaea, Anastrianna, Andraste, Antinua, Bethrynna, Birel, Caelynn, Drusilia, Enna, Felosial, Ielenia, Jelenneth, Keyleth, Leshanna, Lia, Meriele, Mialee, Naivara, Quelenna, Quillathe, Sariel, Shanairra, Shava, Silaqui, Theirastra, Thia, Vadania, Valanthe, Xanaphia<br />
+			<span class="feature">Family Names (Common Translations):</span>Amakiir (Gemflower), Amastacia (Starflower), Galanodel (Moonwhisper), Holimion (Diamonddew), Ilphelkiir (Gemblossom), Liadon (Silverfrond), Meliamne (Oakenheel), Nai'lo (Nightbreeze), Siannodel (Moonbrook), Xiloscient (Goldpetal)
+			</p>
+			<h4>SPRINTERS ELF TRAITS</h4>
+			<p>Your sprinters elf character has a variety of natural abilities, the result of their fey background and free nature.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 3.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Although Sprinters elves reach physical maturity and may live as long as thier elven counterparts, the Sprinters Elves free spirit and extreme wonderlust tend to cut their lives short</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Sprinters Elves love freedom, variety, and selfexpression, so they lean strongly toward the gentler aspects of chaos. They value and protect others'freedom as well as their own, and they are more often good than not. The drow are an exception; their exile into the Underdark has made them vicious and dangerous. Drow are more often evil than not.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Sprinters Elves range from under 2 to over 3 feet tall and have slender builds. Your size is small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 35 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Due to your fey ancestry, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Enhanced Motor Skills.</em></strong> You have proficiency in stealth and sleight of hand skills.</p>
+			<p class="indent"><strong><em>Fey Fearlessness.</em></strong> Sprinters Elves are immune to fear effects.</p>
+			<p class="indent"><strong><em>Extreme Wonderlust</em></strong> Occasionally Sprinters Elves are easily distracted. Only the wisest of the Sprinters Elves are able to maintain concentration.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> Ancient divides among the elven people resulted in three main subraces: high elves, wood elves, and dark elves, who are commonly called drow. Choose one of these subraces. In some worlds, these subraces are divided still further (such as the sun elves and moon elves of the Forgotten Realms), so if you wish, you can choose a narrower subrace.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Adran, Aelar, Aramil, Arannis, Aust, Beiro, Berrian, Carric, Enialis, Erdan, Erevan, Galinndan, Hadarai, Heian, Himo, Immeral, Ivellios, Laucian, Mindartis, Paelias, Peren, Quarion, Riardon, Rolen, Soveliss, Thamior, Tharivol, Theren, Varis</set>
+			<set name="names" type="female">Adrie, Althaea, Anastrianna, Andraste, Antinua, Bethrynna, Birel, Caelynn, Drusilia, Enna, Felosial, Ielenia, Jelenneth, Keyleth, Leshanna, Lia, Meriele, Mialee, Naivara, Quelenna, Quillathe, Sariel, Shanairra, Shava, Silaqui, Theirastra, Thia, Vadania, Valanthe, Xanaphia</set>
+			<set name="names" type="child">Ara, Bryn, Del, Eryn, Faen, Innil. Lael, Mella, Naill, Naeris, Phann, Rael, Rinn, Sai, Syllin, Thia, Vall</set>
+			<set name="names" type="family">Amakiir, Amastacia, Galanodel, Holimion, Ilphelkiir, Liadon, Meliamne, Nai'lo, Siannodel, Xiloscient</set>
+			<set name="names-format">{{name}} {{family}}</set>
+			<set name="height" modifier="2d4">2'7"</set>
+			<set name="weight" modifier="1d4">35 lb.</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="3" />
+			<stat name="innate speed" value="35" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_ELVISH" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ENHANCED_MOTOR_SKILLS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FEY_FEARLESSNESS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXTREME_WONDERLUST" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SPRINTERS_ELF_PRESENCE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NIMBLENESS" />
+		</rules>
+	</element>
+	<element name="Enhanced Motor skills" type="Racial Trait" source="Races of Greystone" id="ID_RACIAL_TRAIT_ENHANCED_MOTOR_SKILLS">
+		<description>
+			<p>You have proficiency in Sleight of Hand and Stealth skills.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency in Sleight of Hand and Stealth skills.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+	<element name="Sprinters Elf Presence" type="Racial Trait" source="Races of Greystone" id="ID_RACIAL_TRAIT_SPRINTERS_ELF_PRESENCE">
+    <description>
+      <p> : In general, a Sprinters Elf usually goes unnoticed. However, when people know a Sprinters Elf is close, they tend to tighten their grip on their belongings. When your presence is known you have disadvantage on sleight of hand checks. </p>
+    </description>
+    <sheet>
+      <description>. When your presence is known you have disadvantage on sleight of hand checks.</description>
+    </sheet>
+  </element>
+	<element name="Fey Fearlessness" type="Racial Trait" source="Races of Greystone" id="ID_RACIAL_TRAIT_FEY_FEARLESSNESS">
+		<description>
+			<p>Most elves have advantage on being charmed, and cannot be put to sleep magically. Sprinters Elves, do not have this trait. However, they completely immune to fear.</p>
+		</description>
+		<sheet>
+			<description>Sprinters Elves are immune to fear effects</description>
+		</sheet>
+	</element>
+	<element name="Extreme Wonderlust" type="Racial Trait" source="Races of Greystone" id="ID_RACIAL_TRAIT_EXTREME_WONDERLUST">
+		<description>
+			<p>Occasionally Sprinters Elves are easily distracted. Only the wisest of the Sprinters Elves are able to maintain concentration. Make wisdom saving throw to maintain concentration when distracted (Distraction is at DM’s discretion).</p>
+		</description>
+		<sheet>
+			<description>Sprinters Elves are easily distracted. Make wisdom saving throw to maintain concentration when distracted (Distraction is at DM’s discretion).</description>
+		</sheet>
+	</element>
+    <element name="Sprinters elf Nimbleness" type="Racial Trait" source="Races of Greystone" id="ID_RACIAL_TRAIT_NIMBLENESS">
+		<description>
+			<p> At 1st level, choose between Stealth or Sleight of hand. your proficiency bonus is doublred for any ability check you make to use the chosen proficiency</p>
+		</description>
+		<sheet display="false">
+			<description>Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Sprinters elf Nimbleness" level="1" number="1" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+		</rules>
+	</element>
+	<!-- Expertise -->
+	<element name="Skill Expertise (Sleight of Hand)" type="Racial Trait" source="Races of Greystone" id="ID_ROG_SPRINTERS_ELF_RACIAL_TRAIT_EXPERTISE_SKILL_SLEIGHTOFHAND">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_SLEIGHTOFHAND</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Sleight of Hand check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="sleight of hand:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Stealth)" type="Racial Trait" source="Races of Greystone" id="ID_ROG_SPRINTERS_ELF_RACIAL_TRAIT_EXPERTISE_SKILL_STEALTH">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_STEALTH</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Stealth check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_STEALTH" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="stealth:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+</elements>

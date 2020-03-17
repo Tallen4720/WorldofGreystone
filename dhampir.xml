@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	
+
+  <element name="Dhampir" type="Race" source="Races of Greystone" id="ID_TALLEN_ROG_RACE_DHAMPIR">
+    <description>
+      <p class="flavor">To be stuck between worlds. feeling the desire to feed from your friends but know that the blood does not sustain you. it is merely a drug. an addiction. one could embrace it and possibly live forever. or one could deny it grow old and die like a mortal one day.</p>
+      <h4>BORN TO THE TURNING</h4>
+      <p>Dhampir are born from a woman who has been bitten and turned during a certain stage of pregnancy. only stronges of children survive the change. they tend to take on the physical traits of the vampire who turned their mother. commonly Dhampir children are stillborn and never survive. but few are of strong will and strong constitution enough to be born into a world that will never accept them. </p>
+      <h4>GENETIC SUPERIORITY</h4>
+      <p>physically being able to survive the birthing process and with the genetics from the vampire that created you. dhampir typically hold a physical stature above others. they usually have the look of a highborn about them. their physicall stature is typically a class above others in appearnace.</p>
+      <p class="indent">Typically a dhampir hates the fact that their parents shun them as an abomination. leaving the child to die. a dhampir who learnes of their vampiric heritage and where they are from tends to have a desire to hunt and destroy their creators on one hand. on the other they wish to know more about them to understand their herritage.</p>
+      
+      <h4>DHAMPIR TRAITS</h4>
+      <p>Dhampir share certain racial traits as a result of their Vampiric Heritage.</p>
+      <p>
+        <span class="feature">Ability Score Increase.</span>Your constitution score increases by 2, and your Charisma score increases by 1.<br/>
+        <span class="feature">Age.</span>Dhampir mature at the same rate as humans but stop aging at adulthood. they may extend their life through unatural means by drinking blood. however most Dhampir who do not feed on living creatures live between 800-900 years.<br/>
+        <span class="feature">Alignment.</span>Dhampir tent to try and blend with society. their alignment typicaly varies.<br/>
+        <span class="feature">Size.</span>Dhampir the same size and build as humans. Your size is Medium.<br/>
+        <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
+        <span class="feature">Superior Darkvision.</span>Thanks to your Vampiric herritage you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.<br/>
+        <span class="feature">Vampiric weakness.</span>You have weakness to radiant damage and weapons made with silver.<br/>
+        <span class="feature">Dhampir magic.</span>as you grow your ability to tap into your bloodline increases. Once you reach 3rd level, you can cast the charm person and disguise self spells once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the spider-climb spell on yourself at-will. Charisma is your spellcasting ability for these spells.<br/>
+        <span class="feature">Languages.</span>You can speak, read, and write Common and one additional language of your choice.<br/>
+        <span class="feature">Dhampir Bite.</span>Whenever you grapple, incapacitate, or restrain a creature , you gain the ability to bite that creature dealing 1d4 piercing damage as an attack action.<br/>
+        <span class="feature">Dhampir Drain.</span>When you use the bite feature You can feed on their blood. granting you life and stealing it from your victom. <br/>
+      </p>
+    </description>
+    <sheet display="false" />
+    <setters>
+     <set name="names" type="male">Ander, Blath, Bran, Frath, Geth, Lander, Luth, Malcer, Stor, Taman, Urth</set>
+      <set name="names" type="female">Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Silifrey, Westra</set>
+      <set name="names" type="surname">Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver</set>
+      <set name="names-format">{{name}} {{surname}}</set>
+      <set name="height" modifier="2d10">4'8"</set>
+      <set name="weight" modifier="2d4">110 lb.</set>
+    </setters>
+    <rules>      
+      <stat name="constitution" value="2"/>
+      <stat name="charisma" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <select type="Language" name="Language (Human)" supports="Standard||Exotic" />
+      <grant type="Racial Trait" id="ID_TALLEN_ROG_RACIAL_TRAIT_DHAMPIR_MAGIC" />
+      <grant type="Racial Trait" id="ID_TALLEN_ROG_RACIAL_TRAIT_VAMPIRIC_WEAKNESS" />
+      <grant type="Racial Trait" id="ID_TALLEN_ROG_RACIAL_TRAIT_DHAMPIR_BITE" />
+      <grant type="Racial Trait" id="ID_TALLEN_ROG_RACIAL_TRAIT_DHAMPIR_DRAIN" />
+      
+    </rules>
+  </element>
+    <element name="Dhampire Magic" type="Racial Trait" source="Races of Greystone" id="ID_TALLEN_ROG_RACIAL_TRAIT_DHAMPIR_MAGIC">
+		<description>
+			<p>at 3rd level You can cast Disguise Self and Charm Person spell once per short or long rest additionally you may use disguise self to alter small parts of your appearance to hide your vampiric heritage at-will. Charisma is your ability for these spells. at 5th level You may cast Spider Climb without material components at will on yourself. </p>
+		</description>
+		<sheet>
+			<description level="3">1/day Disguise self, Charm person (Spellcasting: Charisma)</description>
+			<description level="5">1/day Disguise self, Charm person, and (AT WILL, SELF ONLY) Spiderclimb. (Spellcasting: Charisma)</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIDER_CLIMB" level="5" />
+		</rules>
+	</element>
+  <element name="Vampiric weakness" type="Racial Trait" source="Races of Greystone" id="ID_TALLEN_ROG_RACIAL_TRAIT_VAMPIRIC_WEAKNESS">
+    <description>
+      <p>thought you gain a good portion or the strenghts by having the blood of a vampire lord in your veins. it comes at a cost. you have a weakness to radiant damage and weapons made of silver.</p>
+    </description>
+    <sheet>
+      <description>You have weakness to radiant damage.</description>
+      <description>You have weakness to weapons made with silver.</description>
+    </sheet>
+    <rules>
+		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_RADIANT" />
+    </rules>
+  </element>
+  <element name="Dhampir Bite" type="Racial Trait" source="Races of Greystone" id="ID_TALLEN_ROG_RACIAL_TRAIT_DHAMPIR_BITE">
+    <description>
+      <p>Whenever you grapple, incapacitate, or restrain a creature , you gain the ability to bite that creature dealing 1d4 piercing damage as an attac action.</p>
+    </description>
+    <sheet>
+      <description>Whenever you grapple, incapacitate, or restrain a creature , you gain the ability to bite that creature dealing 1d4 piercing damage as an attack action.</description>
+    </sheet>
+    <rules>
+      <grant type="Weapon" id="ID_ROG_WEAPON_DHAMPIRE_BITE_WEAPON" />
+      <grant type="proficiency" id="ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DHAMPIRE_BITE" />
+    </rules>
+  </element>
+  <element name="Dhampir Drain" type="Racial Trait" source="Races of Greystone" id="ID_TALLEN_ROG_RACIAL_TRAIT_DHAMPIR_DRAIN">
+    <description>
+      <p> you can spend your bonus action to drink the blood of a creature you have use the Dhampir bite on in the same turn, dealing 2d6 necrotic damage. you regain hit points equal to half the necrotic damage dealt this way. </p>
+    </description>
+    <sheet>
+      <description>you can spend your bonus action to drink the blood of a creature you have used the Dhampir bite on in the same turn, dealing 2d6 necrotic damage, and you regain hit points equal to half the necrotic damage dealt this way.</description>
+    </sheet>
+  </element>
+  <element name="Dhampir Bite" type="Weapon" source="Races of Greystone" id="ID_ROG_WEAPON_DHAMPIRE_BITE_WEAPON">
+    <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+    <description>
+        <p>Whenever you grapple, incapacitate, or restrain a creature, you may bite them for 1d4 piercing damage. </p>
+    </description>
+    <setters>
+        <set name="category">Weapons</set>
+        <set name="damage" type="piercing">1d4</set>
+        <set name="proficiency">ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DHAMPIRE_BITE</set>
+    </setters>
+    </element>
+    <element name="Weapon Proficiency (Dhampir Bite)" type="Proficiency" source="Races of Greystone" id="ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DHAMPIRE_BITE">
+        <requirements>ID_TALLEN_ROG_RACE_DHAMPIR</requirements>
+    </element>
+
+</elements>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Companions</name>
+		<description>Companion creatures from the Races of Greystone.</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.2">
+			<file name="Greystonecompanions.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/companions.xml" />
+		</update>
+	</info>
+
+	<element name="Blink Dog" type="Companion" source="Races of Greystone" id="ID_TALLEN_ROG_COMPANION_BLINK_DOG">
+		<description />
+		<setters>
+			<set name="strength">12</set>
+			<set name="dexterity">17</set>
+			<set name="constitution">12</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">13</set>
+			<set name="charisma">11</set>
+			<set name="ac">13</set>
+			<set name="hp">22 (4d8+4)</set>
+			<set name="speed">40 ft., climb 30 ft.</set>
+			<set name="languages">—</set>
+			<set name="skills">Perception +3, Stealth +5</set>
+			<set name="type">Beast</set>
+			<set name="size">Medium</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">1/4</set>
+			<set name="actions">ID_TALLEN_ROG_BLINKDOG_BITE,ID_TALLEN_ROG_BLINKDOG_TELEPORT</set>
+            <set name="traits">ID_TALLEN_ROG_COMPANION_TRAIT_WOLF_KEEN_HEARING_AND_SMELL</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="22" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:speed:climb" value="30" bonus="base" />
+			<stat name="companion:athletics:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Multiattack" type="Companion Action" source="Races of Greystone" id="ID_TALLEN_ROG_BLINKDOG_MULTIATTACK">
+		<description>
+			<p>The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>
+		</description>
+		<sheet>
+			<description>The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Races of Greystone" id="ID_TALLEN_ROG_BLINKDOG_BITE">
+		<description>
+			<p>Melee Weapon Attack: +3 to hit, reach 5 ft. , one target. Hit: 4 (1d6 + 1) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +3 to hit, reach 5 ft. , one target. Hit: 4 (1d6 + 1) piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Teleport" type="Companion Action" source="Races of Greystone" id="ID_TALLEN_ROG_BLINKDOG_TELEPORT">
+		<description>
+			<p>(Recharge 4-6). The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack.</p>
+		</description>
+		<sheet>
+			<description>(Recharge 4-6). The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack.</description>
+		</sheet>
+	</element>
+	<element name="Dire Wolf" type="Companion" source="Races of Greystone" id="ID_TALLEN_ROG_COMPANION_DIRE_WOLF">
+		<description />
+		<setters>
+			<set name="strength">17</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">15</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">10</set>
+			<set name="ac">14</set>
+			<set name="hp">37 (5d10+10)</set>
+			<set name="speed">50 ft.</set>
+			<set name="languages">—</set>
+			<set name="skills">Perception +3, Stealth +4</set>
+			<set name="type">Beast</set>
+			<set name="size">Large</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">1</set>
+			<set name="actions">ID_TALLEN_ROG_DIREWOLF_BITE</set>
+            <set name="traits">ID_TALLEN_ROG_COMPANION_TRAIT_WOLF_KEEN_HEARING_AND_SMELL,ID_TALLEN_ROG_COMPANION_TRAIT_WOLF_PACK_TACTICS</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="14" />
+			<stat name="companion:hp:max" value="37" bonus="base" />
+			<stat name="companion:speed" value="50" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Bite" type="Companion Action" source="Races of Greystone" id="ID_TALLEN_ROG_DIREWOLF_BITE">
+		<description>
+			<p>Melee Weapon Attack: +5 to hit, reach 5 ft. , one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +5 to hit, reach 5 ft. , one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</description>
+		</sheet>
+	</element>
+		<element name="Guenhwyvar" type="Companion" source="World of Greystone" id="ID_TALLEN_ROG_GUENHWYVAR">
+		<description />
+		<setters>
+			<set name="strength">18</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">15</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">8</set>
+			<set name="ac">12</set>
+			<set name="hp">52 </set>
+			<set name="speed">40 ft., climb 40 ft.</set>
+			<set name="languages">—</set>
+			<set name="skills">Perception +3, Stealth +6</set>
+			<set name="type">Beast</set>
+			<set name="size">Large</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">2</set>
+			<set name="traits">ID_TALLEN_ROG_COMPANION_TRAIT_GWENHWYVAR_KEEN_SMELL,ID_TALLEN_ROG_COMPANION_TRAIT_GWENHWYVAR_POUNCE</set>
+			<set name="actions">ID_TALLEN_ROG_COMPANION_ACTION_GWENHWYVAR_BITE,ID_TALLEN_ROG_COMPANION_ACTION_GWENHWYVAR_CLAW</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+			<stat name="companion:hp:max" value="52" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:speed:climb" value="40" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Keen Smell" type="Companion Trait" source="World of Greystone" id="ID_TALLEN_ROG_COMPANION_TRAIT_GWENHWYVAR_KEEN_SMELL">
+		<description>
+			<p>The GWENHWYVAR has advantage on Wisdom (Perception) checks that rely on smell.</p>
+		</description>
+		<sheet>
+			<description>The GWENHWYVAR has advantage on Wisdom (Perception) checks that rely on smell.</description>
+		</sheet>
+	</element>
+	<element name="Pounce" type="Companion Trait" source="World of Greystone" id="ID_TALLEN_ROG_COMPANION_TRAIT_GWENHWYVAR_POUNCE">
+		<description>
+			<p>If the GWENHWYVAR moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the GWENHWYVAR can make one bite attack against it as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>If the GWENHWYVAR moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the GWENHWYVAR can make one bite attack against it as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="World of Greystone" id="ID_TALLEN_ROG_COMPANION_ACTION_GWENHWYVAR_BITE">
+		<description>
+			<p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d10 +5 ) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d10 +5 ) piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Claw" type="Companion Action" source="World of Greystone" id="ID_TALLEN_ROG_COMPANION_ACTION_GWENHWYVAR_CLAW">
+		<description>
+			<p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.</description>
+		</sheet>
+	</element>
+</elements>
