@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	
+
+	<element name="Dunamancy" type="Archetype" source="Races of Greystone" id="ID_TALLEN_ROG_SORCERER_ARCHETYPE_DUNAMANCY">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Sometimes the spark of magic that fuels a sorcerer comes from a divine source that glimmers within the soul. Having such a blessed soul is a sign that your innate magic might come from a distant but powerful familial connection to a divine being. Perhaps your ancestor was an angel, transformed into a mortal and sent to fight in a god’s name. Or your birth might align with an ancient prophecy, marking you as a servant of the gods or a chosen vessel of divine magic.</p>
+			<p class="indent">A Divine Soul, with a natural magnetism, is seen as a threat by some religious hierarchies. As an outsider who commands sacred power, a Divine Soul can undermine an existing order by claiming a direct tie to the divine.</p>
+			<p class="indent">In some cultures, only those who can claim the power of a Divine Soul may command religious power. In these lands, ecclesiastical positions are dominated by a few bloodlines and preserved over generations.</p>			
+			<div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_MANIFEST_ECHO" />
+			<div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_UNLEASH_INCARNATION" />
+			<div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_SHADOW_MARTYR" />
+			<div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_ARCANE_ABEYANCE" />
+			<div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_CONVERGENT_FUTURE" />
+		</description>
+		<sheet>
+			<description>Sometimes the spark of magic that fuels a sorcerer comes from a divine source that glimmers within the soul.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_MANIFEST_ECHO" level="1" />
+			<grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_UNLEASH_INCARNATION" level="1" />
+			<grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_SHADOW_MARTYR" level="6" />
+			<grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_ARCANE_ABEYANCE" level="14" />
+			<grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_CONVERGENT_FUTURE" level="18" />
+		</rules>
+	</element>
+	<element name="Manifest Echo" type="Archetype Feature" source="Races of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_MANIFEST_ECHO">
+		<description>
+			<p><em>1st-level Dunamancy Sorcerer feature</em></p>
+			<p>You can use a bonus action to magically manifest an echo of yourself in an unoccupied space you can see within 15 feet of you. This echo is a magical, translucent, gray image of you that lasts until it is destroyed, until you dismiss it as a bonus action, until you manifest another echo, or until you’re incapacitated.</p>
+			<p class="indent">Your echo has AC 14 + your proficiency bonus, 1 hit point, and immunity to all conditions. If it has to make a saving throw, it uses your saving throw bonus for the roll. It is the same size as you, and it occupies its space. On your turn, you can mentally command the echo to move up to 30 feet in any direction (no action required). If your echo is ever more than 30 feet away from you at the end of your turn, it is destroyed.</p>
+			<p class="indent">You can use the echo in the following ways:</p>
+			<ul>
+				<li>As a bonus action, you can teleport, magically swapping places with your echo at a cost of 15 feet of your movement, regardless of the distance between the two of you.</li>
+				<li>When you cast a spell on your turn, any spell you cast with that action can originate from your space or the echo’s space. You make this choice for each spell.</li>
+				<li>When a creature that you can see within 5 feet of your echo moves at least 5 feet away from it, you can use your reaction to make an opportunity attack against that creature as if you were in the echo’s space.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can magically manifest an echo of yourself in an unoccupied space you can see within 15 feet of you. This echo is a magical, translucent, gray image of you that lasts until it is destroyed, until you dismiss it as a bonus action, until you manifest another echo, or until you’re incapacitated.
+			Your echo has {{manifest echo:ac}} AC, 1 hit point, and immunity to all conditions. If it has to make a save, it uses your save bonus for the roll. It is the same size as you, and it occupies its space. On your turn, you can mentally command the echo to move up to 30 feet in any direction. If your echo is ever more than 30 feet away from you at the end of your turn, it is destroyed.
+			As a bonus action, you can teleport, magically swapping places with your echo at a cost of 15 feet of your movement, regardless of the distance between the two of you.
+			When you take the attack action on your turn, any attack you make with that action can originate from your space or the echo’s space. You make this choice for each attack.
+			When a creature that you can see within 5 feet of your echo moves at least 5 feet away from it, you can use your reaction to make an opportunity attack against that creature as if you were in the echo’s space.</description>
+		</sheet>
+		<rules>
+			<stat name="manifest echo:ac" value="14" />
+			<stat name="manifest echo:ac" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Unleash Incarnation" type="Archetype Feature" source="Races of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_UNLEASH_INCARNATION">
+		<description>
+			<p><em>1st-level Dunamancy Sorcerer feature</em></p>
+			<p>You can heighten your echo’s fury. Whenever you cast a cantrip you may cast one cantrip from the echo’s position. This causes the echo to lose 1 hp.</p>
+			<p class="indent">You can use this feature a number of times equal to your Constitution modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{unleash incarnation:usage}}/Long Rest">
+			<description>Whenever you cast a cantrip, you can have your echo cast one additional cantrip from the echo’s position. the echo then loses 1 Hitpoint.</description>
+		</sheet>
+		<rules>
+			<stat name="unleash incarnation:usage" value="1" bonus="base" />
+			<stat name="unleash incarnation:usage" value="constitution:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Shadow Martyr" type="Archetype Feature" source="Races of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_SHADOW_MARTYR">
+		<description>
+			<p><em>6th-level Dunamancy Sorcerer feature</em></p>
+			<p>You can make your echo throw itself in front of an attack directed at another creature that you can see. Before the attack roll is made, you can use your reaction to teleport the echo to an unoccupied space withing 5 feet of the targeted creature. The attack roll that triggered the reaction is instead made against your echo.</p>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>You can make your echo throw itself in front of an attack directed at another creature that you can see. Before the attack roll is made, you can teleport the echo to an unoccupied space withing 5 feet of the targeted creature. The attack roll that triggered the reaction is instead made against your echo.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Abeyance" type="Archetype Feature" source="Races of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_ARCANE_ABEYANCE">
+		<description>
+			<p><em>14th-level Dunamancy Sorcerer feature</em></p>
+			<p>When you cast a spell using a spell slot of 4th level or lower, you can condense the spell’s magic into a mote. The spell is frozen in time at the moment of casting and held within a gray bead for 1 hour. This bead is a Tiny object with AC 15 and 1 hit point, and it is immune to poison and psychic damage. When the duration ends, or if the bead is destroyed, it vanishes in a flash of light, and the spell is lost.</p>
+			<p class="indent">A creature holding the bead can use its action to release the spell within, whereupon the bead disappears. The spell uses your spell attack bonus and save DC, and the spell treats the creature who released it as the caster for all other purposes.</p>
+			<p class="indent">Once you create a bead with this feature, you can’t do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you cast a spell using a spell slot of 4th level or lower, you can condense the spell’s magic into a mote. The spell is frozen in time at the moment of casting and held within a gray bead for 1 hour. This bead is a Tiny object with AC 15 and 1 hit point, and it is immune to poison and psychic damage. When the duration ends, or if the bead is destroyed, it vanishes in a flash of light, and the spell is lost.
+			A creature holding the bead can use its action to release the spell within, whereupon the bead disappears. The spell uses your spell attack bonus and save DC, and the spell treats the creature who released it as the caster for all other purposes.</description>
+		</sheet>
+	</element>
+	<element name="Convergent Future" type="Archetype Feature" source="Races of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_CONVERGENT_FUTURE">
+		<description>
+			<p><em>18th-level Dunamancy Sorcerer feature</em></p>
+			<p>You can peer through possible futures and magically pull one of them into events around you, ensuring a particular outcome. When you are a creature you can see within 60 feet of you makes an attack roll, an ability check, or a saving throw, you can use your reaction to ignore the die roll and decide whether the number rolled is the minimum needed to succeed or one less than that number (your choice).</p>
+			<p class="indent">When you use this feature, you gain one level of exhaustion. Only by finishing a long rest can you remove a level of exhaustion gained in this way.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you are a creature you can see within 60 feet of you makes an attack roll, an ability check, or a save, you can ignore the die roll and decide whether the number rolled is the minimum needed to succeed or one less than that number.
+			When you use this feature, you gain one level of exhaustion. Only by finishing a long rest can you remove a level of exhaustion gained in this way.</description>
+		</sheet>
+	</element>	
+</elements>

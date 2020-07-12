@@ -131,4 +131,36 @@
         <select type="Class Feature" name="Additional Fighting Style, Feat" supports="Fighting Style" />
     </rules>
 	</element>
+	<element name="+ 2 Armor of Resistance, Psychic" type="Magic Item" source="Dungeon Master’s Guide" id="ID_TALLEN_ROG_MAGIC_ITEM_ARMOR_OF_RESISTANCE_PSYCHIC">
+		<description>
+			<p>You have resistance to psychic damage while you wear this armor.</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">{{parent}} of Psychic Resistance</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	 <element name="Attunement Option" type="Option" source="Bladetide Setting" id="ID_NV_BDTD_OPTION_ATTUNEMENT">
+        <description>
+            <p>This option makes maximum number of attuned items equal to Proficiency Bonus.</p>
+        </description>
+        <sheet display="false">
+            <description>This option makes maximum number of attuned items equal to Proficiency Bonus.</description>
+        </sheet>
+        <rules>
+            <stat name="attunement:max" value="-3" />
+            <stat name="attunement:max" value="proficiency" />
+        </rules>
+    </element>
 </elements>

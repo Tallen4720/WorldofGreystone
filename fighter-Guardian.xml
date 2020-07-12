@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	
+
+	<element name="Guardian" type="Archetype" source="World of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_GUARDIAN">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p> The archetypal Guardian is a master of defense who puts the well-being of his allies above all else. Guardians are resilient and near impenetrable iron walls that stand in the way of all opposition while still dealing heavy damage on the battlefield. It takes more than your average foe to take these juggernauts down.</p>
+			<div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_TWO_HANDED_DEFENSE" />
+			<div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_DEFENSIVE_STANCE" />
+			<div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_PROVOKE" />
+			<div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_SPELL_BLOCKER" />
+            <div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_UNDYING_PROTECTOR" />
+            <div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_ULTIMATE_SHIELD" />
+		</description>
+		<sheet display="false">
+			<description>Guardians are masters of defense who puts the well-being of his allies above all else.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_TWO_HANDED_DEFENSE" level="3"/>
+			<grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_DEFENSIVE_STANCE" level="3"/>
+			<grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_PROVOKE" level="7"/>
+			<grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_SPELL_BLOCKER" level="10"/>
+            <grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_UNDYING_PROTECTOR" level="15"/>
+            <grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_ULTIMATE_SHIELD" level="18"/>
+		</rules>
+	</element>
+	<element name="Two Handed Defense" type="Archetype Feature" source="World Of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_TWO_HANDED_DEFENSE">
+		<description>
+			<p>When you choose this subclass at 3rd level, you gain the ability to wield shields with great prowess. Your shields now have the heavy property and because of your mastery, which grants a +4 bonus to your AC. In addition, you can make attacks with shields. You recieve the dual wielder feat but only works on your offhand weapon that is a shield. The damage die you use for your shield attack is 1d6 and it deals bludgeoning damage. At 7th, 10th, and 15th level, the die increases to 1d8, 1d10, and 1d12 respectively.</p>
+		</description>
+		<sheet>
+			<description>Your shields now have the heavy property and because of your mastery, which grants a +4 bonus to your AC. In addition, you can make attacks with shields. You recieve the two weapon fighting style, but only works on your offhand weapon that is a shield. The damage die you use for your shield attack is 1d{{rog:shield attack-die:size}} and it deals bludgeoning damage.</description>
+		</sheet>
+		<rules>
+            <stat name="ac:misc" value="2" equipped="[shield:any]" />
+			<stat name="rog:shield attack-die:size" value="6" bonus="base" />
+			<stat name="rog:shield attack-die:size" value="8" bonus="base" level="7" />
+			<stat name="rog:shield attack-die:size" value="10" bonus="base" level="10" />
+			<stat name="rog:shield attack-die:size" value="12" bonus="base" level="15" />
+		</rules>
+
+	</element>
+	<element name="Devensive Stance" type="Archetype Feature" source="World Of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_DEFENSIVE_STANCE">
+		<description>
+			<p>At 3rd level, as an action you can take an all-out defensive stance when you're holding your shield. While you're in this stance, you have resistance to all damage except psychic and you may make a single attack as a bonus action with your main hand. If a creature of your size or smaller is directly behind you, Ranged Attacks and Ranged Spell Attacks have disadvantage to hit them. Area of affect spells do not take disadvantage. Your movement speed is halved when you are in a defensive stance. This stance lasts until the start of your next turn.</p>
+		</description>
+		<sheet action="Action" >
+			<description>you can take a defensive stance (action) while in this stance, you have resistance to all damage except psychic. a creature your size or smaller behind you, ranged attacks and ranged spell attacks have disadvantage. movement speed is half. you may make a single attack as a bonus action with your main hand.</description>
+		</sheet>
+	</element>
+	<element name="Provoke" type="Archetype Feature" source="World Of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_PROVOKE">
+		<description>
+			<p>Provoke: at 7th level, as a bonus action. You may force foes equal to your charisma modifier (minimum of 1) to direct their single target attacks and actions at you. You allow the target to have advantage on its Attack rolls vs your AC. And disadvantage on attack rolls against other targets until the start of your next turn. </p>
+		</description>
+		<sheet action="Bonus Action" >
+			<description> cause up to {{provoke:creatures}} targets to gain advantage on attack rolls against you, and disadvantage on attack rolls against other targets.</description>
+		</sheet>
+		<rules>
+			<stat name="provoke:creatures" value="1" bonus="base" />
+			<stat name="provoke:creatures" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Spell Blocker" type="Archetype Feature" source="World Of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_SPELL_BLOCKER">
+		<description>
+			<p>At 10th level, you create a safe area in a 15ft cube behind you when you enter defensive stance. Allies within this cube add your shield's AC bonus to dexterity saving throws they make against spells or other harmful effects. If you or an ally are subjected to an effect that requires them to make a Dexterity saving throw to take only half damage, they take no damage if they succeed on the saving throw.</p>
+		</description>
+		<sheet>
+			<description>15ft cube behind you while in defensive stance gains your shields AC to thier dexterity saving throws they make against spells and other harmful effects. half damage if they fail and no damage if they succeed the save </description>
+		</sheet>
+	</element>
+	<element name="Undying Protector" type="Archetype Feature" source="World Of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_UNDYING_PROTECTOR">
+		<description>
+			<p>At 15th level, you can no longer be critically hit, any attempt to knock you prone has disadvantage and the distance you can be shoved is halved. Also you can now hold your defensive stance for one minute.</p>
+		</description>
+		<sheet>
+			<description> you can no longer be critically hit, any attempt to knock you prone has disadvantage and the distance you can be shoved is halved. Also you can now hold your defensive stance for one minute.</description>
+		</sheet>
+	</element>
+	<element name="Ultimate Shield" type="Archetype Feature" source="World Of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_GUARDIAN_ULTIMATE_SHIELD">
+		<description>
+			<p>At 18th level you may enter a defensive stance as a bonus action instead of an action. When you enter a defensive stance you may add your Strength modifier to your total AC.</p>
+		</description>
+		<sheet>
+			<description>you may enter a defensive stance as a bonus action instead of an action. When you enter a defensive stance you may add your Strength modifier to your total AC. </description>
+		</sheet>
+	</element>
+</elements>

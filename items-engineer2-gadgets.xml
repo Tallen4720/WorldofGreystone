@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>D'Artagnan's Engineer Class</name>
+        <update version="0.0.1">
+            <file name="items-engineer2-gadgets.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/items-engineer2-gadgets.xml" />
+        </update>
+    </info>
+    
+
+  <!-- Gadgets -->
+    <element name="Power Boots" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_POWER_BOOTS">
+        <description>
+            <p>Increases your walking speed by 10 feet.</p>
+            <p class="indent">Jump distance and height are doubled and you can use your Intelligence score and modifier instead of Strength.</p>
+            <p class="indent">Whenever you take fall damage, take half damage and you don’t fall prone.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_POWER_BOOTS</set>
+            <set name="stackable">false</set>
+            <set name="slot">feet</set>
+        </setters>
+        <rules>
+            <stat name="speed:misc" value="10" />
+        </rules>
+    </element>
+    <element name="Medic Kit" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_MEDIC_KIT">
+        <description>
+            <p>You have a pool of healing power that replenishes when you take a short or long rest. With that pool, you can restore a total number of hit points equal to your engineer level x 5. As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool. This feature has no effect on undead and constructs.</p>
+            <p class="indent"><strong>1 Energy.</strong> Touch a dying creature as an action to stabilize it and return it to 1 hit points.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_MEDIC_KIT</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Eagle Lens" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_EAGLE_LENS">
+        <description>
+            <p>You add your Intelligence Modifier (minimum 1) to Perception checks you make.</p>
+            <p class="indent">You gain a +1 bonus to ranged attack rolls.</p>
+            <p class="indent"><strong>1 Energy.</strong> Gain advantage on a weapon attack roll you make.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_EAGLE_LENS</set>
+            <set name="stackable">false</set>
+            <set name="slot">eyes</set>
+        </setters>
+        <rules>
+            <stat name="eagle-lens:bonus" value="1" bonus="base" />
+            <stat name="eagle-lens:bonus" value="intelligence:modifier" bonus="base" />
+            <stat name="perception:proficiency" value="intelligence:modifier" bonus="gadget" />
+        </rules>
+    </element>
+    <element name="Climbing Hooks" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_CLIMBING_HOOKS">
+        <description>
+            <p>You gain the benefits of constant <em>spider climb</em>.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_CLIMBING_HOOKS</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Sustenance Blood Infuser" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_SUSTENANCE_BLOOD_INFUSER">
+        <description>
+            <p>You do not require food or water to survive. Your Hit Point maximum is increased by 1 for each engineer level you have.</p>
+            <p class="indent">You gain proficiency in Constitution Saving Throws.</p>
+            <p class="indent"><strong>2 Energy.</strong> You can cure one poison or disease you are afflicted with as a bonus action.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_SUSTENANCE_BLOOD_INFUSER</set>
+            <set name="stackable">false</set>
+        </setters>
+        <rules>
+            <stat name="hp" value="level:engineer" />
+        </rules>
+    </element>
+    <element name="Mage Lens" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_MAGE_LENS">
+        <description>
+            <p>As an action, you can nonmagically cast <em>detect magic</em>.</p>
+            <p class="indent"><strong>1 Energy.</strong> As an action use this gadget to nonmagically cast identify on any object within line of sight.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_MAGE_LENS</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Appendage Retractable Machine (A.R.M)" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_APPENDAGE_RETRACTABLE_MACHINE_ARM">
+        <description>
+            <p>You have a retractable (as an action) mechanical hand that can move up to 30 feet away from you, and otherwise functions and has restrictions similar to a durationless mage hand spell.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_APPENDAGE_RETRACTABLE_MACHINE_ARM</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Scout Lens" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_SCOUT_LENS">
+        <description>
+            <p>You can see through darkness (including magical darkness) to a distance of 120 feet and have no perception or inspect penalties.</p>
+            <p class="indent">The lenses can also magnify objects viewed to twice their size.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_SCOUT_LENS</set>
+            <set name="stackable">false</set>
+            <set name="slot">eyes</set>
+        </setters>
+    </element>
+    <element name="Voice Changer and Amplifier" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_VOICE_CHANGER_AND_AMPLIFIER">
+        <description>
+            <p>If you have spent a minute or more hearing a creature speak, you can mimic their voice unerringly. A Wisdom (Insight) check is required to discern if that the voice is false. You can also change the pitch of any voice (including your own) spoken through this device.</p>
+            <p class="indent"><strong>1 Energy.</strong> You can increase the volume of your voice to 10 times as much.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_VOICE_CHANGER_AND_AMPLIFIER</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="SCUBA Equipment" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_SCUBA_EQUIPMENT">
+        <description>
+            <p>You gain a swim speed equal to your walking speed.</p>
+            <p class="indent"><strong>2 Energy.</strong> As a bonus action, you can breathe underwater for an hour.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_SCUBA_EQUIPMENT</set>
+            <set name="stackable">false</set>
+        </setters>
+        <rules>
+            <stat name="speed:swim" value="speed" bonus="base" />
+        </rules>
+    </element>
+    <element name="Mechanical Helmet" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_MECHANICAL_HELMET">
+        <description>
+            <p>You add 1 to your AC.</p>
+            <p class="indent"><strong>2 Energy.</strong> As a bonus action, you can send a high-frequency noise from your helmet, that will deafen every other living thing within 15ft until the start of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_MECHANICAL_HELMET</set>
+            <set name="stackable">false</set>
+            <set name="slot">head</set>
+        </setters>
+        <rules>
+            <stat name="ac:misc" value="1" />
+        </rules>
+    </element>
+    <element name="Tinker’s Master Gloves" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_TINKER’S_MASTER_GLOVES">
+        <description>
+            <p>You only use half as much time on the construction of mechanical items, including your gadgets and devices.</p>
+            <p class="indent">You gain advantage on construction and repair checks.</p>
+            <p class="indent"><strong>1 Energy.</strong> The pointer finger of the glove pushes out a lighter, which can produce a small hot flame.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_TINKERS_MASTER_GLOVES</set>
+            <set name="stackable">false</set>
+            <set name="slot">gloves</set>
+        </setters>
+    </element>
+    <element name="Nanite Surge Beam" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_NANITE_SURGE_BEAM">
+        <description>
+            <p><strong>2 Energy.</strong> A beam heals a friendly target within 30ft for 3d4+your Intelligence modifierifier, gain an additional d4 for level 11, and another at level 17.</p>
+            <p class="indent"><strong>2 Energy.</strong> As a reaction, when a creature within 30ft of you rolls a Constitution saving throw, you can grant them advantage on the roll.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_NANITE_SURGE_BEAM</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Overdrive Trigger" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_OVERDRIVE_TRIGGER">
+        <description>
+            <p><strong>3 Energy.</strong> As a bonus action, you gain the benefits of Haste for a minute. This does not require concentration.</p>
+            <p class="indent"><strong>5 Energy.</strong> As an action, you replicate the effects of Time Stop lasting until the end of your next turn. After this effect ends, you gain one exhaustion level.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_OVERDRIVE_TRIGGER</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Grid Shield" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_GRID_SHIELD">
+        <description>
+            <p><strong>2 Energy.</strong> As an action, a 5ft by 5ft shield appears in front of you and stays in front of you acting as half cover from attacks in that direction if not destroyed the shield vanishes in one hour.</p>
+            <p class="indent"><strong>3 Energy.</strong> As an action, a forcefield of hexagonal cells overlaps with your armour. Add your Intelligence modifier to your AC. This effect ends after a 10 minutes or if you fall unconscious.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_GRID_SHIELD</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Thanotic Reader" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_THANOTIC_READER">
+        <description>
+            <p>You can detect the location of undead within 60ft of you.</p>
+            <p class="indent">You can identify how and when a corpse died.</p>
+            <p class="indent"><strong>3 Energy.</strong> As an action you can nonmagically cast speak with dead.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_THANOTIC_READER</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Disguise Mask" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_DISGUISE_MASK">
+        <description>
+            <p>You are proficient in Charisma Saving Throws.</p>
+            <p class="indent"><strong>1 Energy.</strong> Non-Magically cast Disguise Self.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_DISGUISE_MASK</set>
+            <set name="stackable">false</set>
+            <set name="slot">face</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+        </rules>
+    </element>
+    <element name="Soul Reader" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_SOUL_READER">
+        <description>
+            <p>You are proficient in Insight Checks</p>
+            <p class="indent"><strong>1 Energy.</strong> As an action you can nonmagically cast detect good and evil.</p>
+            <p class="indent"><strong>2 Energy.</strong> Nonmagically cast False Life (1d10+Your Level) on you or an ally.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_SOUL_READER</set>
+            <set name="stackable">false</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+        </rules>
+    </element>
+    <element name="Energy Canteen" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_ENERGY_CANTEEN">
+        <description>
+            <p>A Storage Canteen that restores 2d6 energy. It is refilled whenever you take a long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_ENERGY_CANTEEN</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Autoresurrecting Elemental Device" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_AUTORESURRECTING_ELEMENTAL_DEVICE">
+        <description>
+            <p><strong>2 Energy.</strong> When you would take damage that would reduce you to 0hit points, but not kill you outright, you can use your reaction to instead stay at 1 hit points.</p>
+            <p class="indent"><strong>4 Energy.</strong> As an action, you try to revive an adjacent creature who died within the last minute. They must attempt a Constitution saving throw against DC20. On a success, they come back to life at 1hit points.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_AUTORESURRECTING_ELEMENTAL_DEVICE</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Excess Energy Storage Device" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_EXCESS_ENERGY_STORAGE_DEVICE">
+        <description>
+            <p>You add 3 + Intelligence modifier to the maximum amount of Energy you have.</p>
+            <p class="indent">Whenever you suffer at least ten points of lightning damage, you can as a reaction regain one energy point. This can be done up to three times in total, restarting when you take a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_EXCESS_ENERGY_STORAGE_DEVICE</set>
+            <set name="stackable">false</set>
+        </setters>
+        <rules>
+            <stat name="engineer:energy:base" value="3" />
+            <stat name="engineer:energy:base" value="intelligence:modifier" />
+            <stat name="engineer:energy" value="engineer:energy:base" />
+        </rules>
+    </element>
+    <element name="Omnitranslator" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_OMNITRANSLATOR">
+        <description>
+            <p>Creatures who understand at least 1 language can understand any language you speak, and you can understand any spoken language.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_OMNITRANSLATOR</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Jetpack" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_JETPACK">
+        <description>
+            <p>A device on your back allows you to effectively cast a levitate spell at-will.</p>
+            <p class="indent"><strong>4 Energy.</strong> Gain a flying speed of 60 feet for ten minutes.</p>
+            <p class="indent"><strong>4 Energy.</strong> As an action, you can move up to 120ft in a straight line. If you collide with a creature in this path, your movement ends and the creature must make a DEX save. On a failure, the target falls prone. Creatures larger than you gain advantage on this save.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_JETPACK</set>
+            <set name="stackable">false</set>
+            <set name="slot">back</set>
+        </setters>
+    </element>
+    <element name="Creature Capture Device" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_CREATURE_CAPTURE_DEVICE">
+        <description>
+            <p>You hurl the Creature Capture Device at a creature in attempt to capture it. Make an attack roll against the target creature. On a success the creature is sucked into the device and you must make an Animal Handling skill check. You have advantage on the throw if the Creature is poisoned, restrained, unconscious, paralyzed, or frozen.</p>
+            <p class="indent">The DC to catch it is equal to: 10 + CR (round up) + Remaining hit points / 10 (rounded down). On a success you can summon the creature or return it to the device as an action. The creature acts positively towards you as if it had the charmed condition and obeys your every command happily. On a failure the creature breaks free of the device and it is destroyed.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_CREATURE_CAPTURE_DEVICE</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Floating Shoes" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_FLOATING_SHOES">
+        <description>
+            <p>You can walk or run across any liquid as if it were solid stone. Any damaging liquids (lava, acid, ect.) cause you 2d6 damage of the appropriate type every round you spend on them.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_FLOATING_SHOES</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Engitech Offense System" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_ENGITECH_OFFENSE_SYSTEM">
+        <description>
+            <p><strong>3 Energy.</strong> As a bonus action you may enhance a weapon within 30ft with energy from the system. Choose between acid, cold, fire, lightning, force, poison or thunder. The next attack from this weapon deals an additional 2d8 damage of the chosen type.</p>
+            <p class="indent"><strong>3 Energy.</strong> As an action you may shoot an energy beam at a target within 10ft. This causes force damage equal to 2d6+your engineer level. You can spend one additional energy points to force the target to make a Strength save. On a failure, it is sent flying back 5ft per engineer level, taking appropriate falling damage if it collides with an obstacle. Huge or larger creatures gain advantage in this check and are only pushed back half the distance.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_ENGITECH_OFFENSE_SYSTEM</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Engitech Defense System" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_ENGITECH_DEFENSE_SYSTEM">
+        <description>
+            <p>You gain temporary hit points equal to one fifth your engineer level. You regain these hit points at the start of your turn.</p>
+            <p class="indent"><strong>3 Energy.</strong> You can use your reaction to deflect a projectile, including spells. When you are hit by a ranged attack, you can reduce the damage by 4d8+Your Engineer Level. If you reduce the damage to 0, you can spend an additional 1 Energy to reflect the projectile back at the attacker, who must make a Dexterity saving throw. On a failure, the attacker takes the initial full damage and half on a success.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_ENGITECH_DEFENSE_SYSTEM</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Spectravision Goggles" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_SPECTRAVISION_GOGGLES">
+        <description>
+            <p><strong>1 Energy.</strong> You can see into the ethereal plane to a distance of 30 feet, as well as invisible creatures and objects for 10 minutes.</p>
+            <p class="indent"><strong>2 Energy.</strong> For a minute, you can see through any object or wall you spend six seconds observing.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_SPECTRAVISION_GOGGLES</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Holographic Cloak" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_HOLOGRAPHIC_CLOAK">
+        <description>
+            <p>You gain a bonus to Stealth equal to your Intelligence modifier.</p>
+            <p class="indent"><strong>2 Energy.</strong> Automatically whenever you become incapacitated or as part of a Disengage action you can become invisible for three turns and create four illusory duplicates that either run off in opposite directions or perform other actions that could distract the enemy. These duplicates last three rounds, but instantly disappear if they suffer any amount of damage.</p>
+            <p class="indent"><strong>5 Energy.</strong> Nonmagically cast Greater Invisibility as an action.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_HOLOGRAPHIC_CLOAK</set>
+            <set name="stackable">false</set>
+        </setters>
+        <rules>
+            <stat name="stealth:proficiency" value="intelligence:modifier" bonus="gadget" />
+        </rules>
+    </element>
+    <element name="Gravity Manipulator" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_GRAVITY_MANIPULATOR">
+        <description>
+            <p><strong>4 Energy.</strong> Nonmagically cast <em>reverse gravity</em> as an action.</p>
+            <p class="indent"><strong>4 Energy.</strong> Nonmagically cast <em>reverse gravity</em> as an action, but instead you create a zone of greatly intensified gravity. Within this area, the weight of all objects is doubled, movement speed is halved, jump height and distance are halved, and creatures flying must make a Strength save every turn it remains in it or fall to the ground. Fall damage within this area is doubled, and Encumbered creatures suffer 2d6 Bludgeoning damage every turn as they are crushed by the pressure.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_GRAVITY_MANIPULATOR</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Spellshield" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_SPELLSHIELD">
+        <description>
+            <p>If you don’t move during your turn, you gain advantage in saving throws against the effects of spells until your next turn.</p>
+            <p class="indent"><strong>3 Energy.</strong> When you succeed on the save against the effects of a spell that targets only you, you can make it have no effect on you, and instead it targets the original caster using their slot level, spell save DC, attack bonus and spellcasting ability, but you count as the new caster.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_SPELLSHIELD</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Additional Signature Device" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_ADDITIONAL_SIGNATURE_DEVICE">
+        <description>
+            <p>Gain a Secondary (or Tertiary) Signature Device and select one of the Enhanced and Advanced level upgrades.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_ADDITIONAL_SIGNATURE_DEVICE</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Freeze Ray" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_FREEZE_RAY">
+        <description>
+            <p><strong>2 Energy.</strong> Spray a large mist of ice onto a target within 30ft, the opponent must make a Constitution Saving Throw, on a fail they will take 6d4 Cold Damage and will be entombed in ice for 2 rounds, if they are suffer damage during these rounds the ice will break and free them. On a pass they will take half damage and have their running speed reduced by half.</p>
+            <p class="indent"><strong>2 Energy.</strong> Shoot an icicle towards a target within 60ft. The opponent must make a dex save. On a fail, they suffer 4d6 Piercing Damage and 3d6 Cold Damage, and on a Critical Fail they will take an additional 6d6 of Piercing Damage. On a pass they take no damage.</p>
+            <p class="indent">Every use of this gadget increases the energy costs by 1, restarting when you rest.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_FREEZE_RAY</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Disintegrator" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_DISINTEGRATOR">
+        <description>
+            <p><strong>5 Energy.</strong>A target within 120ft must make a Dexterity saving throw. If the saving throw succeeds, the gadget has no effect. If the saving throw fails, the target takes 10d12 + 40 force damage. If this damage reduces the target to 0 hit points, it is disintegrated. A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. Whether a target succeeds or fails, they can only be affected by a Disintegrator once per day.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_DISINTEGRATOR</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Lightweight Artillery Engine" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_LIGHTWEIGHT_ARTILLERY_ENGINE">
+        <description>
+            <p>This mortar must be carried in separate pieces. It can be partially assembled in a round and fully in a minute. It takes the same amount of time to disassemble, and you can’t move or perform any other actions with your hands while it is assembled.</p>
+            <p class="indent">While partially assembled, you can spend 2 Energy as an action to replicate the effects of a fireball with a range of 300ft.</p>
+            <p class="indent">While fully assembled, you can spend 5 Energy as an action to replicate the effects of a single detonation from a Meteor Swarm. When you do so, attempt an Intelligence check against DC18, poor visibility or weather conditions may cause disadvantage on this roll. Failure means that the detonation happens 1d20X10ft away from your target in a random direction. You can only shoot in this manner once every five rounds.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_LIGHTWEIGHT_ARTILLERY_ENGINE</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Neuroadaptable Headgear" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_NEUROADAPTABLE_HEADGEAR">
+        <description>
+            <p>You gain proficiency in Wisdom saving throws.</p>
+            <p class="indent">You resist Psychic Damage.</p>
+            <p class="indent"><strong>1 Energy.</strong> For the next hour, your thoughts cannot be read, and attempts to detect your presence through your consciousness fail.</p>
+            <p class="indent"><strong>3 Energy.</strong> You nonmagically cast Dominate Person with a duration of up to ten minutes.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_NEUROADAPTABLE_HEADGEAR</set>
+            <set name="stackable">false</set>
+            <set name="slot">head</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+        </rules>
+    </element>
+    <element name="Replica Creation Paraphernalia" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_REPLICA_CREATION_PARAPHERNALIA">
+        <description>
+            <p>This set of specialised tools allows you to create replicas of creatures as per the spell Simulacrum. The result duplicate is actually a construct built from clockwork and fake flesh. This construct is nonmagical and cannot be dispelled. You can spend one energy point to recover one hit point of the construct instead of the usual 100GP. You can also allow it to recover a spell by spending an amount of energy equal to the spell’s level.</p>
+            <p class="indent">While the duplicate is active, your max energy is decreased by 7, and you can only have one duplicate active at a time.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_REPLICA_CREATION_PARAPHERNALIA</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Bionic Eye" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_BIONIC_EYE">
+        <description>
+            <p><strong>6 Energy.</strong> As an action, your critical hit range increases by 4 for a minute. You must still beat the target’s AC to hit unless you roll a natural 20. You can also see through all visual illusions during this time, and deal 6d6 extra damage on a critical hit. When this minute ends, you become blinded. This blindness cannot be negated or restored by any means, but it ends after a minute.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_BIONIC_EYE</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Portable Blink Anklets" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_PORTABLE_BLINK_ANKLETS">
+        <description>
+            <p><strong>1 Energy.</strong> As a bonus action, you can teleport up to 20ft away to an unoccupied space you can see, without provoking attacks of opportunity.</p>
+            <p class="indent"><strong>2 Energy.</strong> As an action, you may teleport an object or person within 60ft to another safe position in this area. If you try to teleport someone unwilling or an object they are carrying, they get a Dexterity saving throw to avoid doing so.</p>
+            <p class="indent"><strong>2 Energy.</strong> As a reaction to being targeted by an attacker you can see, you impose disadvantage on the attack.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_PORTABLE_BLINK_ANKLETS</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Backup Energy Supply" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_BACKUP_ENERGY_SUPPLY">
+        <description>
+            <p>As an action, use this to regain the entirety of your energy pool. This can be used once per long rest.</p>
+            <p class="indent">Add an additional 5 Max Energy to your pool</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_BACKUP_ENERGY_SUPPLY</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Quantum Possibility Calculator" type="Item" source="DnD Wiki Engineer" id="ID_DDWE_ITEM_GADGET_QUANTUM_POSSIBILITY_CALCULATOR">
+        <description>
+            <p>Once per minute, you can gain the benefits of Guidance.</p>
+            <p class="indent"><strong>1 Energy.</strong> You nonmagically cast Find Traps.</p>
+            <p class="indent"><strong>4 Energy.</strong> You nonmagically cast Commune to contact the Matrix of the Possibility Calculator.</p>
+            <p class="indent"><strong>4 Energy.</strong> You nonmagically cast Find The Path, and you don’t need to be familiar with the destination.</p>
+            <p class="indent"><strong>7 Energy.</strong> You gain the benefits of Foresight for ten minutes.</p>
+        </description>
+        <setters>
+            <set name="category">Engineer's Gadget</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="proficiency">ID_DDWE_GADGET_PROFICIENCY_QUANTUM_POSSIBILITY_CALCULATOR</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+
+  <!-- Engineer Gadget Proficiencies -->
+    <element name="Power Boots" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_POWER_BOOTS">
+        <supports>DDWE Gadget</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>Increases your walking speed by 10 feet.</p>
+            <p class="indent">Jump distance and height are doubled and you can use your Intelligence score and modifier instead of Strength.</p>
+            <p class="indent">Whenever you take fall damage, take half damage and you don’t fall prone.</p>
+        </description>
+    </element>
+    <element name="Medic Kit" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_MEDIC_KIT">
+        <supports>DDWE Gadget</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You have a pool of healing power that replenishes when you take a short or long rest. With that pool, you can restore a total number of hit points equal to your engineer level x 5. As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool. This feature has no effect on undead and constructs.</p>
+            <p class="indent"><strong>1 Energy.</strong> Touch a dying creature as an action to stabilize it and return it to 1 hit points.</p>
+        </description>
+    </element>
+    <element name="Eagle Lens" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_EAGLE_LENS">
+        <supports>DDWE Gadget</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You add your Intelligence Modifier (minimum 1) to Perception checks you make.</p>
+            <p class="indent">You gain a +1 bonus to ranged attack rolls.</p>
+            <p class="indent"><strong>1 Energy.</strong> Gain advantage on a weapon attack roll you make.</p>
+        </description>
+    </element>
+    <element name="Climbing Hooks" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_CLIMBING_HOOKS">
+        <supports>DDWE Gadget</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You gain the benefits of constant Spider Climb.</p>
+        </description>
+    </element>
+    <element name="Sustenance Blood Infuser" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_SUSTENANCE_BLOOD_INFUSER">
+        <supports>DDWE Gadget</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You do not require food or water to survive. Your Hit Point maximum is increased by 1 for each engineer level you have.</p>
+            <p class="indent">You gain proficiency in Constitution Saving Throws.</p>
+            <p class="indent"><strong>2 Energy.</strong> You can cure one poison or disease you are afflicted with as a bonus action.</p>
+        </description>
+    </element>
+    <element name="Mage Lens" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_MAGE_LENS">
+        <supports>DDWE Gadget</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>As an action, you can nonmagically cast detect magic.</p>
+            <p class="indent"><strong>1 Energy.</strong> As an action use this gadget to nonmagically cast identify on any object within line of sight.</p>
+        </description>
+    </element>
+    <element name="Appendage Retractable Machine (A.R.M)" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_APPENDAGE_RETRACTABLE_MACHINE_ARM">
+        <supports>DDWE Gadget</supports>
+        <requirements></requirements>
+        <prerequisite></prerequisite>
+        <description>
+            <p>You have a retractable (as an action) mechanical hand that can move up to 30 feet away from you, and otherwise functions and has restrictions similar to a durationless mage hand spell.</p>
+        </description>
+    </element>
+    <element name="Scout Lens" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_SCOUT_LENS">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:3]</requirements>
+        <prerequisite>3rd Level Engineer</prerequisite>
+        <description>
+            <p>You can see through darkness (including magical darkness) to a distance of 120 feet and have no perception or inspect penalties.</p>
+            <p class="indent">The lenses can also magnify objects viewed to twice their size.</p>
+        </description>
+    </element>
+    <element name="Voice Changer and Amplifier" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_VOICE_CHANGER_AND_AMPLIFIER">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:3]</requirements>
+        <prerequisite>3rd Level Engineer</prerequisite>
+        <description>
+            <p>If you have spent a minute or more hearing a creature speak, you can mimic their voice unerringly. A Wisdom (Insight) check is required to discern if that the voice is false. You can also change the pitch of any voice (including your own) spoken through this device.</p>
+            <p class="indent"><strong>1 Energy.</strong> You can increase the volume of your voice to 10 times as much.</p>
+        </description>
+    </element>
+    <element name="SCUBA Equipment" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_SCUBA_EQUIPMENT">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:3]</requirements>
+        <prerequisite>3rd Level Engineer</prerequisite>
+        <description>
+            <p>You gain a swim speed equal to your walking speed.</p>
+            <p class="indent"><strong>2 Energy.</strong> As a bonus action, you can breathe underwater for an hour.</p>
+        </description>
+    </element>
+    <element name="Mechanical Helmet" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_MECHANICAL_HELMET">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:3]</requirements>
+        <prerequisite>3rd Level Engineer</prerequisite>
+        <description>
+            <p>You add 1 to your AC.</p>
+            <p class="indent"><strong>2 Energy.</strong> As a bonus action, you can send a high-frequency noise from your helmet, that will deafen every other living thing within 15ft until the start of your next turn.</p>
+        </description>
+    </element>
+    <element name="Tinker’s Master Gloves" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_TINKERS_MASTER_GLOVES">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:3]</requirements>
+        <prerequisite>3rd Level Engineer</prerequisite>
+        <description>
+            <p>You only use half as much time on the construction of mechanical items, including your gadgets and devices.</p>
+            <p class="indent">You gain advantage on construction and repair checks.</p>
+            <p class="indent"><strong>1 Energy.</strong>. The pointer finger of the glove pushes out a lighter, which can produce a small hot flame.</p>
+        </description>
+    </element>
+    <element name="Nanite Surge Beam" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_NANITE_SURGE_BEAM">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:6]</requirements>
+        <prerequisite>6th Level Engineer</prerequisite>
+        <description>
+            <p><strong>2 Energy.</strong> A beam heals a friendly target within 30ft for 3d4+your Intelligence modifierifier, gain an additional d4 for level 11, and another at level 17.</p>
+            <p class="indent"><strong>2 Energy.</strong> As a reaction, when a creature within 30ft of you rolls a Constitution saving throw, you can grant them advantage on the roll.</p>
+        </description>
+    </element>
+    <element name="Overdrive Trigger" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_OVERDRIVE_TRIGGER">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:6]</requirements>
+        <prerequisite>6th Level Engineer</prerequisite>
+        <description>
+            <p><strong>3 Energy.</strong> As a bonus action, you gain the benefits of Haste for a minute. This does not require concentration.</p>
+            <p class="indent"><strong>5 Energy.</strong> As an action, you replicate the effects of Time Stop lasting until the end of your next turn. After this effect ends, you gain one exhaustion level.</p>
+        </description>
+    </element>
+    <element name="Grid Shield" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_GRID_SHIELD">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:6]</requirements>
+        <prerequisite>6th Level Engineer</prerequisite>
+        <description>
+            <p><strong>2 Energy.</strong> As an action, a 5ft by 5ft shield appears in front of you and stays in front of you acting as half cover from attacks in that direction if not destroyed the shield vanishes in one hour.</p>
+            <p class="indent"><strong>3 Energy.</strong> As an action, a forcefield of hexagonal cells overlaps with your armour. Add your Intelligence modifier to your AC. This effect ends after a 10 minutes or if you fall unconscious.</p>
+        </description>
+    </element>
+    <element name="Thanotic Reader" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_THANOTIC_READER">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:6]</requirements>
+        <prerequisite>6th Level Engineer</prerequisite>
+        <description>
+            <p>You can detect the location of undead within 60ft of you.</p>
+            <p class="indent">You can identify how and when a corpse died.</p>
+            <p class="indent"><strong>3 Energy.</strong> As an action you can nonmagically cast speak with dead.</p>
+        </description>
+    </element>
+    <element name="Disguise Mask" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_DISGUISE_MASK">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:6]</requirements>
+        <prerequisite>6th Level Engineer</prerequisite>
+        <description>
+            <p>You are proficient in Charisma Saving Throws.</p>
+            <p class="indent"><strong>1 Energy.</strong> Non-Magically cast Disguise Self.</p>
+        </description>
+    </element>
+    <element name="Soul Reader" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_SOUL_READER">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:6]</requirements>
+        <prerequisite>6th Level Engineer</prerequisite>
+        <description>
+            <p>You are proficient in Insight Checks</p>
+            <p class="indent"><strong>1 Energy.</strong> As an action you can nonmagically cast detect good and evil.</p>
+            <p class="indent"><strong>2 Energy.</strong> Nonmagically cast False Life (1d10+Your Level) on you or an ally.</p>
+        </description>
+    </element>
+    <element name="Energy Canteen" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_ENERGY_CANTEEN">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:6]</requirements>
+        <prerequisite>6th Level Engineer</prerequisite>
+        <description>
+            <p>A Storage Canteen that restores 2d6 energy as an action. It is refilled whenever you take a long rest.</p>
+        </description>
+    </element>
+    <element name="Autoresurrecting Elemental Device" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_AUTORESURRECTING_ELEMENTAL_DEVICE">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:6]</requirements>
+        <prerequisite>6th Level Engineer</prerequisite>
+        <description>
+            <p><strong>2 Energy.</strong> When you would take damage that would reduce you to 0hit points, but not kill you outright, you can use your reaction to instead stay at 1 hit points.</p>
+            <p class="indent"><strong>4 Energy.</strong> As an action, you try to revive an adjacent creature who died within the last minute. They must attempt a Constitution saving throw against DC20. On a success, they come back to life at 1hit points.</p>
+        </description>
+    </element>
+    <element name="Excess Energy Storage Device" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_EXCESS_ENERGY_STORAGE_DEVICE">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:10]</requirements>
+        <prerequisite>10th Level Engineer</prerequisite>
+        <description>
+            <p>You add 3 + Intelligence modifier to the maximum amount of Energy you have.</p>
+            <p class="indent">Whenever you suffer at least ten points of lightning damage, you can as a reaction regain one energy point. This can be done up to three times in total, restarting when you take a short or long rest.</p>
+        </description>
+    </element>
+    <element name="Omnitranslator" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_OMNITRANSLATOR">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:10]</requirements>
+        <prerequisite>10th Level Engineer</prerequisite>
+        <description>
+            <p>Creatures who understand at least 1 language can understand any language you speak, and you can understand any spoken language.</p>
+        </description>
+    </element>
+    <element name="Jetpack" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_JETPACK">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:10]</requirements>
+        <prerequisite>10th Level Engineer</prerequisite>
+        <description>
+            <p>A device on your back allows you to effectively cast a levitate spell at-will.</p>
+            <p class="indent"><strong>4 Energy.</strong> Gain a flying speed of 60 feet for ten minutes.</p>
+            <p class="indent"><strong>4 Energy.</strong> As an action, you can move up to 120ft in a straight line. If you collide with a creature in this path, your movement ends and the creature must make a DEX save. On a failure, the target falls prone. Creatures larger than you gain advantage on this save.</p>
+        </description>
+    </element>
+    <element name="Creature Capture Device" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_CREATURE_CAPTURE_DEVICE">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:10]</requirements>
+        <prerequisite>10th Level Engineer</prerequisite>
+        <description>
+            <p>You hurl the Creature Capture Device at a creature in attempt to capture it. Make an attack roll against the target creature. On a success the creature is sucked into the device and you must make an Animal Handling skill check. You have advantage on the throw if the Creature is poisoned, restrained, unconscious, paralyzed, or frozen.</p>
+            <p class="indent">The DC to catch it is equal to: 10 + CR (round up) + Remaining hit points / 10 (rounded down). On a success you can summon the creature or return it to the device as an action. The creature acts positively towards you as if it had the charmed condition and obeys your every command happily. On a failure the creature breaks free of the device and it is destroyed.</p>
+        </description>
+    </element>
+    <element name="Floating Shoes" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_FLOATING_SHOES">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:10]</requirements>
+        <prerequisite>10th Level Engineer</prerequisite>
+        <description>
+            <p>You can walk or run across any liquid as if it were solid stone. Any damaging liquids (lava, acid, ect.) cause you 2d6 damage of the appropriate type every round you spend on them.</p>
+        </description>
+    </element>
+    <element name="Engitech Offense System" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_ENGITECH_OFFENSE_SYSTEM">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:10]</requirements>
+        <prerequisite>10th Level Engineer</prerequisite>
+        <description>
+            <p><strong>3 Energy.</strong> As a bonus action you may enhance a weapon within 30ft with energy from the system. Choose between acid, cold, fire, lightning, force, poison or thunder. The next attack from this weapon deals an additional 2d8 damage of the chosen type.</p>
+            <p class="indent"><strong>3 Energy.</strong> As an action you may shoot an energy beam at a target within 10ft. This causes force damage equal to 2d6+your engineer level. You can spend one additional energy points to force the target to make a Strength save. On a failure, it is sent flying back 5ft per engineer level, taking appropriate falling damage if it collides with an obstacle. Huge or larger creatures gain advantage in this check and are only pushed back half the distance.</p>
+        </description>
+    </element>
+    <element name="Engitech Defense System" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_ENGITECH_DEFENSE_SYSTEM">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:10]</requirements>
+        <prerequisite>10th Level Engineer</prerequisite>
+        <description>
+            <p>You gain temporary hit points equal to one fifth your engineer level. You regain these hit points at the start of your turn.</p>
+            <p class="indent"><strong>3 Energy.</strong> You can use your reaction to deflect a projectile, including spells. When you are hit by a ranged attack, you can reduce the damage by 4d8+Your Engineer Level. If you reduce the damage to 0, you can spend an additional 1 Energy to reflect the projectile back at the attacker, who must make a Dexterity saving throw. On a failure, the attacker takes the initial full damage and half on a success.</p>
+        </description>
+    </element>
+    <element name="Spectravision Goggles" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_SPECTRAVISION_GOGGLES">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:10]</requirements>
+        <prerequisite>10th Level Engineer</prerequisite>
+        <description>
+            <p><strong>1 Energy.</strong> You can see into the ethereal plane to a distance of 30 feet, as well as invisible creatures and objects for 10 minutes.</p>
+            <p class="indent"><strong>2 Energy.</strong> For a minute, you can see through any object or wall you spend six seconds observing.</p>
+        </description>
+    </element>
+    <element name="Holographic Cloak" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_HOLOGRAPHIC_CLOAK">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:10]</requirements>
+        <prerequisite>10th Level Engineer</prerequisite>
+        <description>
+            <p>You gain a bonus to Stealth equal to your Intelligence modifier.</p>
+            <p class="indent"><strong>2 Energy.</strong> Automatically whenever you become incapacitated or as part of a Disengage action you can become invisible for three turns and create four illusory duplicates that either run off in opposite directions or perform other actions that could distract the enemy. These duplicates last three rounds, but instantly disappear if they suffer any amount of damage.</p>
+            <p class="indent"><strong>5 Energy.</strong> Nonmagically cast Greater Invisibility as an action.</p>
+        </description>
+    </element>
+    <element name="Gravity Manipulator" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_GRAVITY_MANIPULATOR">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:14]</requirements>
+        <prerequisite>14th Level Engineer</prerequisite>
+        <description>
+            <p><strong>4 Energy.</strong> Nonmagically cast Reverse Gravity as an action.</p>
+            <p class="indent"><strong>4 Energy.</strong> Nonmagically cast Reverse Gravity as an action, but instead you create a zone of greatly intensified gravity. Within this area, the weight of all objects is doubled, movement speed is halved, jump height and distance are halved, and creatures flying must make a Strength save every turn it remains in it or fall to the ground. Fall damage within this area is doubled, and Encumbered creatures suffer 2d6 Bludgeoning damage every turn as they are crushed by the pressure.</p>
+        </description>
+    </element>
+    <element name="Spellshield" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_SPELLSHIELD">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:14]</requirements>
+        <prerequisite>14th Level Engineer</prerequisite>
+        <description>
+            <p>If you don’t move during your turn, you gain advantage in saving throws against the effects of spells until your next turn.</p>
+            <p class="indent"><strong>3 Energy.</strong> When you succeed on the save against the effects of a spell that targets only you, you can make it have no effect on you, and instead it targets the original caster using their slot level, spell save DC, attack bonus and spellcasting ability, but you count as the new caster.</p>
+        </description>
+    </element>
+    <element name="Additional Signature Device" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_ADDITIONAL_SIGNATURE_DEVICE">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:14]</requirements>
+        <prerequisite>14th Level Engineer</prerequisite>
+        <description>
+            <p>Gain a Secondary (or Tertiary) Signature Device and select one of the Enhanced and Advanced level upgrades.</p>
+        </description>
+    </element>
+    <element name="Freeze Ray" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_FREEZE_RAY">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:14]</requirements>
+        <prerequisite>14th Level Engineer</prerequisite>
+        <description>
+            <p><strong>2 Energy.</strong> Spray a large mist of ice onto a target within 30ft, the opponent must make a Constitution Saving Throw, on a fail they will take 6d4 Cold Damage and will be entombed in ice for 2 rounds, if they are suffer damage during these rounds the ice will break and free them. On a pass they will take half damage and have their running speed reduced by half.</p>
+            <p class="indent"><strong>2 Energy.</strong> Shoot an icicle towards a target within 60ft. The opponent must make a dex save. On a fail, they suffer 4d6 Piercing Damage and 3d6 Cold Damage, and on a Critical Fail they will take an additional 6d6 of Piercing Damage. On a pass they take no damage.</p>
+            <p class="indent">Every use of this gadget increases the energy costs by 1, restarting when you rest.</p>
+        </description>
+    </element>
+    <element name="Disintegrator" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_DISINTEGRATOR">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:14]</requirements>
+        <prerequisite>14th Level Engineer</prerequisite>
+        <description>
+            <p><strong>5 Energy.</strong>A target within 120ft must make a Dexterity saving throw. If the saving throw succeeds, the gadget has no effect. If the saving throw fails, the target takes 10d12 + 40 force damage. If this damage reduces the target to 0 hit points, it is disintegrated. A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. Whether a target succeeds or fails, they can only be affected by a Disintegrator once per day.</p>
+        </description>
+    </element>
+    <element name="Lightweight Artillery Engine" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_LIGHTWEIGHT_ARTILLERY_ENGINE">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:14]</requirements>
+        <prerequisite>14th Level Engineer</prerequisite>
+        <description>
+            <p>This mortar must be carried in separate pieces. It can be partially assembled in a round and fully in a minute. It takes the same amount of time to disassemble, and you can’t move or perform any other actions with your hands while it is assembled.</p>
+            <p class="indent">While partially assembled, you can spend 2 Energy as an action to replicate the effects of a fireball with a range of 300ft.</p>
+            <p class="indent">While fully assembled, you can spend 5 Energy as an action to replicate the effects of a single detonation from a Meteor Swarm. When you do so, attempt an Intelligence check against DC18, poor visibility or weather conditions may cause disadvantage on this roll. Failure means that the detonation happens 1d20X10ft away from your target in a random direction. You can only shoot in this manner once every five rounds.</p>
+        </description>
+    </element>
+    <element name="Neuroadaptable Headgear" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_NEUROADAPTABLE_HEADGEAR">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:14]</requirements>
+        <prerequisite>14th Level Engineer</prerequisite>
+        <description>
+            <p>You gain proficiency in Wisdom saving throws.</p>
+            <p class="indent">You resist Psychic Damage.</p>
+            <p class="indent"><strong>1 Energy.</strong> For the next hour, your thoughts cannot be read, and attempts to detect your presence through your consciousness fail.</p>
+            <p class="indent"><strong>3 Energy.</strong> You nonmagically cast Dominate Person with a duration of up to ten minutes.</p>
+        </description>
+    </element>
+    <element name="Replica Creation Paraphernalia" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_REPLICA_CREATION_PARAPHERNALIA">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:18]</requirements>
+        <prerequisite>18th Level Engineer</prerequisite>
+        <description>
+            <p>This set of specialised tools allows you to create replicas of creatures as per the spell Simulacrum. The result duplicate is actually a construct built from clockwork and fake flesh. This construct is nonmagical and cannot be dispelled. You can spend one energy point to recover one hit point of the construct instead of the usual 100GP. You can also allow it to recover a spell by spending an amount of energy equal to the spell’s level.</p>
+            <p class="indent">While the duplicate is active, your max energy is decreased by 7, and you can only have one duplicate active at a time.</p>
+        </description>
+    </element>
+    <element name="Bionic Eye" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_BIONIC_EYE">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:18]</requirements>
+        <prerequisite>18th Level Engineer</prerequisite>
+        <description>
+            <p><strong>6 Energy.</strong> As an action, your critical hit range increases by 4 for a minute. You must still beat the target’s AC to hit unless you roll a natural 20. You can also see through all visual illusions during this time, and deal 6d6 extra damage on a critical hit. When this minute ends, you become blinded. This blindness cannot be negated or restored by any means, but it ends after a minute.</p>
+        </description>
+    </element>
+    <element name="Portable Blink Anklets" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_PORTABLE_BLINK_ANKLETS">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:18]</requirements>
+        <prerequisite>18th Level Engineer</prerequisite>
+        <description>
+            <p><strong>1 Energy.</strong> As a bonus action, you can teleport up to 20ft away to an unoccupied space you can see, without provoking attacks of opportunity.</p>
+            <p class="indent"><strong>2 Energy.</strong> As an action, you may teleport an object or person within 60ft to another safe position in this area. If you try to teleport someone unwilling or an object they are carrying, they get a Dexterity saving throw to avoid doing so.</p>
+            <p class="indent"><strong>2 Energy.</strong> As a reaction to being targeted by an attacker you can see, you impose disadvantage on the attack.</p>
+        </description>
+    </element>
+    <element name="Backup Energy Supply" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_BACKUP_ENERGY_SUPPLY">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:18]</requirements>
+        <prerequisite>18th Level Engineer</prerequisite>
+        <description>
+            <p>As an action, use this to regain the entirety of your energy pool. This can be used once per long rest.</p>
+            <p class="indent">Add an additional 5 Max Energy to your pool</p>
+        </description>
+    </element>
+    <element name="Quantum Possibility Calculator" type="Proficiency" source="DnD Wiki Engineer" id="ID_DDWE_GADGET_PROFICIENCY_QUANTUM_POSSIBILITY_CALCULATOR">
+        <supports>DDWE Gadget</supports>
+        <requirements>[level:engineer:18]</requirements>
+        <prerequisite>18th Level Engineer</prerequisite>
+        <description>
+            <p>Once per minute, you can gain the benefits of Guidance.</p>
+            <p class="indent"><strong>1 Energy.</strong> You nonmagically cast Find Traps.</p>
+            <p class="indent"><strong>4 Energy.</strong> You nonmagically cast Commune to contact the Matrix of the Possibility Calculator.</p>
+            <p class="indent"><strong>4 Energy.</strong> You nonmagically cast Find The Path, and you don’t need to be familiar with the destination.</p>
+            <p class="indent"><strong>7 Energy.</strong> You gain the benefits of Foresight for ten minutes.</p>
+        </description>
+    </element>
+    
+</elements>

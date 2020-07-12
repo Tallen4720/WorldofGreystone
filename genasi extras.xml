@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Dark Genasi" type="Sub Race" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_DARK">
+		<supports>Genasi</supports>
+		<description>
+			<p>Drawing their heritage from the elemental plange of darkness, you have very dark, sometimes even pure black skin. Motes of shadow cling to and roll of of you.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span> Your Charisma score increases by 1.<br />
+				<span class="feature">Blend Into Shadow.</span> You have advantage on stealth checks in dim light and darkness. Creatures attempting perception checks versus your stealth have disadvantage while you're in darkness.<br />
+				<span class="feature">Shed Darkness.</span> You can cast the darkness spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_DARK_BLEND_INTO_SHADOW" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_DARK_SHED_DARKNESS" />
+		</rules>
+	</element>
+	<element name="Blend Into Shadow" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_DARK_BLEND_INTO_SHADOW">
+		<description>
+			<p>You have advantage on stealth checks in dim light and darkness. Creatures attempting perception checks versus your stealth have disadvantage while you're in darkness.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on stealth checks in dim light and darkness. Creatures attempting perception checks versus your stealth have disadvantage while you're in darkness.</description>
+		</sheet>
+	</element>
+	<element name="Shed Darkness" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_DARK_SHED_DARKNESS">
+		<description>
+			<p>You can cast the darkness spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast the Darkness spell once with this trait, requiring no material components. (Spellcasting: Constitution)</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" />
+		</rules>
+	</element>
+	
+	<element name="Light Genasi" type="Sub Race" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_LIGHT">
+		<supports>Genasi</supports>
+		<description>
+			<p>Born from the elemental plane of light, these genasi have either pure white or highly saturated skin colors. They shed a passive dim light from their skin.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span> Your Wisdom score increases by 1.<br />
+				<span class="feature">Shed Light.</span> You constantly shed dim light out to 5 feet. As an action you can start shedding bright light for 10 feet and dim light for an additional 10 feet. You can end this as a bonus action. you have disadvantage on stealth checks while in dim light or darkness.<br />
+				<span class="feature">Lightbearer.</span> You know the Flash cantrip (Spells for Elements #2) and the Light cantrip. Constitution is your spellcasting ability for this spell.<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_LIGHT_SHED_LIGHT" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_LIGHT_LIGHTBEARER" />
+		</rules>
+	</element>
+	<element name="Shed Light" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_LIGHT_SHED_LIGHT">
+		<description>
+			<p>You constantly shed dim light out to 5 feet. As an action you can start shedding bright light for 10 feet and dim light for an additional 10 feet. You can end this as a bonus action. you have disadvantage on stealth checks while in dim light or darkness.</p>
+		</description>
+		<sheet>
+			<description>You constantly shed dim light out to 5 feet. As an action you can start shedding bright light for 10 feet and dim light for an additional 10 feet. You can end this as a bonus action. you have disadvantage on stealth checks while in dim light or darkness.</description>
+		</sheet>
+	</element>
+	<element name="Lightbearer" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_LIGHT_LIGHTBEARER">
+		<description>
+			<p>You know the Flash cantrip (Spells for Elements #2) and the Light cantrip. Constitution is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet>
+			<description>You know the Flash cantrip and the Light cantrip. (Spellcasting: Constitution)</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
+			<grant type="Spell" id="ID_HOMEBREW_SPELL_FLASH" />
+		</rules>
+	</element>
+	<element name="Flash" type="Spell" source="Homebrew" id="ID_HOMEBREW_SPELL_FLASH">
+		<supports>Cleric, Druid</supports>
+		<description>
+			<p>You target a creature in range that you can see with a directed burst of blinding light. That creature must make a Constitution saving throw or be blinded for 1 turn on a failed save. Once a creature has been blinded by this spell, it is immune to becoming blinded by this spell again for 1 minute.</p>
+		</description>
+		<setters>
+			<set name="keyword"></set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a firefly wing</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Lava Genasi" type="Sub Race" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_LAVA">
+		<supports>Genasi</supports>
+		<description>
+			<p>Your blood is of both the elemental plane of earth and fire. Leading you to take on the aspect of lava. You have dark skin with cracks of bright red, orange, and yellow throughout it.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span> Your Constitution score increases by 1.<br />
+				<span class="feature">Burning Body.</span> When a creature hits you with a melee attack, they take 1d4 fire damage.<br />
+				<span class="feature">Magma Resistance</span> You have resistance to fire damage.<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_LAVA_BURNING_BODY" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_LAVA_MAGMA_RESISTANCE" />
+		</rules>
+	</element>
+	<element name="Burning Body" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_LAVA_BURNING_BODY">
+		<description>
+			<p>When a creature hits you with a melee attack, they take 1d4 fire damage.</p>
+		</description>
+		<sheet>
+			<description>When a creature hits you with a melee attack, they take 1d4 fire damage.</description>
+		</sheet>
+	</element>
+	<element name="Magma Resistance" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_LAVA_MAGMA_RESISTANCE">
+		<description>
+			<p>You have resistance to fire damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+	
+	<element name="Ice Genasi" type="Sub Race" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_ICE">
+		<supports>Genasi</supports>
+		<description>
+			<p>You hold aspects of both the elemental planes of water and air. You have pale skin, often coming to sharp points on areas such as your chin and ears, and you produce no body heat.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span> Your Constitution or Wisdom score increases by 1.<br />
+				<span class="feature">Cold to the Bone.</span> You have resistance to cold damage.<br />
+				<span class="feature">Ice-Blooded.</span> You know the Ray of Frost and Frostbite cantrips. Constitution is your spellcasting ability for these spells.<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_ICE_ABILITY_SCORE_INCREASE" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_ICE_COLD_TO_THE_BONE" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_ICE_ICEBLOODED" />
+		</rules>
+	</element>
+	<element name="Ice Genasi Ability Score Increase" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_ICE_ABILITY_SCORE_INCREASE">
+		<description>
+			<p>You may increase either your Constitution score or your Wisdom score by 1. Choose one of the following:</p>
+		</description>
+		<sheet diplay="false"/>
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase" supports="IceIncrease" />
+		</rules>
+	</element>
+	<element name="Cold to the Bone" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_ICE_COLD_TO_THE_BONE">
+		<description>
+			<p>You have resistance to cold damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Ice-Blooded" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_ICE_ICEBLOODED">
+		<description>
+			<p>You know the Ray of Frost and Frostbite cantrips. Constitution is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the Ray of Frost and Frostbite cantrips. (Spellcasting Ability: Constitution)</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_FROST" />
+			<grant type="Spell" id="ID_POTA_SPELL_FROSTBITE" />
+		</rules>
+	</element>
+	
+	<element name="Lightning Genasi" type="Sub Race" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_LIGHTNING">
+		<supports>Genasi</supports>
+		<description>
+			<p>Both fire and air roar through you, coalescing as lightning. You often have yellowish-white or blueish-white skin, and your hair is constantly frizzy with static.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span> Your Dexterity score increases by 1.<br />
+				<span class="feature">Lightning Spring.</span> Your movement speed increases to 35 feet, you can use your dexterity modifier when jumping, and you can jump twice as far/high as normal.<br />
+				<span class="feature">Lightning Grip.</span> You have advantage on grapple checks. You also know the Shocking Grasp cantrip. Constitution is your spellcasting ability for this spell.<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_LIGHTNING_LIGHTNING_SPRING" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_LIGHTNING_LIGHTNING_GRIP" />
+		</rules>
+	</element>
+	<element name="Lightning Spring" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_LIGHTNING_LIGHTNING_SPRING">
+		<description>
+			<p>Your movement speed increases to 35 feet, you can use your dexterity modifier when jumping, and you can jump twice as far/high as normal.</p>
+		</description>
+		<sheet>
+			<description>Your movement speed increases to 35 feet, you can use your dexterity modifier when jumping, and you can jump twice as far/high as normal.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed" value="35" bonus="speed" />
+		</rules>
+	</element>
+	<element name="Lightning Spring" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_LIGHTNING_LIGHTNING_GRIP">
+		<description>
+			<p>You have advantage on grapple checks. You also know the Shocking Grasp cantrip. Constitution is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on grapple checks. You also know the Shocking Grasp cantrip. (Spellcasting Ability: Constitution)</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" />
+		</rules>
+	</element>
+	
+	<element name="Gem Genasi" type="Sub Race" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_GEM">
+		<supports>Genasi</supports>
+		<description>
+			<p>The mixture of the elements of earth and light rest within you. You have shiny skin of almost any color that appears to have a clear coating over it.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span> Your Strength score or Constitution Score increases by 1.<br />
+				<span class="feature">Powerful Build.</span> You count as one size larger when determining your carrying and lifting capacity.<br />
+				<span class="feature">Gem Skin.</span> Your skin is hard like a gem. Your unarmored AC is 12 + your Dexterity modifier.<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_GEM_ABILITY_SCORE_INCREASE" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_GEM_POWERFUL_BUILD" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_GEM_GEM_SKIN" />
+		</rules>
+	</element>
+	<element name="Gem Genasi Ability Score Increase" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_GEM_ABILITY_SCORE_INCREASE">
+		<description>
+			<p>You may increase either your Constitution score or your Wisdom score by 1. Choose one of the following:</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase" supports="GemIncrease" />
+		</rules>
+	</element>
+	<element name="Powerful Build" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_GEM_POWERFUL_BUILD">
+		<description>
+			<p>You count as one size larger when determining your carrying and lifting capacity.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying and lifting capacity.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+	<element name="Gem Skin" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_GEM_GEM_SKIN">
+		<description>
+			<p>Your skin is hard like a gem. Your unarmored AC is 12 + your Dexterity modifier.</p>
+		</description>
+		<sheet>
+			<description> Your skin is hard like a gem. Your unarmored AC equals {{ac:gem skin}}</description>
+		</sheet>
+		<rules>
+			<stat name="ac:gem skin" value="13" />
+			<stat name="ac:gem skin" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:gem skin" bonus="calculation" equipped="[armor:none]" alt="Gem Skin (Gem Genasi)" />
+		</rules>
+	</element>
+	
+	<element name="Ash Genasi" type="Sub Race" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_ASH">
+		<supports>Genasi</supports>
+		<description>
+			<p>You hold fire, earth, and air in your blood. Your skin is ashy brown, black, or grey. Specks of ash seem to fall from your skin at all times.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span> Your Intelligence score or Dexterity score increases by 1.<br />
+				<span class="feature">Ash Cloud.</span> You can breathe out ash in a 15 foot sphere in front of you. The ash spreads around corners and the area it covers is heavily obscured. Creatures that enter the area or start their turn there take 1 fire damage. The ash cloud stays for 1 minute, or until dispersed by wind.<br />
+				<span class="feature">Ashen Lungs.</span> You can hold your breath for twice as normal, and gasses cannot suffocate you.<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_ASH_ABILITY_SCORE_INCREASE" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_ASH_ASH_CLOUD" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_ASH_ASHEN_LUNGS" />
+		</rules>
+	</element>
+	<element name="Ash Genasi Ability Score Increase" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_ASH_ABILITY_SCORE_INCREASE">
+		<supports>Genasi</supports>
+		<description>
+			<p>You may increase either your Intelligence score or your Dexterity score by 1. Choose one of the following:</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase" supports="AshIncrease" />
+		</rules>
+	</element>
+	<element name="Ash Cloud" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_ASH_ASH_CLOUD">
+		<description>
+			<p>You can breathe out ash in a 15 foot sphere in front of you. The ash spreads around corners and the area it covers is heavily obscured. Creatures that enter the area or start their turn there take 1 fire damage. The ash cloud stays for 1 minute, or until dispersed by wind.</p>
+		</description>
+		<sheet>
+			<description>You can breathe out ash in a 15 foot sphere in front of you. The ash spreads around corners and the area it covers is heavily obscured. Creatures that enter the area or start their turn there take 1 fire damage. The ash cloud stays for 1 minute, or until dispersed by wind.</description>
+		</sheet>
+	</element>
+	<element name="Ashen Lungs" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_ASH_ASHEN_LUNGS">
+		<description>
+			<p>You can hold your breath for twice as normal, and gasses cannot suffocate you.</p>
+		</description>
+		<sheet>
+			<description>You can hold your breath for twice as normal, and gasses cannot suffocate you.</description>
+		</sheet>
+	</element>
+	
+	<element name="Salt Genasi" type="Sub Race" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_SALT">
+		<supports>Genasi</supports>
+		<description>
+			<p>A unique blend of earth and water led to you. You have white or off-white rough skin. many salt genasi also lack pupils, having entirely white eyes.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span>Your Constitution or Charisma score increases by 1.<br />
+				<span class="feature">Salt Touch.</span> You can change a 1-foot cube of saltwater to freshwater and vice-versa. In addition, you can sense any addatives put into liquids you touch, including poisons, drugs, and creamers.<br />
+				<span class="feature">Turn Into Salt.</span> While underwater, you can embrace your salt composition, melting into the water to form a blurred white cloud. You have resistance to non-magical Bludgeoning, Piercing, and Slashing damage, and have advantage on stealth checks, while in this state. This state ends if you leave the water, or it can be ended as a bonus action. In addition, you can spend a minute with a corpse to erode it away into a pile of salt.<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_SALT_ABILITY_SCORE_INCREASE" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_SALT_SALT_TOUCH" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUBRACE_GENASI_SALT_TURN_INTO_SALT" />
+		</rules>
+	</element>
+	<element name="Salt Genasi Ability Score Increase" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_SALT_ABILITY_SCORE_INCREASE">
+		<description>
+			<p>You may increase either your Constitution score or your Charisma score by 1. Choose one of the following:</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase" supports="SaltIncrease" />
+		</rules>
+	</element>
+	<element name="Salt Touch" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_SALT_SALT_TOUCH">
+		<description>
+			<p>You can change a 1-foot cube of saltwater to freshwater and vice-versa. In addition, you can sense any addatives put into liquids you touch, including poisons, drugs, and creamers.</p>
+		</description>
+		<sheet>
+			<description>You can change a 1-foot cube of saltwater to freshwater and vice-versa. In addition, you can sense any addatives put into liquids you touch, including poisons, drugs, and creamers.</description>
+		</sheet>
+	</element>
+	<element name="Turn Into Salt" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_SALT_TURN_INTO_SALT">
+		<description>
+			<p>While underwater, you can embrace your salt composition, melting into the water to form a blurred white cloud. You have resistance to non-magical Bludgeoning, Piercing, and Slashing damage, and have advantage on stealth checks, while in this state. This state ends if you leave the water, or it can be ended as a bonus action. In addition, you can spend a minute with a corpse to erode it away into a pile of salt.</p>
+		</description>
+		<sheet>
+			<description>While underwater, you can embrace your salt composition, melting into the water to form a blurred white cloud. You have resistance to non-magical Bludgeoning, Piercing, and Slashing damage, and have advantage on stealth checks, while in this state. This state ends if you leave the water, or it can be ended as a bonus action. In addition, you can spend a minute with a corpse to erode it away into a pile of salt.</description>
+		</sheet>
+	</element>
+	
+	<element name="Strength" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_ASI_STR">
+		<supports>GemIncrease</supports>
+		<description>
+			<p>Your Strength score will improve by 1.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength" value="1" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_ASI_DEX">
+		<supports>AshIncrease</supports>
+		<description>
+			<p>Your Dexterity score will improve by 1.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+	<element name="Constitution" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_ASI_CON">
+		<supports>IceIncrease, GemIncrease, SaltIncrease</supports>
+		<description>
+			<p>Your Constitution score will improve by 1.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="Constitution" value="1" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_ASI_INT">
+		<supports>AshIncrease</supports>
+		<description>
+			<p>Your Intelligence score will improve by 1.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="intelligence" value="1" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_ASI_WIS">
+		<supports>IceIncrease</supports>
+		<description>
+			<p>Your Wisdom score will improve by 1.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="wisdom" value="1" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_ASI_CHA">
+		<supports>SaltIncrease</supports>
+		<description>
+			<p>Your Charisma score will improve by 1.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+</elements>
+<!--Nice-->

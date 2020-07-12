@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+ 
+
+  <!-- Path of the Silent Berserker -->
+  <element name="Path of the Silent Berserker" type="Archetype" source="World of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_PATH_OF_THE_SILENT_BERSERKER">
+    <supports>Primal Path</supports>
+    <description>
+      <p>Silent Berserkers are barbarians who internalized their rage, not wasting their breath on battle cries or extreme savagery. While raging, these individuals let go of all emotions and become brutally efficient killers, often becoming a menace of those who face them in battle. They tend to focus on getting jobs done quickly, efficiently, and without qualms while steal themselves against influences that would cause others to fly into a rage.</p>
+      <p class="indent"></p>
+      <div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_SILENT_BERSERKER_SILENT_RAGE" />
+      <div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_SILENT_BERSERKER_INSTINCTUAL_RAGE"/>
+      <div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_SILENT_BERSERKER_UNWAVERING_SILENCE" />
+      <div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_SILENT_BERSERKER_HIDDEN_FIRE" />
+      <div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_SILENT_BERSERKER_UNBREAKABLE" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_SILENT_BERSERKER_SILENT_RAGE" level="3" />
+      <grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_SILENT_BERSERKER_INSTINCTUAL_RAGE" level="3" />
+      <grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_SILENT_BERSERKER_UNWAVERING_SILENCE" level="6" />
+      <grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_SILENT_BERSERKER_HIDDEN_FIRE" level="10" />
+      <grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_SILENT_BERSERKER_UNBREAKABLE" level="14" />
+    </rules>
+  </element>
+  <element name="Silent Rage" type="Archetype Feature" source="World of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_SILENT_BERSERKER_SILENT_RAGE">
+    <description>
+      <p>Starting when you choose this path at 3rd level, you silence your outward appearances of rage, instead channeling it through powerful strikes; whenever you hit a creature with a melee weapon while raging, they take 1d{{rog:silent berserker-talent-die:size}} additional damage.</p>
+    </description>
+    <sheet>
+      <description>While raging, when you hit a creature with amelee weapon they take an additional d{{rog:silent berserker-talent-die:size}} of damage</description>
+    </sheet>
+	<rules>
+			<stat name="rog:silent berserker-talent-die:size" value="6" bonus="base" />
+			<stat name="rog:silent berserker-talent-die:size" value="8" bonus="base" level="10" />
+			<stat name="rog:silent berserker-talent-die:size" value="10" bonus="base" level="14" />
+			<stat name="rog:silent berserker-talent-die:size" value="12" bonus="base" level="20" />
+		</rules>
+  </element>
+  <element name="Instinctual Rage" type="Archetype Feature" source="World of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_SILENT_BERSERKER_INSTINCTUAL_RAGE">
+    <description>
+      <p>At 3rd level, as part of you becoming a silent berserker, you have learned to control your rage in a way few barbarians can. If you are damaged from a melee attack and not raging, you may use your reaction to enter into a rage until the start of your next turn. You may not enter into a rage this way if you have already raged an amount of times for your barbarian level as shown in the Rages column of the Barbarian table.</p>
+    </description>
+    <sheet>
+      <description>you have learned to control your rage. If you are damaged from  melee attack and not raging. you may use your reaction to enter a rage until the start of your next turn. you may only do so if you have Rage left.</description>
+    </sheet>
+  </element>
+  <element name="Unwavering Silence" type="Archetype Feature" source="World of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_SILENT_BERSERKER_UNWAVERING_SILENCE">
+    <description>
+      <p>Starting at 6th level, your silent rage sustains you. While raging, if you have 1 or more hit points and are below half your hit point maximum, as a bonus action, you may spend a hit die to regain hit points, similar to when you would regain hit points during a short rest.</p>
+    </description>
+    <sheet>
+      <description>While raging, if you have 1 or more Hit points but below half your Maximum. as a bonus action, you may expend a hit die to regain Hit points.</description>
+    </sheet>
+  </element>
+  <element name="Hidden Fire" type="Archetype Feature" source="World of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_SILENT_BERSERKER_HIDDEN_FIRE">
+    <description>
+      <p>Starting at 10th level, you are no longer gripped by rage. Through the process of channeling your inner rage, you have learned to use it to further reserve yourself against outside influences.</p>
+    </description>
+    <sheet>
+      <description>when raging. You are immune to the effects of enchantment spells that would make you act against your will. You are immune to being charmed.</description>
+    </sheet>
+  </element>
+  <element name="Unbreakable" type="Archetype Feature" source="World of Greystone" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_SILENT_BERSERKER_UNBREAKABLE">
+    <description>
+      <p>Starting at 14th level you are horrifying in battle. Your inner rage has turned you into an unstoppable juggernaut. All damage you take is reduced by 7. This adjustment comes before damage resistance.</p>
+    </description>
+    <sheet>
+      <description>your inner rage has turned you into an unstoppable juggernaut. All damage you take is reduced by 7. Adjustment comes before damage resistance.</description>
+    </sheet>
+  </element>
+</elements>

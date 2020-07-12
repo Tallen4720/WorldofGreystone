@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>D’Artagnan’s Spells from D&amp;D Wiki</name>
+        <update version="0.0.1">
+            <file name="spells-dartagnans-spells.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/spells-dartagnans-spells.xml" />
+        </update>
+    </info>
+    
+    <element name="D’Artagnan’s Spells" type="Source" source="Core" id="ID_DARTAGNAN_DNDWIKI_SOURCE_DARTAGNANS_SPELLS">
+        <description>
+            <![CDATA[<p></p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">DAS</set>
+            <set name="url">https://www.dandwiki.com/wiki/User:D%27Artagnan/5e_Custom_Spells</set>
+            <set name="image"></set>
+            <set name="author" abbreviation="DA" url="https://www.dandwiki.com/wiki/User:D%27Artagnan">D’Artagnan</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">false</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200612</set>
+        </setters>
+    </element>
+
+    <element name="Holy Lance" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_HOLY_LANCE">
+        <supports>Cleric</supports>
+        <description>
+            <p>A spear of divine light is launched at a target creature within range. Make a ranged spell attack. On a hit, the target is dealt 1d10 radiant damage. This damage increases to 2d10 at level 5, 3d10 at level 11, and 4d10 at level 17.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Static Shock" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_STATIC_SHOCK">
+        <supports>Wizard, Sorcerer, Druid</supports>
+        <description>
+            <p>A spark of bright lightning is launched at a target creature within range. Make a ranged spell attack. On a hit, the target is dealt 1d10 lightning damage. This damage increases to 2d10 at level 5, 3d10 at level 11, and 4d10 at level 17.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Void Bolt" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_VOID_BOLT">
+        <supports>Wizard, Sorcerer</supports>
+        <description>
+            <p>A mote of aetheric energy is launched at a target creature within range. Make a ranged spell attack. On a hit, the target is dealt 1d10 force damage. This damage increases to 2d10 at level 5, 3d10 at level 11, and 4d10 at level 17.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Shadeblast" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_SHADEBLAST">
+        <supports>Wizard, Sorcerer, Warlock, Cleric</supports>
+        <description>
+            <p>A dark lance of negative energy is launched at a target creature within range. Make a ranged spell attack. On a hit, the target is dealt 1d8 necrotic damage. If this attack hits critically, the damage dice are instead d12s. This damage increases to 2d8 at level 5, 3d8 at level 11, and 4d8 at level 17.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Necromancy</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Elemental Strike" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_ELEMENTAL_STRIKE">
+        <supports>Wizard, Sorcerer</supports>
+        <description>
+            <p>You wreathe your hands in elemental energy. Make a melee spell attack against a creature you can touch. On a hit, you deal 1d10 (Fire, Lightning, or Cold) damage. This damage increases to 2d10 at level 5, 3d10 at level 11, and 4d10 at level 17.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Psionbolt" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_PSIONBOLT">
+        <supports>Psion</supports>
+        <description>
+            <p>Make a ranged spell attack against a target within range as a bolt of mental energy pulses at a creature within range. On a hit, the target takes 1d8 psychic damage, and subtracts 1d4 from the total of the next attack roll or ability check or save they make until the end of their next turn. This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Psychokinesis" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_PSYCHOKINESIS">
+        <supports>Psion</supports>
+        <description>
+            <p>You fling an object weighing up to 20 lb. within range towards another point within range. You can use this spell to make a ranged spell attack against one creature, dealing 1d4 bludgeoning damage on a hit. This damage increases to 2d4 at level 5, 3d4 at level 11, and 4d4 at level 17.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Bonus Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Void Burst" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_VOID_BURST">
+        <supports>Wizard, Sorcerer</supports>
+        <description>
+            <p>A small explosion of aetherial energy centered on a point within range strikes out at all creatures within a 10 foot radius of that point. Affected creatures must make a Dexterity saving throw. On a failure, the creatures take 3d8 force damage. They take half damage on a successful saving throw. For each spell slot that this spell is cast beyond the 1st level, this spell deals an additional 1d8 force damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Shock Wave" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_SHOCK_WAVE">
+        <supports>Wizard, Sorcerer, Druid</supports>
+        <description>
+            <p>Creatures within a 15 ft cone must make a Dexterity saving throw as lightning fans out from your outstretched hand. On a failure, they take 3d6 lightning damage, and half as much on a success. For each level beyond the 1st that this spell is cast, this spell deals an additional 1d6 damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">15 foot cone (self)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Earthen Ward" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_EARTHEN_WARD">
+        <supports>Wizard, Druid</supports>
+        <description>
+            <p>A fine layer of clay and/or stone manifests and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Bonus Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small clump of clay or gravel</set>
+            <set name="range">60 ft</set>
+            <set name="duration">10 minutes (concentration)</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Arc Strike" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_ARC_STRIKE">
+        <supports>Wizard, Sorcerer</supports>
+        <description>
+            <p>Your hands are wreathed in crackling lightning. Make a melee spell attack against a creature you can touch. You gain advantage on the attack if the creature is wearing metal armor, or if they are composed largely of it. On a hit, you deal 2d12 lightning damage, and the creature must make a Constitution saving throw or be knocked prone. For each level beyond the first that this spell is cast, it deals an additional 1d12 lightning damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Mage’s Feint" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_MAGES_FEINT">
+        <supports>Wizard, Sorcerer</supports>
+        <description>
+            <p>You quickly channel a burst of magical energy. Make a melee spell attack against a target you can touch. On a hit, the creature takes 2d8 force damage. If you miss, you gain advantage on the next attack roll you make against the target before the end of your next turn. If you cast this spell at a higher level, it deals 1d8 force damage for each level beyond the first.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Bonus Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Blazing Mote" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_BLAZING_MOTE">
+        <supports>Wizard, Sorcerer</supports>
+        <description>
+            <p>You cast a searing mote of burning and painful fire at a target within range. On a hit, the target takes 2d12 fire damage, and another 1d8 fire damage at the start of your next turn. For each level beyond the first that this spell is cast, you deal an additional 1d12 to initial fire damage, and an additional 1d8 at the start of your next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Frost Fan" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_FROST_FAN">
+        <supports>Wizard, Sorcerer</supports>
+        <description>
+            <p>You wave your hand as a cold aura envelops it. Frigid air wafts out to harm creatures in a 15 foot cone. Affected creatures must make a Constitution saving throw. On a failure, they take 3d6 cold damage, and half as much on a success. For each level beyond the 1st that this spell is cast, this spell deals an additional 1d6 damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">Self</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Psionova" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_PSIONOVA">
+        <supports>Psion</supports>
+        <description>
+            <p>A psionic shock strikes in a space of a 10 foot radius sphere within range. All creatures in the radius must make an Intelligence save. On a failed save, the creatures take 2d6 Psychic damage and are knocked prone. On a successful save they take only half damage and are not knocked prone. When this spell is used at 2nd level or higher, add an additional 1d6 damage for each level beyond the 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Mind Blast" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_MIND_BLAST">
+        <supports>Psion</supports>
+        <description>
+            <p>A psionic blast is emitted in a 10 foot radius from the caster. Creatures caught in the blast take 2d6 psychic damage and are pushed back 5 feet from the caster if they fail the INT save. Those who succeed only take half the damage and are not pushed backwards. When this spell is used at 2nd level or higher, add an additional 10 feet to the radius and 1d6 per additional level.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">Self</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Psion Beacon" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_PSION_BEACON">
+        <supports>Psion</supports>
+        <description>
+            <p>A flash of psionic light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 psychic damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the psionic dim light glittering on the target until then. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Aqua Jet" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_AQUA_JET">
+        <supports>Wizard, Sorcerer, Druid</supports>
+        <description>
+            <p>Make a ranged spell attack against a creature within range. On a hit, the target is struck and dealt 2d8 cold and 2d8 bludgeoning damage. If the hit creature is Large or smaller, it must make a Strength saving throw. On a failure, the creature is knocked prone. This spell deals an additional 1d8 cold or bludgeoning damage for each spell slot above the 2nd that this spell is cas</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Void Rupture" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_VOID_RUPTURE">
+        <supports>Wizard, Sorcerer</supports>
+        <description>
+            <p>Creatures in a 30 foot line must make a Dexterity saving throw, as cosmic space opens up, causing an aetheric distortion. On a failure, creatures take 3d8 force damage and are knocked prone. On a success, they take simply half damage. For each level beyond the second this spell is cast, this spell deals an additional 1d8 force damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">30 foot line (from self)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Frigid Rebuttal" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_FRIGID_REBUTTAL">
+        <supports>Wizard, Druid, Sorcerer</supports>
+        <description>
+            <p>You point your finger, and the creature that damaged you is momentarily shrouded in bitter ice. The creature must make a Constitution saving throw. It takes 3d8 cold damage on a failed save, or half as much damage on a successful one. On a failure, the creature’s speed is reduced to zero until the end of their next turn. For each level beyond the second that this spell is cast, it deals an additional 1d8 cold damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">1 reaction, which you take in response to being damaged by a creature within 60 feet of you that you can see</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">60 ft</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Enchant Thrown Weapon" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_ENCHANT_THROWN_WEAPON">
+        <supports>Druid, Ranger, Wizard</supports>
+        <description>
+            <p>You touch a nonmagical weapon with the thrown property. Until the spell ends, it becomes a magic weapon that deals 2d8 + your Spellcasting modifier damage when thrown. Provided you have an empty hand after throwing the weapon, you may use your reaction or bonus action to summon the weapon into your empty hand until the spell ends. Casting this spell at the 4th level or higher increases the spell’s duration to 8 hours. Casting it at the 6th level or higher increases it to 1 week. Casting it at the 8 level or higher increases it to 1 month. Casting it at the 9th level increases its duration indefinitely, only to be undone by anti-magic fields, dispel magic, or wish.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Bonus Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 hour</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Lightning Blade" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_LIGHTNING_BLADE">
+        <supports>Druid, Wizard</supports>
+        <description>
+            AAAA
+            <p class="indent">When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for every two slot levels above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Bonus Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">Self</set>
+            <set name="duration">10 minutes (Concentration)</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Concuss" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_CONCUSS">
+        <supports>Psion</supports>
+        <description>
+            <p>The caster claps, sending out a concussive wave of raw psionics. Creatures in the path of the wave must make a Constitution saving throw. On a failed save, creatures take 3d8 psychic damage and are deafened for 1 minute. On a successful save, Those who succeed are not deafened and take half the damage. When you cast this spell using a spell slot of 3rd level or higher, the psychic damage increases by 1d8 for each slot above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">15ft cone</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Psydarts" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_PSYDARTS">
+        <supports>Psion</supports>
+        <description>
+            AAAA
+            <p class="indent">When this spell is cast at the 3rd level or higher, add two additional darts per additional level.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Hone Senses" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_HONE_SENSES">
+        <supports>Psion, Ranger</supports>
+        <description>
+            AAAA
+            <p class="indent">When this spell is casted at the 3rd level or higher, one additional creature may be targeted per additional level, as long as they are within 10 feet of the first target.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Divination</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">Touch</set>
+            <set name="duration">10 minutes (Concentration)</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Psionic Ward" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_PSIONIC_WARD">
+        <supports>Psion</supports>
+        <description>
+            AAAA
+            <p class="indent">When you cast this spell using a spell slot of 3nd level or higher, the damage absorbed by this spell increases by 1d6 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Abjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">Reaction</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">Self</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Void Bombard" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_VOID_BOMBARD">
+        <supports>Wizard, Sorcerer</supports>
+        <description>
+            <p>Make a ranged spell attack against a creature within range. On a hit, the target creature takes 4d10 force damage, and must succeed on a STR saving throw or be knocked prone (If large or smaller). On a hit, this spell also causes an eruption of aetheric arcana, damaging nearby creatures. Creatures within 10ft. of the original target must make a Dexterity saving throw. On a failure, the creatures take 4d6 force damage and are pushed 5 feet from the explosion. On a success, they take half damage. For each spell slot expended beyond the 3rd, this spell deals an additional 1d10 and 1d6 damage, respectively.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Void Blink" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_VOID_BLINK">
+        <supports>Wizard, Sorcerer</supports>
+        <description>
+            <p>You teleport to an unoccupied space that you can see within range. Hostile creatures within 5 ft of the space you started must make a Dex save. On a failure, they take 3d6 force damage, and half as much on a success. The damage is increased by 1d6 for each level beyond the 3rd that this spell is cast.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">Bonus Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">60 ft</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Sound of Dischord" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_SOUND_OF_DISCHORD">
+        <supports>Bard</supports>
+        <description>
+            AAAA
+            <p class="indent">A creature who is deaf or otherwise cannot hear you suffers no psychic damage and does not lose their reaction. Casting this spell at higher levels deals an additional 1d6 thunder damage for each level beyond the 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">Self (60 foot line)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Sunshot" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_SUNSHOT">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>You launch a bolt of searing energy. Make a ranged spell attack against a target creature within range. On a hit, this spell deals 5d12 radiant damage. Undead and oozes take an additional 1d12 radiant damage. Casting this spell at higher levels increases the damage by 1d12 for each level beyond the 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Venomous Spite" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_VENOMOUS_SPITE">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>You create three darkly colored (usually green or purple) darts of magical venom and hurl them at targets within range. You can hurl them at one target or several. Make a ranged spell attack for each dart. On a hit, the target takes 3d6 poison damage. When you cast this spell using a spell slot of 4th level or higher, you create one additional dart for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Homeward" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_HOMEWARD">
+        <supports>Cleric, Paladin</supports>
+        <description>
+            <p>You pray to a higher power to save you from danger. You and up to three other willing creatures within range teleport to the last place you completed a long rest, as long as it is on the same plane of existance. When casting this spell at higher levels, you may target one additional creature for each level beyond the 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="isRitual">true</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">an old humanoid bone</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Psybeam" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_PSYBEAM">
+        <supports>Psion</supports>
+        <description>
+            <p>The caster launches a beam of psionic energy that is 60 feet long by 5 feet wide. Every creature in the line of effect must make a dexterity saving throw. 5d8 psychic damage is taken on a failed save, and half as much on a successful one. When this spell is cast at 4th level or higher, an additional 1d8 is added per additional spell level.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">60 foot line</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Ætherstorm" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_ÆTHERSTORM">
+        <supports>Wizard, Sorcerer</supports>
+        <description>
+            <p>A sphere of astral energy rips through at a space centered on a point within range. All creatures within a 25 foot-radius sphere must make a Con Save. On a failure, creatures are pulled 15 ft towards the center and take 6d8 force damage. If a creature is at the center, or the center is occupied by a creature so that another cannot occupy the space, all such creatures take an additional 2d6 bludgeoning damage, and are knocked prone on a failure. On a success, creatures take half damage. For each level this spell is cast beyond the 4th, this spell deals an additional 1d8 force damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">300 ft</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Sonicstep" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_SONICSTEP">
+        <supports>Bard, Sorcerer, Wizard</supports>
+        <description>
+            <p>You teleport to an unoccupied space that you can see within range. Creatures within 5 feet of you before teleporting must make a Con save. On a failure, such creatures take 6d8 thunder damage and are pushed back 10 feet. On a success they simply take half damage. You cannot teleport to a space occupied by a creature pushed by this spell after it has been pushed. For each level beyond the 4th that this spell is cast, it deals an additional 1d8 thunder damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">Bonus Action or reaction to taking damage</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Ætheric Ballista" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_ÆTHERIC_BALLISTA">
+        <supports>Wizard</supports>
+        <description>
+            AAAA
+            <p class="indent">Casting this spell with a 5th or 6th level slot increases the bonus to +2, to +3 with a 7th or 8th level slot, and +4 with a 9th level spell slot.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">Self</set>
+            <set name="duration">1 minute (Concentration)</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Chains of Mantares" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_CHAINS_OF_MANTARES">
+        <supports>Wizard, Sorcerer, Warlock</supports>
+        <description>
+            AAAA
+            <p class="indent">Upon failing the save, a creature also takes 6d6 necrotic damage, and they take this damage again at the end of each of their turns while restrained. As an action on their turns, a creature who is restrained may attempt a Str save to break free. For each level beyond the 3rd that this spell is cast, an extra 1d6 necrotic damage is dealt.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Conjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">An iron chain of at least 3 links</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 minute (Concentration)</set>
+            <set name="isConcentration">true</set>
+        </setters>
+    </element>
+    <element name="Sacred Shield" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_SACRED_SHIELD">
+        <supports>Cleric, Paladin, Druid</supports>
+        <description>
+            AAAA
+            <p class="indent">Casting this spell at higher levels increases the Temporary HP and the damage done to melee attackers by 5 for each level this spell is cast beyond the 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Abjuration</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">30 feet</set>
+            <set name="duration">1 Hour</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    <element name="Rend" type="Spell" source="D’Artagnan’s Spells" id="ID_DAS_DNDW_SPELL_REND">
+        <supports>Psion</supports>
+        <description>
+            AAAA
+            <p class="indent">When this spell is cast at level 5 or higher, you may target one additional creature per additional level.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Enchantment</set>
+            <set name="isRitual">false</set>
+            <set name="time">Standard Action</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="isConcentration">false</set>
+        </setters>
+    </element>
+    
+</elements>

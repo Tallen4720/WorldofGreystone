@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+
+	<element name="Bone Tiefling" type="Sub Race" source="World of Greystone" id="ID_TALLEN_ROG_SUBRACE_TIEFLING_BONE">
+		<supports>Tiefling-Variant</supports>
+		<description>
+			<p>Since not all tieflings are of the blood of Asmodeus, some have traits that differ from those in the Player's Handbook. The Dungeon Master may permit the following variants for your tiefling character, although Devil's Tongue, Skeletal Tail, and Unholy Venom are mutually exclusive.</p>
+			<p class="indent"><b><i>Appearance. </i></b>Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose 1d4+1 of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs ; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone.</p>
+			<p class="indent"><b><i>Ability Score Increase. </i></b>Your Constitution score increases by 1, and your Charisma score increases by 2.</p>
+			<p class="indent"><b><i>Fridgid Toughness. </i></b>You know the vicious mockery cantrip. When you reach 3rd level, you can cast the charm person spell as a 2nd-level spell once with this trait. When you reach 5th level , you can cast the enthrall spell once with this trait. You must finish a long rest to cast these spells once again with this trait. Charisma is your spellcasting ability for them. This trait replaces the Infernal Legacy trait.</p>
+			<p class="indent"><b><i>Skeletal Tail. </i></b>Once you reach 3rd level, you can cast the burning hands spell once per day as a 2nd-level spell. This trait replaces the hellish rebuke spell of the Infernal Legacy trait.</p>
+			<p class="indent"><b><i>Unholy Venom. </i></b>You have bat-like wings sprouting from your shoulder blades. You have a flying speed of 30 feet. This trait replaces the Infernal Legacy trait.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_TIEFLING_VARIANT_SUBRACE" />
+			<stat name="Constitution" value="1"/>
+			<stat name="Charisma" value="2"/>
+            <grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+			<grant type="Racial Trait" id="ID_TALLEN_ROG_RACIAL_TRAIT_FERAL_TIEFLING_FRIDGID_TOUGHNESS"/>
+            <grant type="Racial Trait" id="ID_TALLEN_ROG_RACIAL_TRAIT_FERAL_TIEFLING_SELETAL_TAIL"/>
+            <grant type="Racial Trait" id="ID_TALLEN_ROG_RACIAL_TRAIT_FERAL_TIEFLING_UNHOLY_VENOM"/>
+		</rules>
+	</element>
+	<element name="Fridgid Toughness" type="Racial Trait" source="World of Greystone" id="ID_TALLEN_ROG_RACIAL_TRAIT_FERAL_TIEFLING_FRIDGID_TOUGHNESS">
+		<supports>Bone Tiefling</supports>
+		<description>
+			<p>You know the vicious mockery cantrip. When you reach 3rd level, you can cast the charm person spell as a 2nd-level spell once with this trait. When you reach 5th level , you can cast the enthrall spell once with this trait. You must finish a long rest to cast these spells once again with this trait. Charisma is your spellcasting ability for them. This trait replaces the Infernal Legacy trait.</p>
+		</description>
+		<sheet>
+			<description>You know the vicious mockery cantrip. When you reach 3rd level, you can cast the charm person spell as a 2nd-level spell once with this trait. When you reach 5th level , you can cast the enthrall spell once with this trait. You must finish a long rest to cast these spells once again with this trait. Charisma is your spellcasting ability for them.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Skeletal Tail" type="Racial Trait" source="World of Greystone" id="ID_TALLEN_ROG_RACIAL_TRAIT_FERAL_TIEFLING_SELETAL_TAIL">
+		<supports>Bone Tiefling</supports>
+		<description>
+		<p>Your tail is now skeletal, with protruded spines and tightly stretched skin and is a natural weapon, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>Your tail is now skeletal, with protruded spines and tightly stretched skin and is a natural weapon, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike..</description>
+		</sheet>
+	</element>
+	<element name="Unholy Venom" type="Racial Trait" source="World of Greystone" id="ID_TALLEN_ROG_RACIAL_TRAIT_FERAL_TIEFLING_UNHOLY_VENOM">
+		<supports>Bone Tiefling</supports>
+		<description>
+			<p>When you make a successful attack against a creature with your Skeletal Tail, you can use a bonus action to inject them with your venomous prongs. The creature must succeed on a Constitution saving throw or becomes poisoned until the end of your next turn. The save DC for this saving throw equals 8 + your proficiency bonus + your Constitution modifier. Once you use this trait you cannot use it again until you complete a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>as a bonus action. when you hit a target with your Skelatal Tail you may inject them with poison. the creature must succeed a DC {{tail-poison:dc}} constitution saving throw or be poisoned until the end of your next turn</description>
+		</sheet>
+        <rules>
+			<stat name="tail-poison:dc" value="8" />
+			<stat name="tail-poison:dc" value="constitution:modifier" />
+			<stat name="tail-poison:dc" value="proficiency" />
+		</rules>
+	</element>
+
+</elements>
