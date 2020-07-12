@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+    	<update version="0.0.1">
+        	<file name="Homebrew-items.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Homebrew-items.xml" />
+    	</update>
+	</info>
 <element name="Necklace of the Wolf" type="Magic Item" source="World of Greystone" id="ID_WOGS_DMG_MAGIC_ITEM_NECKLACE_OF_THE_WOLF">
 		<description>
 			<p> while you wear this necklace. you have a connection with the spirit of Kasteel. an ancient Direwolf. its intelegence is a 15 (+2) rather than the usual stats. you may summon him for an hour every 2 days.</p>

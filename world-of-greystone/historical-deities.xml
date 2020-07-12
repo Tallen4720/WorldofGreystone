@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+    	<update version="0.0.1">
+    		 <file name="historical-deities.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/historical-deities.xml" />
+    	</update>
+	</info>
 
 <element name="Aegir" type="Deity" source="Player’s Handbook" id="ID_WOTC_PHB_DEITY_AEGIR">
 		<description>

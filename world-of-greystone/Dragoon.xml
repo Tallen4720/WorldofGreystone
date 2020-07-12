@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+    	<update version="0.0.1">
+        	<file name="Dragoon.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Dragoon.xml" />
+    	</update>
+	</info>
 
 	<element name="Dragoon" type="Race" source="Races of Greystone" id="ID_RACE_ROG_DRAGOON">
 		<description>

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+    	<update version="0.0.1">
+        	<file name="sorcerer-dunamancy.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/sorcerer-dunamancy.xml" />
+    	</update>
+	</info>
 	
 
 	<element name="Dunamancy" type="Archetype" source="Races of Greystone" id="ID_TALLEN_ROG_SORCERER_ARCHETYPE_DUNAMANCY">

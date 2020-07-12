@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+  <info>
+    <update version="0.0.1">
+        <file name="dhampir.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/dhampir.xml" />
+    </update>
+  </info>
 	
 
   <element name="Dhampir" type="Race" source="Races of Greystone" id="ID_TALLEN_ROG_RACE_DHAMPIR">

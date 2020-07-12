@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+    	<update version="0.0.1">
+        	<file name="genasi-extras.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/genasi-extras.xml" />
+    	</update>
+	</info>
+
 	<element name="Dark Genasi" type="Sub Race" source="Homebrew" id="ID_HOMEBREW_SUBRACE_GENASI_DARK">
 		<supports>Genasi</supports>
 		<description>

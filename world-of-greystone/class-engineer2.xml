@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Engineer Class</name>
         <update version="0.0.1">
-            <file name="class-engineer2.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/class-engineer2.xml" />
+            <file name="class-engineer2.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/class-engineer2.xml" />
         </update>
     </info>
     

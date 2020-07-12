@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+        <update version="0.0.1">
+            <file name="Dragoon-weapons.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Dragoon-weapons.xml" />
+        </update>
+    </info>
 	
 	<!-- simple -->
 	<element name="Dragoon Tail" type="Weapon" source="Races of Greystone" id="ID_ROG_WEAPON_DRAGOON_TAIL_WEAPON">
@@ -13,46 +18,46 @@
         <set name="damage" type="piercing">1d6</set>
         <set name="proficiency">ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOON_TAIL</set>
     </setters>
-</element>
+    </element>
 
-<element name="Dragoon Claws" type="Weapon" source="Races of Greystone" id="ID_ROG_WEAPON_DRAGOON_CLAW_WEAPON">
-    <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
-    <description>
+    <element name="Dragoon Claws" type="Weapon" source="Races of Greystone" id="ID_ROG_WEAPON_DRAGOON_CLAW_WEAPON">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
+        <description>
         <p>You may extend claws from within your finger tips as part of your dragon herritage. while extended you may not use this hand to hold anything. </p>
-    </description>
-    <setters>
-        <set name="category">Weapons</set>
-        <set name="slot">onehand</set>
-        <set name="damage" type="slashing">1d6</set>
-        <set name="proficiency">ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOON_CLAWS</set>
-    </setters>
-</element>
-<element name="Weapon Proficiency (Dragoon Tail)" type="Proficiency" source="Races of Greystone" id="ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOON_TAIL">
-    <requirements>ID_RACE_ROG_DRAGOON</requirements>
-</element>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="slashing">1d6</set>
+            <set name="proficiency">ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOON_CLAWS</set>
+        </setters>
+    </element>
+    <element name="Weapon Proficiency (Dragoon Tail)" type="Proficiency" source="Races of Greystone" id="ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOON_TAIL">
+        <requirements>ID_RACE_ROG_DRAGOON</requirements>
+    </element>
 
-<element name="Weapon Proficiency (Dragoon Claws)" type="Proficiency" source="Races of Greystone" id="ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOON_CLAWS">
-    <requirements>ID_RACE_ROG_DRAGOON</requirements>
-</element>
+    <element name="Weapon Proficiency (Dragoon Claws)" type="Proficiency" source="Races of Greystone" id="ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOON_CLAWS">
+        <requirements>ID_RACE_ROG_DRAGOON</requirements>
+    </element>
 
-<element name="Weapon Proficiency (Dragoon Natural Weapons)" type="Proficiency" source="Races of Greystone" id="ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOON_NATURAL_WEAPONS">
-    <requirements>ID_RACE_ROG_DRAGOON</requirements>
-    <rules>
-        <grant type="Proficiency" id="ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOON_TAIL" />
-        <grant type="Proficiency" id="ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOON_CLAWS" />
-    </rules>
-</element>
-<element name="Races of Greystone" type="Source" source="Core" id="ID_TALLEN_SOURCE_RACES_OF_GREYSTONE">
-    <description>
-        <p>a nice description for the users</p>
-    </description>
-    <setters>
-        <set name="abbreviation">ROG</set>
-        <set name="url">https://dnd.wizards.com/products/tabletop-games/rpg-products/eberron</set>
-        <set name="image">https://media.dnd.wizards.com/styles/product_tabletop_left/public/images/product/PI_eberron_lastwar.png</set>
-        <set name="author" abbreviation="WOTC" url="http://dnd.wizards.com">Wizards of the Coast</set>
-        <set name="homebrew">true</set>
-    </setters>
-</element>
+    <element name="Weapon Proficiency (Dragoon Natural Weapons)" type="Proficiency" source="Races of Greystone" id="ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOON_NATURAL_WEAPONS">
+        <requirements>ID_RACE_ROG_DRAGOON</requirements>
+        <rules>
+            <grant type="Proficiency" id="ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOON_TAIL" />
+            <grant type="Proficiency" id="ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOON_CLAWS" />
+        </rules>
+    </element>
+    <element name="Races of Greystone" type="Source" source="Core" id="ID_TALLEN_SOURCE_RACES_OF_GREYSTONE">
+        <description>
+            <p>a nice description for the users</p>
+        </description>
+        <setters>
+            <set name="abbreviation">ROG</set>
+            <set name="url">https://dnd.wizards.com/products/tabletop-games/rpg-products/eberron</set>
+            <set name="image">https://media.dnd.wizards.com/styles/product_tabletop_left/public/images/product/PI_eberron_lastwar.png</set>
+            <set name="author" abbreviation="WOTC" url="http://dnd.wizards.com">Wizards of the Coast</set>
+            <set name="homebrew">true</set>
+        </setters>
+    </element>
 
 </elements>

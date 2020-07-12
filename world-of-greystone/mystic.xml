@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Mystic (Multiclass)</name>
-		<description>UA Mystic that allows mulitclassing - Coded by Matthias </description>
-		<author url="https://media.wizards.com/2017/dnd/downloads/UAMystic3.pdf">Wizards of the Coast</author>
-		<update version="0.0.8">
-			<file name="class-mystic-multi.xml" url="https://raw.githubusercontent.com/zweefer/aurora/aurora/class-mystic-multi.xml" />
-		</update>
+    	<update version="0.0.1">
+        	<file name="mystic.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/mystic.xml" />
+    	</update>
 	</info>
 	
 	<element name="Unearthed Arcana: The Mystic Class" type="Source" source="Core" id="ID_WOTC_SOURCE_UNEARTHED_ARCANA_20170313">

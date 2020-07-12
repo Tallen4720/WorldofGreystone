@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <elements>
   <info>
-    <name>Abomination</name>
-    <description>The Abomination from D$D Wiki.</description>
-    <author> DnD Wiki</author>
-    <update version="0.2.5">
-      <file name="class-abomination.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/user/abomination.xml" />
+    <update version="0.0.1">
+        <file name="Abomination_Class.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Abomination_Class.xml" />
     </update>
   </info>
 

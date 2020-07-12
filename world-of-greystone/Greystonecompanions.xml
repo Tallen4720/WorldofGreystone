@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Companions</name>
-		<description>Companion creatures from the Races of Greystone.</description>
-		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.2">
-			<file name="Greystonecompanions.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/companions.xml" />
-		</update>
+    	<update version="0.0.1">
+        	<file name="Greystonecompanions.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Greystonecompanions.xml" />
+    	</update>
 	</info>
 
 	<element name="Blink Dog" type="Companion" source="Races of Greystone" id="ID_TALLEN_ROG_COMPANION_BLINK_DOG">

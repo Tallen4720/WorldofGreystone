@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+        <update version="0.0.1">
+            <file name="race-felis.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/race-felis.xml" />
+        </update>
+    </info>
    
 
     <element name="Felis" type="Race" source="Jason Wright" id="ID_BEYOND_RACE_FELIS">

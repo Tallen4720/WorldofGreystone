@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <elements>
-
+    <info>
+        <update version="0.0.1">
+            <file name="race-amazon-var.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/race-amazon-var.xml" />
+        </update>
+    </info>
 
 <element name="Amazon, Variant" id="ID_WIKI_RACE_AMAZON_VAR" source="D&amp;D Wiki" type="Race">
 
