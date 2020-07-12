@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+    	<update version="0.0.1">
+        	<file name="Homebrew-items.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Homebrew-items.xml" />
+    	</update>
+	</info>
+	
+<element name="Necklace of the Wolf" type="Magic Item" source="World of Greystone" id="ID_WOGS_DMG_MAGIC_ITEM_NECKLACE_OF_THE_WOLF">
+		<description>
+			<p> while you wear this necklace. you have a connection with the spirit of Kasteel. an ancient Direwolf. its intelegence is a 15 (+2) rather than the usual stats. you may summon him for an hour every 2 days.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Tooth" type="Weapon" source="Races of Greystone" id="ID_TALLEN_ROG_TOOTH">
+		<supports> ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_RELOAD, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS </supports>
+		<description>
+			<p>Ammunition (range 40/120), Reload 7, Magazine Loading, Misfire 2</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">1200</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">40/120</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="misfire">2</set>
+			<set name="reload">7</set>
+			<set name="proficiency">ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_FIREARM_TOOTH</set>
+		</setters>
+	</element>	
+	<element name="Weapon Proficiency (Tooth)" type="Proficiency" source="Races of Greystone" id="ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_FIREARM_TOOTH">
+        <supports>Weapon, Ranged</supports>
+    </element>
+    <element name="Tooth and Claw" type="Magic Item" source="Races of Greystone" id="ID_TALLEN_ROG_TOOTHCLAW">
+		<description>
+			<p>This pair of enchanted pistols have a connection to one another. when you have one in hand you may always call the other to hand as a bonus action. you are also able to weild them as if you were proficient in two weapon fighting</p>
+			<p class="indent">If you have one of these weapons in hand. you may call the other to your other hand as a bonus action. </p>
+			<p class="indent">each of these fire arms may be customized to the wielder. you my change out 3 pieces of this item with a tinkering check vs the item rarity. uncommon=15 rare=20 veryrare=25 and legendary=30. the parts are Barrel grips and sights</p>
+            <p class="indent">ToothBarrel= uncommon +1 damage</p>
+            <p class="indent">ToothSights= uncommon +1 attacks</p>
+            <p class="indent">ToothGrips=</p>
+			<p class="indent">ClawBarrel= uncommon +1 damage</p>
+			<p class="indent">ClawSights= uncommon +1 attacks</p>
+			<p class="indent">ClawGrips=</p>
+        </description>
+		<setters>
+			<set name="keywords">Tooth</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Tooth">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Tooth</set>
+		</setters>
+	</element>
+	 <element name="Time Guardians Trust" type="Magic Item" source="Races of Greystone" id="ID_TALLEN_ROG_TIME_GUARDIANS_TRUST">
+		<description>
+			<p>This Spear lay dormant for centuries waiting for time to overlap itelse again.</p>
+			<p class="indent">You crit with this weapon on a 19 or 20. </p>
+			<p class="indent">This weapon has 7 charges. At dawn roll a 1d4  and replenish that many charges.</p>
+            <p class="indent">In the moment.  (1 charge)= Once during your turn you may take an extra action at the cost of your next turns action. </p>
+            <p class="indent">Biding time. (2 charges)= When you make an attack roll. after the dice are seen you may choose to expend the charges to bide your time. The attack vanishes in-front of the creature. The next time you hit the creature this attack hits that creature as well. Each turn you wait before the next hit increases the damage by 1 dice per each dice of the first hit. (example) 2d6 1 turn =4d6.  2d6 2 turns =6d6.) and so on</p>
+            <p class="indent">“sometimes its better to be patient”</p>
+			<p class="indent">Borrowing from Tomorrow (1 charge)= You touch a willing creature, instilling their body today with the vitality of tomorrow. Until they complete a long rest, they increase their maximum hit points by 1d12. After they complete this long rest, their maximum hit points decrease 1d4 until they complete another long rest.</p>
+			<p class="indent">1d6 Piercing+str+2 </p>
+        </description>
+		<setters>
+			<set name="keywords">Spear</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Spear">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">Spear</set>
+			<set name="charges">7</set>
+			<set name="enhancement">2</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Greystone Firearms)" type="Proficiency" source="Races of Greystone" id="ID_ROG_PROFICIENCY_WEAPON_PROFICIENCY_GREYSTONE_FIREARMS">
+    <rules>
+        <grant type="Proficiency" id="ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SIDEARMS" />
+        <grant type="Proficiency" id="ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_LONGARMS" />
+		<grant type="Grants" id="ID_RDDT_AA_GRANTS_ARCANEARTILLERY_REQUIREMENT" />
+    </rules>
+</element>
+<element name="Shield Bracelet" type="Magic Item" source="Races of Greystone" id="ID_TALLEN_ROG_SHIELD_BRACELET">
+		<description>
+			<p>You gain a +3 bonus to AC and saving throws while wearing this ring.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="3" />
+			<stat name="strength:save:misc" value="3" />
+			<stat name="dexterity:save:misc" value="3" />
+			<stat name="constitution:save:misc" value="3" />
+			<stat name="intelligence:save:misc" value="3" />
+			<stat name="wisdom:save:misc" value="3" />
+			<stat name="charisma:save:misc" value="3" />
+		</rules>
+	</element>
+	<element name="Additional Fighting Style" type="Feat" source="Races of Greystone" id="ID_TALLEN_ROG_FEAT_EXTRA_FIGHTING_STYLE_1">
+    <prerequisite>Fighting Style feature</prerequisite>
+    <description>
+        <p><em>Prerequisite: Fighting Style feature</em></p>
+        <p>You have trained to master a different fighting style. You gain an additional fighting style.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+        <select type="Class Feature" name="Additional Fighting Style, Feat" supports="Fighting Style" />
+    </rules>
+	</element>
+
+	<element name="Additional Fighting Style" type="Feat" source="Races of Greystone" id="ID_TALLEN_ROG_FEAT_EXTRA_FIGHTING_STYLE_2">
+    <requirements>ID_TALLEN_ROG_FEAT_EXTRA_FIGHTING_STYLE_1</requirements>
+    <prerequisite>Fighting Style feature</prerequisite>
+    <description>
+        <p><em>Prerequisite: Fighting Style feature</em></p>
+        <p>You have trained to master a different fighting style. You gain an additional fighting style.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+        <select type="Class Feature" name="Additional Fighting Style, Feat" supports="Fighting Style" />
+    </rules>
+	</element>
+	<element name="+ 2 Armor of Resistance, Psychic" type="Magic Item" source="Dungeon Master’s Guide" id="ID_TALLEN_ROG_MAGIC_ITEM_ARMOR_OF_RESISTANCE_PSYCHIC">
+		<description>
+			<p>You have resistance to psychic damage while you wear this armor.</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">{{parent}} of Psychic Resistance</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	 <element name="Attunement Option" type="Option" source="Bladetide Setting" id="ID_NV_BDTD_OPTION_ATTUNEMENT">
+        <description>
+            <p>This option makes maximum number of attuned items equal to Proficiency Bonus.</p>
+        </description>
+        <sheet display="false">
+            <description>This option makes maximum number of attuned items equal to Proficiency Bonus.</description>
+        </sheet>
+        <rules>
+            <stat name="attunement:max" value="-3" />
+            <stat name="attunement:max" value="proficiency" />
+        </rules>
+    </element>
+</elements>
