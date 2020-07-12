@@ -1,0 +1,1325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>Abomination</name>
+    <description>The Abomination from D$D Wiki.</description>
+    <author> DnD Wiki</author>
+    <update version="0.2.5">
+      <file name="class-abomination.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/user/abomination.xml" />
+    </update>
+  </info>
+
+  <element name="Abomination" type="Class" source="The Abomination Class" id="ID_USER_CLASS_ABOMINATION">
+    <description>
+      <p>A tall human stalks through the darkness, readying his claws to strike.</p>
+      <p class="indent">A halfing snarls at the an angry mob as a pair of dark wings sprout from his back.</p>
+      <p class="indent">Frothing at the mouth, what was a dwarf slashes at a victim, and prepares for the feast.</p>
+      <p class="indent"> Regardless of the story of their creation, abominations are normal people that conatin a dark, feral beast inside them.</p>
+      <p class="indent">When their emotions begin to be too much, the beast takes hold, and they transfom into a horrifying being..</p>
+      <h4> HUMANITY LOST</h4>
+      <p> Due to their curse, Abominations don't stay in one place for too long, for fear of others finding out. Since they can't control the primal urges, they leve humanity behind for everyone's safety.</p>
+      <p class="indent">When an abomination gets too stressed, they transform into a hideous beast. Depending on the situation they may control it, but that's never a guarantee.</p>
+      <h4>GUARDIAN BEAST</h4>
+      <p>Thouagh Abominations like to avoid society, they do usually care for others. In many cases they are able to make friends with normal beings, especially if they knew the Abomination before the curse..</p>
+      <p class="indent">If the friend of an Abomination is in danger, the Abomination is more than willing to take any pain to protect them, even if it means revealing their secret.</p>
+      <h4>CREATING AN ABOMINATION</h4>
+      <p>When creating an abomination character, think about the origin of the curse. Were you scientist that made a mistake? Were you a prisoner who experimented on extensively? Did you anger a witch and she cursed you for life? Either way, Abominations are rearely cursed willingly</p>
+      <h5 class="caption">QUICK BUILD</h5>
+      <p>You can make a abomination quickly by following these suggestions. First, put your highest ability score in Constitution, followed by Strength or Dexterity. Second, choose the haunted one background.</p>
+      <h3>CLASS FEATURES</h3>
+      <p>As an Abomination, you gain the following class features.</p>
+      <h5 class="caption">HIT POINTS</h5>
+      <ul class="unstyled">
+        <li>
+          <strong>Hit Dice:</strong> 1d12 per Abomination level
+        </li>
+        <li>
+          <strong>Hit Points at 1st Level:</strong> 12 + your Constitution modifier
+        </li>
+        <li>
+          <strong>Hit Points at Higher Levels:</strong> 1d12 (or 7) + your Constitution modifier per Abomination level after 1st
+        </li>
+      </ul>
+      <h5 class="caption">PROFICIENCIES</h5>
+      <ul class="unstyled mb">
+        <li>
+          <strong>Armor:</strong> Light armor
+        </li>
+        <li>
+          <strong>Weapons:</strong> Simple weapons, martial weapons
+        </li>
+        <li>
+          <strong>Tools:</strong> None
+        </li>
+      </ul>
+      <ul class="unstyled">
+        <li>
+          <strong>Saving Throws:</strong> Strength, Constitution
+        </li>
+        <li>
+          <strong>Skills:</strong> Choose two from Acrobatics, Athletics, Stealth, Insight, or Perception
+        </li>
+      </ul>
+      <h5 class="caption">EQUIPMENT</h5>
+      <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+      <ul>
+        <li>
+          <i>(a)</i> Manacle as an improvised weapon<i>(b)</i> any improvised weapon
+        </li>
+        <li>
+          <i>(a)</i> two daggers or <i>(b)</i> two light hammers
+        </li>
+        <li>
+          <i>(a)</i> A Burglar's pack or <i>(b)</i> a Priest's pack
+        </li>
+      </ul>
+      <h5 class="caption">THE ABOMINATION</h5>
+      <table class="class-features">
+        <thead>
+          <tr>
+            <td class="col-10">Level</td>
+            <td class="col-20">Stress Max</td>
+            <td class="col-60 left">Features</td>
+          </tr>
+        </thead>
+        <tr>
+          <td>1st</td>
+          <td>0</td>
+          <td class="left">Bile, Beast Armor</td>
+        </tr>
+        <tr>
+          <td>2nd</td>
+          <td>2</td>
+          <td class="left">Stress,Eldritch Blood (WILDSHAPE RULES)</td>
+        </tr>
+        <tr>
+          <td>3rd</td>
+          <td>3</td>
+          <td class="left">Manifestation</td>
+        </tr>
+        <tr>
+          <td>4th</td>
+          <td>4</td>
+          <td class="left">Ability Score Improvement,Wrathful Gaze</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>5</td>
+          <td class="left">Extra Attack</td>
+        </tr>
+        <tr>
+          <td>6th</td>
+          <td>6</td>
+          <td class="left">Absolution</td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>7</td>
+          <td class="left">Manifestation Feature</td>
+        </tr>
+        <tr>
+          <td>8th</td>
+          <td>8</td>
+          <td class="left">Ability Score Improvement, Glutton for Punishment</td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>9</td>
+          <td class="left">Rain of Blood, Savage Strike (2)</td>
+        </tr>
+        <tr>
+          <td>10th</td>
+          <td>10</td>
+          <td class="left">Extra Attack</td>
+        </tr>
+        <tr>
+          <td>11th</td>
+          <td>11</td>
+          <td class="left">Manifestation Feature</td>
+        </tr>
+        <tr>
+          <td>12th</td>
+          <td>12</td>
+          <td class="left">Ability Score Improvement,Damnation's Gift</td>
+        </tr>
+        <tr>
+          <td>13th</td>
+          <td>13</td>
+          <td class="left">Manifestation Feature</td>
+        </tr>
+        <tr>
+          <td>14th</td>
+          <td>14</td>
+          <td class="left">Savage Strike (3)</td>
+        </tr>
+        <tr>
+          <td>15th</td>
+          <td>15</td>
+          <td class="left">Manifestation Feature</td>
+        </tr>
+        <tr>
+          <td>16th</td>
+          <td>16</td>
+          <td class="left">Ability Score Improvement</td>
+        </tr>
+        <tr>
+          <td>17th</td>
+          <td>17</td>
+          <td class="left">Extra Attack</td>
+        </tr>
+        <tr>
+          <td>18th</td>
+          <td>18</td>
+          <td class="left">Manifestation Feature</td>
+        </tr>
+        <tr>
+          <td>19th</td>
+          <td>19</td>
+          <td class="left">Ability Score Improvement, Ageless</td>
+        </tr>
+        <tr>
+          <td>20th</td>
+          <td>20</td>
+          <td class="left">Inhuman Bondage</td>
+        </tr>
+      </table>
+      <div element="ID_USER_CLASS_FEATURE_ABOMINATION_BEAST'S_BILE" />
+      <div element="ID_USER_CLASS_FEATURE_ABOMINATION_BEAST_ARMOR" />
+      <div element="ID_USER_CLASS_FEATURE_ABOMINATION_STRESS" />
+      <div element="ID_USER_CLASS_FEATURE_ABOMINATION_MANIFESTATION" />
+      <div element="ID_USER_CLASS_FEATURE_ABOMINATION_WRATHFUL_GAZE" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_ABOMINATION_ABILITYSCOREIMPROVEMENT" />
+      <div element="ID_USER_CLASS_FEATURE_ABOMINATION_EXTRA_ATTACK" />
+      <div element="ID_USER_CLASS_FEATURE_ABOMINATION_ABSOLUTION" />
+      <div element="ID_USER_CLASS_FEATURE_ABOMINATION_GLUTTON_FOR_PUNISHMENT" />
+      <div element="ID_USER_CLASS_FEATURE_ABOMINATION_RAIN_OF_BLOOD" />
+      <div element="ID_USER_CLASS_FEATURE_ABOMINATION_DAMNATIONS_GIFT" />
+      <div element="ID_USER_CLASS_FEATURE_ABOMINATION_AGELESS"/>
+      <div element="ID_USER_CLASS_FEATURE_ABOMINATION_INHUMAN_BONDAGE" />
+    </description>
+    <sheet display="false">
+      <description>A fwarrior cursed by evil who can become a powerful beast.</description>
+    </sheet>
+    <setters>
+      <set name="short">A warrior cursed by evil who can become a powerful beast.</set>
+      <set name="hd">d12</set>
+    </setters>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_USER_MULTICLASS_ABOMINATION" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_USER_MULTICLASS_ABOMINATION"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_USER_MULTICLASS_ABOMINATION" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_USER_MULTICLASS_ABOMINATION" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_USER_MULTICLASS_ABOMINATION" />
+      <select type="Proficiency" name="Skill Proficiency (Abomination)"
+       supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_PERCEPTION" number="2" requirements="!ID_CRIT_MULTICLASS_ABOMINATION"/>
+      <grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ABOMINATION_BEAST'S_BILE" level="1" />
+      <grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ABOMINATION_BEAST_ARMOR" level="1" />
+      <grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ABOMINATION_STRESS" level="2" />
+      <grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ABOMINATION_MANIFESTATION" level="3" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ABOMINATION_ABILITYSCOREIMPROVEMENT" level="4" />
+      <grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ABOMINATION_WRATHFUL_GAZE" level="4" />
+      <grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ABOMINATION_EXTRA_ATTACK" level="5" />
+      <grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ABOMINATION_ABSOLUTION" level="5" />
+      <grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ABOMINATION_GLUTTON_FOR_PUNISHMENT" level="7" />
+      <grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ABOMINATION_RAIN_OF_BLOOD" level="9" />
+      <grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ABOMINATION_DAMNATIONS_GIFT" level="11" />
+      <grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ABOMINATION_AGELESS" level="19" />
+      <grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ABOMINATION_INHUMAN_BONDAGE" level="20" />
+    </rules>
+    <multiclass id="ID_USER_MULTICLASS_ABOMINATION">
+      <prerequisite>Strength 13</prerequisite>
+      <requirements>[str:13]</requirements>
+      <setters>
+        <set name="multiclass proficiencies">simple weapons, martial weapons</set>
+      </setters>
+      <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+      </rules>
+    </multiclass>
+  </element>
+  <element name="Beast's Bile" type="Class Feature" source="The Abomination Class" id="ID_USER_CLASS_FEATURE_ABOMINATION_BEAST'S_BILE">
+    <description>
+      <p>Starting at level 1, you you know the poison spray cantrip. You may cast a number of equal to your Constituion modifier. All uses are restored after a long rest.</p>
+    </description>
+    <sheet>
+      <description> You know the poison spray cantrip. </description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_POISON_SPRAY" />
+    </rules>
+  </element>
+  <element name="Beast Armor" type="Class Feature" source="The Abomination Class" id="ID_USER_CLASS_FEATURE_ABOMINATION_BEAST_ARMOR">
+    <description>
+      <p>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier.</p>
+    </description>
+    <sheet>
+      <description>While you aren’t wearing armor, your AC equals {{ac:beast armor abomination}}.</description>
+    </sheet>
+    <rules>
+      <stat name="ac:beast armor abomination:base" value="10" />
+      <stat name="ac:beast armor abomination:dexterity" value="dexterity:modifier" />
+      <stat name="ac:beast armor abomination:constitution" value="constitution:modifier" />
+
+      <stat name="ac:beast armor abomination" value="ac:beast armor abomination:base" />
+      <stat name="ac:beast armor abomination" value="ac:beast armor abomination:dexterity" />
+      <stat name="ac:beast armor abomination" value="ac:beast armor abomination:constitution" />
+
+      <stat name="ac:calculation" value="ac:beast armor abomination" bonus="calculation" equipped="[armor:none]" alt="beast armor (Abomination)" />
+    </rules>
+  </element>
+  <element name="Stress" type="Class Feature" source="The Abomination Class" id="ID_USER_CLASS_FEATURE_ABOMINATION_STRESS">
+    <description>
+      <p>The Abomination tries to hide his affliction when he can, but in battle, under torture, or under interrogation, the stress may start building. The more stress an abomination gains, the less of a grip he has on humanity. This isn't necessarily bad in battle, as using the stress allows the abomination to the abomination may channel the beast within.</p>
+      <p class="indent">You gain 1 stress point upon being attacked, and you can store stress points equal to your level. At level 3 you also gains 1 stress point when an ally takes damage. You cannot gains stress any other way without DM discretion</p>
+      <p class="indent"> Some stress features rquirs a saving throw. The saving throw DC is calculated as follows:</p>
+      <center>
+        <p>
+          <strong>Stress save DC</strong> = 8 + your proficiency bonus + your Constituition modifier
+        </p>
+      </center>
+      <h6>Savage Stike</h6>
+      <p>If a melee or thown weapon attack hits, you can use 2 stress points to deal 1d6 additional damage of the weapons damage type. At level 8, you can spend a 3rd stress point add 1d6 damage. At level 14, you can add a fourth stress point to add another 1d6 damage.</p>
+      <h6>Eldritch Blood</h6>
+      <p>As a bonus action you can use 1 stress point to gain advantage to your next attack this round. The number of times you can use this is equal to half your abomination level rounded down, until your next long rest.</p>
+    </description>
+    <sheet>
+      <description>You have {{stress:points}} stress Points and your Stress DC is {{stress:dc}}</description>
+    </sheet>
+    <rules>
+      <stat name="stress:points" value="level:abomination" />
+      <stat name="stress:dc" value="8" />
+      <stat name="stress:dc" value="proficiency" />
+      <stat name="stress:dc" value="constitution:modifier" />
+      <grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ABOMINATION_STRESS_SAVAGE_STRIKE" />
+      <grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ABOMINATION_STRESS_ELDRITCH_BLOOD" />
+    </rules>
+  </element>
+    <element name="Savage Strike" type="Class Feature" source="The Abomination Class" id="ID_USER_CLASS_FEATURE_ABOMINATION_STRESS_SAVAGE_STRIKE">
+      <description>
+        <p>If a melee or thown weapon attack hits, you can use 2 stress points to deal 1d6 additional weapon damage per stress point.</p>
+      </description>
+      <sheet usage="2 Stress">
+        <description>If a melee or thown weapon attack hits, you can use up to {{savage strike:str}} stress points to deal 1d6 additional weapon damage per stress point.</description>
+      </sheet>
+      <rules>
+        <stat name="savage strike:str" value="2" bonus="base" />
+        <stat name="savage strike:str" value="3" level="9" bonus="base" />
+        <stat name="savage strike:str" value="4" level="14" bonus="base" />
+      </rules>
+    </element>
+    <element name="Eldritch Blood" type="Class Feature" source="The Abomination Class" id="ID_USER_CLASS_FEATURE_ABOMINATION_STRESS_ELDRITCH_BLOOD">
+      <description>
+        <p>As a bonus action you can use 1 stress point to gain advantage to your next attack this round. The number of times you can use this is equal to half your abomination level rounded down, until your next long rest.</p>
+      </description>
+      <sheet action="Bonus Action" usage="Long Rest, 1 Stress">
+        <description> As a bonus action you can use 1 stress point to gain advantage to your next attack this round. You can do this {{eldritch blood:lv}} time(s) per long rest.</description>
+      </sheet>
+      <rules>
+        <stat name="eldritch blood:lv" value="1" bonus="base" />
+        <stat name="eldritch blood:lv" value="2" level="4" bonus="base" />
+        <stat name="eldritch blood:lv" value="3" level="6" bonus="base" />
+        <stat name="eldritch blood:lv" value="4" level="8" bonus="base" />
+        <stat name="eldritch blood:lv" value="5" level="10" bonus="base" />
+        <stat name="eldritch blood:lv" value="6" level="12" bonus="base" />
+        <stat name="eldritch blood:lv" value="7" level="14" bonus="base" />
+        <stat name="eldritch blood:lv" value="8" level="16" bonus="base" />
+        <stat name="eldritch blood:lv" value="9" level="18" bonus="base" />
+        <stat name="eldritch blood:lv" value="10" level="20" bonus="base" />
+      </rules>
+    </element>
+  <element name="Manifestation" type="Class Feature" source="The Abomination Class" id="ID_USER_CLASS_FEATURE_ABOMINATION_MANIFESTATION">
+    <description>
+      <p>At 3rd level, the beast can no longer be contained. When you reach maximum stress points, you shapeshift into the manifestation you select at this level:Demon Beast, Raven Beast, or Lycanthrope. You lose 2 stress points at the begining ofevery turn you are in manifesttion, and once your stress reaches zero, you return to your normal form.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Archetype" name="Manifestation" supports="Manifestation" level="3" />
+    </rules>
+  </element>
+ <element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ABOMINATION_ABILITYSCOREIMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Abomination 4)" supports="Improvement Option,Barbarian,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Abomination 8)" supports="Improvement Option,Barbarian,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Abomination 12)" supports="Improvement Option,Barbarian,12" level="12" />
+			<select type="Class Feature" name="Improvement Option Abomination 16)" supports="Improvement Option,Barbarian,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Abomination 19)" supports="Improvement Option,Barbarian,19" level="19" />
+		</rules>
+	</element>
+   <element name="Wrathful Gaze" type="Class Feature" source="The Abomination Class" id="ID_USER_CLASS_FEATURE_ABOMINATION_WRATHFUL_GAZE">
+    <description>
+      <p>At 4th level, you always have the eyes of your manifestation.</p>
+      <p class="indent"> As an action and 3 stress points, you can force a target looking at you to make a wisdom saving throw.  On a failed save, the target is stunned for 1 minute. The target may make a Wisdom saving throw at the beginning of its turn each round to end this effect. You must finish a short or long rest before using this feature again.</p>
+    </description>
+    <sheet>
+      <description usage="Long Rest, 3 Stress">As an action, you can force an enemy to make a wisdom save. On a fail they are stunned for 1 minute. They can repeat the saving throw every turn.</description>
+    </sheet>
+  </element>
+  <element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_USER_CLASS_FEATURE_ABOMINATION_EXTRA_ATTACK">
+    <description>
+      <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. You gain this feature again at level 10 and 17.</p>
+    </description>
+    <sheet>
+      <description>You can attack {{extra attack:count}} times, instead of 1 time, whenever you take the Attack action on your turn.</description>
+    </sheet>
+    <rules>
+      <stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+      <stat name="extra attack:count" value="3" level="10" bonus="extra attack" />
+      <stat name="extra attack:count" value="4" level="17" bonus="extra attack" />
+    </rules>
+  </element>
+  <element name="Absolution" type="Class Feature" source="The Abomination Class" id="ID_USER_CLASS_FEATURE_ABOMINATION_ABSOLUTION">
+    <description>
+      <p>Starting at level 6, you learn to manipulate your cells so you can heal yourself and keep up the good fight.</p> 
+      <p class="indent"> As an action, you choose an amount to reduce your stress points by, and gain hit points equal to twice that amount. You must finish a long rest before using this feature again</p>
+    </description>
+    <sheet action="Action" usage="Long Rest, Stress">
+      <description> You choose an amount to reduce your stress points by, and gain hit points equal to twice that amount.</description>
+    </sheet>
+  </element>
+  <element name="Glutton for Punishment" type="Class Feature" source="The Abomination Class" id="ID_USER_CLASS_FEATURE_ABOMINATION_GLUTTON_FOR_PUNISHMENT">
+    <description>
+      <p>Starting at level 8, the joy of protecting allies thrills you.</p>
+      <p class="indent">When an ally within 5 ft. of you is hit by a melee attack, you can use your reaction to have the attack hit you instead.</p>
+      <p class="indent">Additionally, when you get hit by a melee attack, you will gain 2 stress points intead of one.</p>
+    </description>
+    <sheet>
+      <description>
+        When an ally within 5 ft. of you is hit by a melee attack, you can use your reaction to have the attack hit you instead.
+        When you get hit by a melee attack, you will gain 2 stress points intead of one.
+      </description>
+    </sheet>
+  </element>
+  <element name="Rain of Blood" type="Class Feature" source="The Abomination Class" id="ID_USER_CLASS_FEATURE_ABOMINATION_RAIN_OF_BLOOD">
+    <description>
+      <p>Beginning at 9th level,  if you are below half your hit point max, you can use an action to use all your remaining stress points to splatter your blood all around you. All creatures within 10 ft. must pass a Dexterity saving throw or take 2d12 damage of the type specified by your manifestation (poison, necrotic, acid). You gain a number of stress points equal to the number of creatures hit. Once you reach max hit points, you can use this feature again.</p>
+    </description>
+    <sheet>
+      <description> if you are below half your hit point max, you can use an action to use all your remaining stress to force all creatures within 10 ft. must pass a Dexterity saving throw or take 2d12 damage of the type specified by your manifestation. You regain stress equal to the number of creatures hit. Once you reach max hit points, you can use this feature again.</description>
+    </sheet>
+  </element>
+  <element name="Damnation's Gift" type="Class Feature" source="The Abomination Class" id="ID_USER_CLASS_FEATURE_ABOMINATION_DAMNATIONS_GIFT">
+    <description>
+      <p>Starting at 12th level, you are less your original race and more your manifestation at this point.</p>
+      <p class="indent">When you reach 0 hit points, you can use a reaction and all of your remaining stress points to instead have an equal number of hit points. You must finish a long rest before using this feature again. </p>
+    </description>
+    <sheet action="Reaction" usage="Long Rest, All Stress">
+      <description>When you reach 0 hit points, you can use a reaction and all of your remaining stress points to instead have an equal number of hit points.</description>
+    </sheet>
+  </element>
+  <element name="Ageless" type="Class Feature" source="The Abomination Class" id="ID_USER_CLASS_FEATURE_ABOMINATION_AGELESS">
+    <description>
+      <p>Beginning at 19th level, the abomination gains immortality. It can't be aged normally or magically and no longer requires to eat or drink.</p>
+    </description>
+    <sheet>
+      <description>You can't be aged normally or magically and no longer requires to eat or drink.</description>
+    </sheet>
+  </element>
+  <element name="Inhuman Bondage" type="Class Feature" source="The Abomination Class" id="ID_USER_CLASS_FEATURE_ABOMINATION_INHUMAN_BONDAGE">
+    <description>
+      <p>Beginning at 20th level, you use your curse to decimate your enemies.</p>
+      <p class="indent">  As an action, and 15 stress points, you create an aura that surrounds you for 1 minute. Enemies that start their turn within 30 ft. of you make a Wisdom saving throw. On a fail saved, they take 2d6 Psychic damage and become restrained; if they pass they take half damage and are not restrained. You must finish a long rest before using this feature again.</p>
+    </description>
+    <sheet action="Action" usage="Long Rest, 15 Stress">
+      <description> you create an aura that surrounds you for 1 minute. Enemies that start their turn within 30 ft. of you make a Wisdom saving throw. On a fail saved, they take 2d6 Psychic damage and become restrained; if they pass they take half damage and are not restrained.</description>
+    </sheet>
+  </element>
+
+    <!-- Lycanthrope -->
+  <element name="Lycanthrope" type="Archetype" source="The Abomination Class" id="ID_USER_ARCHETYPE_LYCANTHROPE">
+    <supports>Manifestation</supports>
+    <description>
+      <p>Commonly refered to as a werewolf, your curse used to have you turn into a beast at the sight of the full moon. MAny townspeople have driven you away for fear you will eat them. Over the years you have learned to control the beast, and it serves as a strong, bewitched weapon.</p>
+      <div element="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_FERAL_KIND" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_MAGIC_CLAWS" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_BEASTS_WRATH" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_WILD_BLOOD" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_NATURES_TOUCH" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_FEAR" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_GO_FOR_THE_THROAT" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_ALPHA_WOLF" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_GHOST_WOLF_BONDAGE" />
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_FERAL_KIND" level="3" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_MAGIC_CLAWS" level="5" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_BEASTS_WRATH" level="7" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_WILD_BLOOD" level="9" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_NATURES_TOUCH" level="11" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_FEAR" level="13" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_GO_FOR_THE_THROAT" level="15" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_ALPHA_WOLF" level="18" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_GHOST_WOLF_BONDAGE" level="20" />
+    </rules>
+  </element>
+  <element name="Feral Kind" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_FERAL_KIND">
+    <description>
+      <p>Starting when you choose this path, you gain the following features while your manifestation is activated.</p>
+        <li> You start to grow fur on your arms and legs, and your teeth start to sharpen.</li>
+        <li>You gain an additional 10 ft. movement speed when moving towards enemies below half their hit point maximum.</li>
+        <li> You grow claws that are treated as finesse and you are proficient with them. Your claws deal 1d6 slashing damage and when you are in your manifestation they deal 1d8 slashing damage. Your claw damage increases at level 9 to 2d6/2d8, and at level 17 to 3d6/3d8.</li>
+    </description>
+    <sheet>
+      <description>
+        You gain an additional 10 ft. movement speed when moving towards enemies below half their hit point maximum.
+        You grow claws that are treated as finesse weapons you are proficient with. Your claws deal {{feral:claw}}d6 slashing damage normally, and when you are in your manifestation they deal {{feral:claw}}d8 slashing damage.
+      </description>
+    </sheet>
+    <rules>
+      <stat name="feral:claw" value="1" bonus="base" />
+      <stat name="feral:claw" value="2" level="9" bonus="base" />
+      <stat name="feral:claw" value="3" level="17" bonus="base" />
+    </rules>
+  </element>
+  <element name="Magic Claws" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_MAGIC_CLAWS">
+    <description>
+      <p>At level 5, your claws are treated as magical for the purposes of overcoming damage reduction.</p>
+    </description>
+    <sheet>
+      <description>Your claws are treated as magical.</description>
+    </sheet>
+  </element>
+  <element name="Beasts Wrath" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_BEASTS_WRATH">
+    <description>
+      <p>Beginning at 7th level, your eyes turn black while in your manifestation, and you start to retain some of your manifestation's abilities.</p>
+      <p class="indent"> You now have Blindsight to a range of 10 ft.</p>
+    </description>
+    <sheet display="false">
+      <description></description>
+      <rules>
+        <grant type="Vision" id="ID_VISION_BLIND_SIGHT" />
+      </rules>
+    </sheet>
+  </element>
+  <element name="Wild Blood" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_WILD_BLOOD">
+    <description>
+      <p>Beginning at 9th level, when you use your rain of blood feature, it does poison damage.</p>
+    </description>
+    <sheet>
+      <description>Your rain of Blood feature deals poison damage.</description>
+    </sheet>
+  </element>
+  <element name="Nature's Touch" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_NATURES_TOUCH">
+    <description>
+      <p>Starting at 11th level, you are seamlessly in touch with your animal side. While in maifestaation, your ears are pointed, and your feet turn into paws.</p>
+      <p class="indent"> As an action, you can shapeshift into either a dire wolf, a winter wolf or a normal wolf for 1 hour. You can end this feature early as a bonus action. You must finish a long rest to use this feature again. </p>
+    </description>
+    <sheet acton="Action" usage="Long Rest">
+      <description> You can shapeshift into a wolf, a dire wolf, or a winter wolf for 1 hour. </description>
+    </sheet>
+  </element>
+<element name="Fear" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_FEAR">
+    <description>
+      <p>Starting at 13th level, your manifestations muscles start to swell, and thck fur covers your whole body. </p>
+      <p class="indent"> You can gain an amount of stress points equal to your level as a bonus action. So much stress at one time is harmful on your body, so you take 2d8 damage. You must finish a long rest before using this feature again.</p>
+    </description>
+  <sheet acton="Bonus Action" usage="Long Rest">
+      <description> You can take 2d8 damage to raise your stress points to your current maximum.</description>
+    </sheet>
+  </element>
+<element name="Go for the Throat" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_GO_FOR_THE_THROAT">
+    <description>
+      <p>Starting at level 15, your manifestation's nose and mouth turn into a snout, and your teeth turn into long sharp fangs.</p>
+      <p class="Indent"> If you score a critical hit against a creature with less than half their hit point you can shapeshift into your manifestation without max stress as a bonus action. You must finsish a long rest before you can use this feature again. </p>
+      <p class="indent"> Additionally, your manifestation gains a bite attack that does 4d10 damage</p>
+  </description>
+    <sheet usage="Long Rest">
+      <description>If you score a critical hit, you can use a bonus action to to become your manifestation with your current stress points.
+         Your manifestaion also gains a bite attack the does 4d10 damage.
+      </description>
+    </sheet>
+  </element>
+   <element name="Alpha Wolf" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_ALPHA_WOLF">
+    <description>
+      <p>At level 18,  as a bonus action and 10 stress points you can coat your fangs and claws in poison for 1 minute.</p>
+      <p class="indent"> Whenever you deal damage with a bite or claw attack, the target must pass a Constitution saving throw or take 1d12 poison damage and become incapacitated until the end of its turn. A creature incapacitated by this feature cannot be affected so again for 24 hours but still takes poison damage on failed saving throws. You must finish a short or long rest before using this feature again.</p>
+    </description>
+    <sheet action="Bonus Action" usage="Short Rest, 10 Stress">
+      <description> You can coat your fangs and claws in poison for 1 minute.</description>
+      Whenever you deal damage with a bite or claw attack, the target must pass a Constitution saving throw or take 1d12 poison damage and become incapacitated.
+    </sheet>
+  </element>
+   <element name="Ghost Wolf Bondage" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_GHOST_WOLF_BONDAGE">
+    <description>
+      <p>At level 20, Creatures restrained by your Inhuman Bondage are surrounded and attacked by ghost hounds. The ghost hounds deal 1d8 piercing damage when they hit.</p>
+    </description>
+    <sheet>
+      <description>Creatures restrained by your Inhuman Bondage are surrounded and attacked by ghost hounds which deal 1d8 piercing damage.</description>
+    </sheet>
+  </element>
+
+  <!-- Demon Beast -->
+  <element name="Demon Beast" type="Archetype" source="The Abomination Class" id="ID_USER_ARCHETYPE_DEMON_BEAST">
+    <supports>Manifestation</supports>
+    <description>
+      <p>You have been possessed by one of the beasts of hell, and they see you as a way of spreading chaos. The fiend will take hold of your body, but in turn you gain its power. While your powers are not inheriently evil, many religious people will see as a heretic that needs to be slain.</p>
+      <div element="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_DEMONIC_ENTITY" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_FIENDISH_DELIGHTS" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_FIERY_BLOOD" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_SUMMONS" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_BURNING_AURA" />
+     <div element="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_SIN_FORM" />
+    </description>
+    <rules>
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_DEMONIC_ENTITY" level="3" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_FIENDISH_DELIGHTS" level="7" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_FIERY_BLOOD" level="9" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_SUMMONS" level="11" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_BURNING_AURA" level="15" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_SIN_FORM" level="18" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_DEMONIC_BONDAGE" level="20" />
+    </rules>
+  </element>
+  <element name="Demonic Entity" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_DEMONIC_ENTITY">
+    <description>
+      <p>Starting when you choose this path, you gain the following features while your manifestation is activated.</p>
+        <li> Your skin turns to a dark red, and your eyes are flaming. You sproUt horns on your head, and you grow a slender tail.</li>
+        <li> Your melee attacks deal an additional 1d6 fire damage.</li>
+				<li>You can cast Summon Fiend once as an action.</li>
+    </description>
+    <sheet>
+      <description> When your manifestation activates, your melee attacks deal an extra 1d6 fire damage, and you can cast Summon Fiend once as an action.</description>
+    </sheet>
+  </element>
+  <element name="Fiendish Delight" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_FIENDISH_DELIGHTS">
+    <description>
+      <p>Beginning at 7th level, your knees and elbows grow rocky spikes in your manifestation, and you start to take joy in the suffering of your enemies.</p>
+      <p class="indent"> Once per turn while you are in your manifestation ,when you melee attack you can use your bonus action to heal yourself for half of the damge you dealt on your first attack. </p>
+    </description>
+    <sheet>
+      <description> Once per turn while in your manifestation, when you melee attack you can use your bonus action to heal yourself for half of the damge you dealt on your first attack.</description>
+    </sheet>
+  </element>
+  <element name="Fiery Blood" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_FIERY_BLOOD">
+    <description>
+      <p>Beginning at 9th level, you can feel the wrath of hell flowing hrough your veins.</p>
+      <p class="indent"> When you use your rain of blood feature, it does fire damage.</p>
+    </description>
+    <sheet>
+      <description>Your rain of Blood feature deals fire damge.</description>
+    </sheet>
+  </element>
+  <element name="Summons" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_SUMMONS">
+    <description>
+      <p>Starting at 11th level,  your back becomes lined with humanoid skulls</p>
+      <p class="indent"> You are able to summon 1d4 + 1 imps as an action. They are friendly and serve you until you dismiss them or their hit points are reduced to 0. You must finish a short or long rest before using this feature again.</p>
+    </description>
+    <sheet>
+      <description usage="Long Rest"> While your manifestation is activated, you are able to summon 1d4 + 1 imps as an action </description>
+    </sheet>
+  </element>
+<element name="Burning Aura" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_BURNING_AURA">
+    <description>
+      <p>Starting at 15th level, you have a burning aura around you while in manifestation. </p>
+      <p class="indent">At the start of each your turns in manifestation, you deal fire damage equal to your abomination level to each creature within 5 feet of you, and flammable objects in the aura that aren't being worn or carried are ignited.</p>
+      <p class="indent">While you aren't in your manifestation, you may use a bonus action deal fire damage equal to your Constitution modifier to creatures within 5 feet of you at the beginning of your turn. </p>
+  </description>
+    <sheet>
+      <description> At the start of each your turns in manifestation, you deal {{level:abomination}} fire damage  to each creature within 5 feet of you, and flammable objects in the aura that aren't being worn or carried are ignited. While you aren't in your manifestation, you may use a bonus action deal {{constitution:modifier}} fire damage to all creatures within 5 feet of you.</description>
+    </sheet>
+  </element>
+<element name="Sin Form" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_SIN_FORM">
+    <description>
+      <p>Starting at 18th level, your manifestation becomes an embodiment of one of the seven deadly sins. </p>
+      <p class="indent"> All of your manifestation attacks are considered magical for overcoming damage, and you choose one of the sins and gain it's benefits.</p>
+  </description>
+    <sheet>
+      <description> When you manifest, you manifest as one of the seven deadly sins.</description>
+    </sheet>
+  <rules>
+    <select type="Class Feature" name="Deadly Sin (Demon Beast)" supports="Sin Form" level="18" />
+  </rules>
+  </element>
+  <element name="Demonic Bondage" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_DEMONIC_BONDAGE">
+    <description>
+      <p>At level 20, your targets hit by Inhuman Bondage must past a Dexterity saving throw or become restrained by chains that sprout from the ground. Every turn a creature begins restrained by these chains, it takes 1d8 fire damage.</p>
+    </description>
+    <sheet>
+      <description> Targets hit by Inhuman Bondage must past a Dexterity saving throw or become restrained by chains that sprout from the ground. Every turn a creature begins restrained by these chains, it takes 1d8 fire damage.</description>
+    </sheet>
+  </element>
+
+  <!-- Sin Forms -->
+    <element name="Greed" type="Class Feature" source="The Abomination Class" id="ID_CRIT_CLASS_FEATURE_DEMON_BEAST_SIN_FORM_GRRED">
+        <supports>Sin Form</supports>
+        <description>
+          <p>Your greed manifests itself, turning your skin to gold and overwhelming your foes with a desire for wealth. </p>
+            <p class="indent"> Your Beast Armor is now 12 + Dexterity modifier + Constitution modifier, and all enemies must make a Wisdom saving throw when trying to attack you. If they fail, they turn on their allies and try to seize their riches</p>
+        </description>
+        <sheet>
+            <description> When enimes attack you, they must succed on a wisdom saving throw or they turn on their allies and try to stal from them.</description>
+        </sheet>
+      <rules>
+        <stat name="ac:beast armor abomination:greed" value="2" />
+        <stat name="ac:beast armor abomination" value="ac:beast armor abomination:greed" />
+      </rules>
+    </element>
+    <element name="Sloth" type="Class Feature" source="The Abomination Class" id="ID_CRIT_CLASS_FEATURE_DEMON_BEAST_SIN_FORM_SLOTH">
+        <supports>Sin Form</supports>
+        <description>
+          <p>Your sloth manifests itself, slowing the movements of your foes. </p>
+             <p class="indent">While ememies are within 30 ft of your manifestation they must succeed a Constitution Saving Throw, or their movement speed is halved. Within 10 feet of your manifestation, all Dexterity checks and attacks have disadvantage.</p>
+        </description>
+        <sheet>
+            <description>While ememies are within 30 ft of your manifestation they must succeed a Constitution Saving Throw, or their movement speed is halved. Within 10 feet of your manifestation, all Dexterity checks and attacks have disadvantage.</description>
+        </sheet>
+    </element>
+    <element name="Lust" type="Class Feature" source="The Abomination Class" id="ID_CRIT_CLASS_FEATURE_DEMON_BEAST_SIN_FORM_LUST">
+        <supports>Sin Form</supports>
+        <description>
+            <p> Your lust manifests itself, and you allow yourself to be consumed by desire. </p>
+          <p class="indent">The air around is filled with an intoxicating aroma, forcing enemies within 30 ft to succeed on a Wisdom saving throw or be charmed for 1 minute. In addition, you may reroll a missed attack once per turn on enemies that are charmed.</p>
+        </description>
+        <sheet>
+            <description>Enemies within 30 ft. of your manifestation must scceed a Wisdom Saving Throw or be charmed for 1 minute. You can reroll any attack made on any enemy charmed in this way.</description>
+        </sheet>
+    </element>
+    <element name="Gluttony" type="Class Feature" source="The Abomination Class" id="ID_CRIT_CLASS_FEATURE_DEMON_BEAST_SIN_FORM_GLUTTONY">
+        <supports>Sin Form</supports>
+        <description>
+            <p>Your gluttony manifests itself, splitting you downward and creating a hungering maw.</p>
+            <p class="indent"> You now have a massive mouth running vertically down your chest and stomach, which can be used to make a bite attack as an action that deals 8d6 bludgeoning damage.</p>
+            <p class="indent">If the target is a size or more smaller than you and is grappled, on a successful bite, you can swallow the target. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside of you, and it takes 3d6 acid damage at the start of each of your turns. If you take 25 damage or more in a single round from the creatures inside of you, then you must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of you. </p>
+        </description>
+        <sheet>
+            <description>
+              Your manifestation now has a massive mouth running vertically down your chest and stomach, which can be used to make a bite attack as an action that deals 8d6 bludgeoning damage.
+                 If the target is a size or more smaller than you and is grappled, on a successful bite, you can swallow the target. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside of you, and it takes 3d6 acid damage at the start of each of your turns. If you take 25 damage or more in a single round from the creatures inside of you, then you must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of you.
+            </description>
+        </sheet>
+    </element>
+    <element name="Wrath" type="Class Feature" source="The Abomination Class" id="ID_CRIT_CLASS_FEATURE_DEMON_BEAST_SIN_FORM_WRATH">
+        <supports>Sin Form</supports>
+        <description>
+            <p> Your wrath manifests itself, overtaking you with rage. </p>
+            <p class="indent">Your attacks deal +4 damage while in your manifestation.</p>
+        </description>
+        <sheet>
+            <description>Your attacks deal +4 damage while in your manifestation..</description>
+        </sheet>
+    </element>
+    <element name="Envy" type="Class Feature" source="The Abomination Class" id="ID_CRIT_CLASS_FEATURE_DEMON_BEAST_SIN_FORM_">
+        <supports>Sin Form</supports>
+        <description>
+            <p> Your envy manifests, causing you to take on the strengths of others.</p>
+            <p class="indent">  Once per combat while in manifestation, you can choose an enemy within 60 ft. that you can see. You can choose to copy one of that enemy's attacks or spells if it can cast them. To copy an attack or spell you must see the enemy use that attack or spell.</p>
+            <p class="indent"> If you copy an attack, the attack uses your Strength and Dexterity modifiers as the normal attack calls for. If the attack uses a certain weapon you summon a demonic version of that weapon. The demonic weapon works exactly the same as the original, but it it dissapears once combat ends.</p> 
+            <p class="indent"> If you copy a spell, you can cast the spell a number of times equal to your Constitution Modifier. Constitution is your spellcasting modifier. You are unable to cast the spell once combat ends, but any effects from casting the spell during combat last for their normal duration. </p>
+        </description>
+        <sheet>
+            <description>You have the ability to copy one attack or spell from an enemy you can see.</description>
+        </sheet>
+    </element>
+  <element name="Pride" type="Class Feature" source="The Abomination Class" id="ID_CRIT_CLASS_FEATURE_DEMON_BEAST_SIN_FORM_DEAD">
+    <supports>Sin Form</supports>
+    <description>
+      <p>Your pride manifests, evoking foolishness and hubris in the hearts of men.</p>
+      <p class="indent">All enemies within 30ft of your manifestation must pass a Wisdom saving throw or be affected by the spell confusion as they all attempt to establish who is better than each other.</p>
+    </description>
+    <sheet>
+      <description>All enemies within 30ft of your manifestation become must pass a Wisdom saving throw or be affected by the spell confusion as they all attempt to establish who is better than each other.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" />
+    </rules>
+  </element>
+  
+  <!-- Raven Beast -->
+  <element name="Raven Beast" type="Archetype" source="The Abomination Class" id="ID_USER_ARCHETYPE_RAVEN_BEAST">
+    <supports>Manifestation</supports>
+    <p> Though many eldritch abominations are spread through myth, few are as active as the Black Raven. This ancient beast marks its prey, and steals their souls and manipulates their bodies to add to his dark flock. Those in the Dark Flock are generally a symbol of misfortune and death, so the people have learned to destroy any members they find. </p>
+    <description>
+      <div element="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_MYTHICAL_FORM" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_UNTAPPED_MAGIC" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_NECROTIC_BLOOD" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_MASTER_MANIFESTO" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_SCREECH_OF_DEATH" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_MASTER_OF_THE_SKIES" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_ONE_WITH_THE_RAVEN" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_UNDEAD_BONDAGE" />
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_MYTHICAL_FORM" level="3" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_UNTAPPED_MAGIC" level="7" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_NECROTIC_BLOOD" level="9" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_MASTER_MANIFESTO" level="11" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_SCREECH_OF_DEATH" level="13" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_MASTER_OF_THE_SKIES" level="15" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_ONE_WITH_THE_RAVEN" level="18" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_UNDEAD_BONDAGE" level="20" />
+    </rules>
+  </element>
+  <element name="Mythical Form" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_MYTHICAL_FORM">
+    <description>
+      <p>Starting when you choose this path, you gain the following features while your manifestation is activated.</p>
+      <li> Your fingernails and toenails turn black and start to lengthen You start to grow back feathers on your arms.</li>
+      <li>You gain 35 ft. fly speed. Your fly speed increases by 5 ft at levels 7, 11, 13, 15, and 18.</li>
+      <li>You gain dark vision out to 30 ft.</li>
+    </description>
+    <sheet display="false">
+      <description>
+      </description>
+    </sheet>
+    <rules>
+       <stat name="innate speed:fly" value="35" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+       <stat name="innate speed:fly" value="40" bonus="base" level="7" equipped="![armor:medium],![armor:heavy]" />
+       <stat name="innate speed:fly" value="45" bonus="base" level="11" equipped="![armor:medium],![armor:heavy]" />
+       <stat name="innate speed:fly" value="50" bonus="base" level="13" equipped="![armor:medium],![armor:heavy]" />
+       <stat name="innate speed:fly" value="55" bonus="base" level="15" equipped="![armor:medium],![armor:heavy]" />
+       <stat name="innate speed:fly" value="60" bonus="base" level="18" equipped="![armor:medium],![armor:heavy]" />
+       <grant type="Vision" id="ID_VISION_DARKVISION" />
+    </rules>
+  </element>
+  <element name="Untapped Magic" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_UNTAPPED_MAGIC">
+    <description>
+      <p>Beginning at 7th level, you can feel the dark force following through you.</p>
+      <p class="indent"> When you're in your manifestation, any creature you kill grants you one use of the eldritch blast cantrip.</p>
+    </description>
+    <sheet>
+      <description>Any creature you kill in your manifestation grants you one use of eldritch blast.</description>
+    </sheet>
+      <rules>
+        <grant type="Spell" id="ID_PHB_SPELL_ELDRITCH_BLAST" />
+      </rules>
+  </element>
+  <element name="Necrotic Blood" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_NECROTIC_BLOOD">
+    <description>
+      <p>Beginning at 9th level, when you use your rain of blood feature, it does necrotic damage.</p>
+    </description>
+    <sheet>
+      <description>Your rain of Blood feature deals necrotic damage.</description>
+    </sheet>
+  </element>
+  <element name="Master Manifesto" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_MASTER_MANIFESTO">
+    <description>
+      <p>Starting at 11th level, your manifestation's hair and neck turn into feathers, and your feet turn into talons. </p>
+     <p class="indent"> You can use your remaining stress points and an action to end your manifestation, dealing necrotic damage to enemies and healing allies in a 20 ft. radius equal to the stress points used.</p>
+    </description>
+    <sheet action="Action">
+      <description> You can use your remaining stress points to end your manifestation, dealing necrotic damage to enemies and healing allies in a 20 ft. radius equal to the stress points used.</description>
+    </sheet>
+  </element>
+  <element name="Screech of Death" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_SCREECH_OF_DEATH">
+    <description>
+      <p>Starting at 13th level, your manifestation's mouth and nose turn into a black beak.</p>
+     <p class="Indent"> You can use 5 stress points and an action to exhale in a 30ft cone. Creature must pass a Constitution saving throw or take 3d6 + 10 necrotic damage. </p>
+    </description>
+    <sheet action="Action" usage="5 Stress">
+      <description> You can exhale in a 30ft cone. Creatures must pass a Constitution saving throw or take 3d6 + 10 necrotic damage.</description>
+    </sheet>
+  </element>
+  <element name="Master of the Skies" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_MASTER_OF_THE_SKIES">
+    <description>
+      <p>Starting at level 15, your manifestation's arms turn into big black wings.</p>
+     <p> Any ranged attacks you make while flying deal +2 damage. You can also use a bonus action to make the Dash action while you are flying.</p>
+    </description>
+    <sheet>
+      <description>
+        ranged attacks you make while flying deal +2 damage. You can also use a bonus action to make the Dash action while you are flying.
+      </description>
+    </sheet>
+  </element>
+  <element name="One with the Raven" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_ONE_WITH_THE_RAVEN">
+    <description>
+      <p>At level 18, you can freely shapeshift into your manifestation regardless how many stress points you have. You only lose 1 stress instead of 2 while in your manifestation. </p>
+      <p class="indent">Additionally, you can make ranged attacks with your feathers. Each feather is treated as magical, has a range of 30 ft., and deals 1d6 damage. You may use your savage strike feature with your feather attacks as well.</p>
+    </description>
+    <sheet>
+      <description>
+        You can freely shapeshift into your manifestation regardless how many stress points you have. You only lose 1 stress instead of 2 while in your manifestation.
+        Additionally, you can make ranged attacks with your feathers. Each feather is treated as magical, has a range of 30 ft., and deals 1d6 damage. You may use your savage strike feature with your feather attacks as well.
+      </description>
+    </sheet>
+  </element>
+  <element name="Undead Bondage" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_RAVEN_BEAST_UNDEAD_BONDAGE">
+    <description>
+      <p>At level 20, Creatures restrained by Inhuman Bondage must pass a Constitution saving throw or be blinded until the feature ends. </p>
+      <p class="indent">If a creature dies while inside your inhuman bondage aura, they are risen at the beginning of your next turn as a skeleton until inhuman bondage ends.</p>
+    </description>
+    <sheet>
+      <description>
+        Creatures restrained by Inhuman Bondage must pass a Constitution saving throw or be blinded until the feature ends.
+          If a creature dies while inside your inhuman bondage aura, they are risen at the beginning of your next turn as a skeleton until inhuman bondage ends.
+      </description>
+    </sheet>
+  </element>
+
+  <!-- Hyde's Goliath -->
+  <element name="Hyde's Goliath" type="Archetype" source="The Abomination Class" id="ID_USER_ARCHETYPE_HYDE_GOLIATH">
+    <supports>Manifestation</supports>
+    <description>
+      <p> Everyone has a dark side to their personality, usually a primal, murderous side. Due to some experiment gone wrong, you have had that dark side awakened, and it turned your body into a raging monster. Over the yers you managed some level of contro, but your instability is a danger to others.</p>
+      <div element="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_DARK_SIDE" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_FISTS_OF_RAGE" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_TOXIC_BLOOD" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_HEALING_FACTOR" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_THUNDER_CLAP" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_JUMP_GOOD" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_WORLD_BREAKER" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_ANGRY_BONDAGE" />
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_DARK_SIDE" level="3" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_FISTS_OF_RAGE" level="7" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_TOXIC_BLOOD" level="9" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_HEALING_FACTOR" level="11" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_THUNDER_CLAP" level="13" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_JUMP_GOOD" level="15" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_WORLD_BREAKER" level="18" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_ANGRY_BONDAGE" level="20" />
+    </rules>
+  </element>
+  <element name="Dark Side" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_DARK_SIDE">
+    <description>
+      <p>Starting when you choose this path, you gain the following features while your manifestation is activated.</p>
+      <li> Your skin and eyes start to turn green and your muscles start to swell.</li>
+      <li> You have proficiency in the intimidation skill.</li>
+      <li> You gain resistance to bludgeoning, piercing, and slashing damage.</li>
+    </description>
+    <sheet>
+      <description>
+        While you are in your manifestation, you are resistant to bludgeoning, piercing, and slashing damage.
+      </description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+    </rules>
+  </element>
+  <element name="Fists of Rage" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_FISTS_OF_RAGE">
+    <description>
+      <p>Beginning at 7th level, the rage begins to take hold, and your arms grow bigger and stronger from that rage.</p>
+      <p class="indent"> Your unarmed attacks now deal 1d6 bludgeoning damage while in manifestation. This change to 1d8 at level 11, 1d10 at level 14, and 1d12 at level 18.</p>
+    </description>
+    <sheet>
+      <description>Your unarmed attacks now deal 1d{{hyde:strike}} bludgeoning damage while in manifestation.</description>
+    </sheet>
+    <rules>
+      <stat name="hyde:strike" value="6" bonus="base" />
+      <stat name="hyde:strike" value="8" level="11" bonus="base" />
+      <stat name="hyde:strike" value="10" level="14" bonus="base" />
+      <stat name="hyde:strike" value="12" level="18" bonus="base" />
+    </rules>
+  </element>
+  <element name="Toxic Blood" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_TOXIC_BLOOD">
+    <description>
+      <p>Beginning at 9th level, when you use your rain of blood feature, it does acid damage.</p>
+    </description>
+    <sheet>
+      <description>Your rain of Blood feature deals acid damage.</description>
+    </sheet>
+  </element>
+  <element name="Healing Factor" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_HEALING_FACTOR">
+    <description>
+      <p>Starting at 11th level, your veins start to grow, where they are pratically bulging out of your body. </p>
+     <p class="indent"> While you're in Manifesation, every time you gain a stress point, you also gain a temporary hitpoint. These hitpoints last until the Manifestation ends. </p>
+    </description>
+    <sheet>
+      <description> While in Manifesation, every time you gain a stress point, you also gain a temporary hitpoint. These hitpoints last until the Manifestation ends.</description>
+    </sheet>
+  </element>
+  <element name="Thunder Clap" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_THUNDER_CLAP">
+    <description>
+      <p>Starting at 13th level, Your manifestation's, chest, abs, and back muscles grow incerdibly strong, and your clothing starts to tear.</p>
+      <p class="indent"> You can use an action and 5 stress points to clap your hands and make a sonic surge in a 30 ft. cone. Anyone in that cone must make a Dexterity Saving Throw, or take 3d6 + 4 thunder damge and be deafened for their next 3 turns. </p>
+    </description>
+    <sheet action="Action" usage="5 Stress">
+      <description> You can make a shockwave in a 30ft cone. Creatures must pass a Dexterity saving throw or take 3d6 + 4 thunder damage and be deafened for their next 3 turns.</description>
+    </sheet>
+  </element>
+  <element name="Jump Good" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_JUMP_GOOD">
+    <description>
+      <p>Starting at level 15, your manifestation's leg muscles swell to be stronger, and your whole whole body grows larger.</p>
+      <p class="indent">your strength stat increases by one, and while your in manifestation your jump height and length now adds your strength score instead of your modifier.</p>
+      <p class="indent"> Adittionally if you take the jump action you can use your bonus action and 7 stress points to slam into the ground. Any creature in a 10 ft. radius of your landing point must make a Dexterity Saving throw, or take 4d10 force damage.</p>
+    </description>
+    <sheet action="Bonus Action" usage="7 Stress">
+      <description>
+        Your jump modifier now equals your strength score. 
+        If you take the jump action you can force all creatures within 10 ft of your landing spot to make a Dexerity Saving throw. If they fail they take 4d10 force damage.
+      </description>
+    </sheet>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="World Breaker" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_WORLD_BREAKER">
+    <description>
+      <p>At level 18,you now have a +2 to all melee attacks and you can use an action to instantly transform into your manifestation. </p>
+    </description>
+    <sheet>
+      <description>
+        You can use an action to turn into your manifestation, and you can add +2 to all melee attacks.
+      </description>
+    </sheet>
+  </element>
+  <element name="Angry Bondage" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_ANGRY_BONDAGE">
+    <description>
+      <p>At level 20, Creatures restrained by Inhuman Bondage must pass a Wisdom saving throw or be confused until the feature ends. </p>
+      <p class="indent">Any ally in range  of your inhuman bondage have a +4 to melee attacks until they leave the range or the bondage ends.</p>
+    </description>
+    <sheet>
+      <description>
+        Creatures restrained by Inhuman Bondage must pass a Wisdom saving throw or be confused until the feature ends.
+        Any ally in range of your inhuman bondage have a +4 to melee attacks until they leave the range or the bondage ends.
+      </description>
+    </sheet>
+  </element>
+  <!-- Divine Puppet -->
+  <element name="Divine Puppet" type="Archetype" source="The Abomination Class" id="ID_USER_ARCHETYPE_DIVINE_PUPPET">
+    <supports>Manifestation</supports>
+    <description>
+      <p> While the forces of hell are better known for taking control of humans, the gods will occasionally do so as well. Be it through an arcane ritual or some bored god's fancy, a human can be possessed by the gods and they will control the bodyof the human when they see fit. While some people will respect or even worship these puppets, the fickle nature of the gods can make them a great danger to the people near a puppet. </p>
+      <div element="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_DIVINE_POWERS" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_STRINGS_OF_FATE" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_HOLY_BLOOD" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_DIVINE_SURGE" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_CHAINS_FROM_ABOVE" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_BEHOLD" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_DIVINE_REFUGE" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_GODLY_BONDAGE" />
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_DIVINE_POWERS" level="3" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_STRINGS_OF_FATE" level="7" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_HOLY_BLOOD" level="9" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_DIVINE_SURGE" level="11" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_CHAINS_FROM_ABOVE" level="13" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_BEHOLD" level="15" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_DIVINE_REFUGE" level="18" />
+      <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_GODLY_BONDAGE" level="20" />
+    </rules>
+  </element>
+  <element name="Divine Powers" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_DIVINE_POWERS">
+    <description>
+      <p>When you reach 3rd level, your skin turns to a ghostly pale and your eyes turn into a bright glowing light. As the God takes control of your body, it grants you the ability to cast spells.</p>
+      <p class="indent">
+        <strong>
+          <em>Cantrips.</em>
+        </strong> You learn two cantrips of your choice from the cleric spell list. You learn an additional cleric cantrip of your choice at 10th level.
+      </p>
+      <p class="indent">
+        <strong>
+          <em>Spell Slots.</em>
+        </strong> The Divine Puppet Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.
+      </p>
+      <p class="indent">
+        <strong>
+          <em>Spells Known of 1st-Level and Higher.</em>
+        </strong> You know three 1st-level cleric spells of your choice.
+      </p>
+      <p class="indent">The Spells Known column of the Divine Puppet Spellcasting table shows when you learn more cleric spells of 1st level or higher. Each of these spells must be of a level for which you have spell slots.</p>
+      <p class="indent">Whenever you gain a level in this class, you can replace one of the cleric spells you know with another spell of your choice from the cleric spell list. The new spell must be of a level for which you have spell slots.</p>
+      <p class="indent">
+        <strong>
+          <em>Spellcasting Ability.</em>
+        </strong> Constitution is your spellcasting ability for your Cleric spells, since you have to contain the divine power inside you. You use your Constitution whenever a spell refers to your spellcasting ability. In addition, you use your Constitution modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.
+      </p>
+      <center>
+        <p>
+          <strong>Spell save DC</strong> = 8 + your proficiency bonus + your Constitution modifier
+        </p>
+        <p>
+          <strong>Spell attack modifier</strong> = your proficiency bonus + your Constitution modifier
+        </p>
+      </center>
+      <h5 class="caption">DIVINE PUPPET SPELLCASTING</h5>
+      <table class="class-features">
+        <thead>
+          <tr>
+            <td class="col-10">Abomination Level</td>
+            <td class="col-10">Cantrips Known</td>
+            <td class="col-10">Spells Known</td>
+            <td>1st</td>
+            <td>2nd</td>
+            <td>3rd</td>
+            <td>4th</td>
+          </tr>
+        </thead>
+        <tr>
+          <td> 3rd</td>
+          <td>2</td>
+          <td> 3</td>
+          <td>2</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td> 4th</td>
+          <td>2</td>
+          <td> 4</td>
+          <td>3</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td> 5th</td>
+          <td>2</td>
+          <td> 4</td>
+          <td>3</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td> 6th</td>
+          <td>2</td>
+          <td> 4</td>
+          <td>3</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td> 7th</td>
+          <td>2</td>
+          <td> 5</td>
+          <td>4</td>
+          <td>2</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td> 8th</td>
+          <td>2</td>
+          <td> 6</td>
+          <td>4</td>
+          <td>2</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td> 9th</td>
+          <td>2</td>
+          <td> 6</td>
+          <td>4</td>
+          <td>2</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>10th</td>
+          <td>3</td>
+          <td> 7</td>
+          <td>4</td>
+          <td>3</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>11th</td>
+          <td>3</td>
+          <td> 8</td>
+          <td>4</td>
+          <td>3</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>12th</td>
+          <td>3</td>
+          <td> 8</td>
+          <td>4</td>
+          <td>3</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>13th</td>
+          <td>3</td>
+          <td> 9</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>14th</td>
+          <td>3</td>
+          <td>10</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>15th</td>
+          <td>3</td>
+          <td>10</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>16th</td>
+          <td>3</td>
+          <td>11</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>17th</td>
+          <td>3</td>
+          <td>11</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>18th</td>
+          <td>3</td>
+          <td>11</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>19th</td>
+          <td>3</td>
+          <td>12</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>20th</td>
+          <td>3</td>
+          <td>13</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>You can force the divine power within you to cast spells.</description>
+    </sheet>
+    <spellcasting name="Divine Puppet" ability="Constitution" prepare="false" allowReplace="true">
+      <list>Cleric</list>
+    </spellcasting>
+    <rules>
+      <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+      <stat name="Divine Puppet:spellcasting:slots:1" value="2" level="3" />
+      <stat name="Divine Puppet:spellcasting:slots:1" value="1" level="4" />
+      <stat name="Divine Puppet:spellcasting:slots:1" value="1" level="7" />
+      <stat name="Divine Puppet:spellcasting:slots:2" value="2" level="7" />
+      <stat name="Divine Puppet:spellcasting:slots:2" value="1" level="10" />
+      <stat name="Divine Puppet:spellcasting:slots:3" value="2" level="13" />
+      <stat name="Divine Puppet:spellcasting:slots:3" value="1" level="16" />
+      <stat name="Divine Puppet:spellcasting:slots:4" value="1" level="19" />
+      <select type="Spell" name="Cantrip (Divine Puppet)" supports="Cleric, 0" level="3" number="2" spellcasting="Divine Puppet" />
+      <select type="Spell" name="Cantrip (Divine Puppet)" supports="Cleric, 0" level="10" number="1" spellcasting="Divine Puppet" />
+      <select type="Spell" name="Spellcasting (Divine Puppet)" supports="($(spellcasting:list)||Cleric), 1" level="3" number="1" spellcasting="Divine Puppet" allowReplace="false" />
+      <select type="Spell" name="Spellcasting (Divine Puppet)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Divine Puppet" />
+      <select type="Spell" name="Spellcasting (Divine Puppet)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Divine Puppet"/>
+      <select type="Spell" name="Spellcasting (Divine Puppet)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Divine Puppet"/>
+      <select type="Spell" name="Spellcasting (Divine Puppet)" supports="(Cleric||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Divine Puppet"/>
+      <select type="Spell" name="Spellcasting (Divine Puppet)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Divine Puppet"/>
+      <select type="Spell" name="Spellcasting (Divine Puppet)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Divine Puppet"/>
+      <select type="Spell" name="Spellcasting (Divine Puppet)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Divine Puppet"/>
+      <select type="Spell" name="Spellcasting (Divine Puppet)" supports="(Cleric||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Divine Puppet"/>
+      <select type="Spell" name="Spellcasting (Divine Puppet)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Divine Puppet"/>
+      <select type="Spell" name="Spellcasting (Divine Puppet)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Divine Puppet"/>
+      <select type="Spell" name="Spellcasting (Divine Puppet)" supports="(Cleric||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Divine Puppet"/>
+    </rules>
+  </element>
+  <element name="Strings of Fate" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_STRINGS_OF_FATE">
+    <description>
+      <p>Beginning at 7th level, your manifestation has glowing strings around its wrists.</p>
+      <p class="indent"> These strings count as two weapons, and they each deal 1d8 + your Dexterity Modifier radiant damage on a hit, and the two weapons can be used together in the same way as dual weilding two weapons.</p>
+    </description>
+    <sheet>
+      <description>While in manifestation, you have two strings that deal 1d8 .</description>
+    </sheet>
+  </element>
+  <element name="Holy Blood" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_HOLY_BLOOD">
+    <description>
+      <p>Beginning at 9th level, when you use your rain of blood feature, it does radiant damage.</p>
+    </description>
+    <sheet>
+      <description>Your rain of Blood feature deals radiant damage.</description>
+    </sheet>
+  </element>
+  <element name="Divine Surge" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_DIVINE_SURGE">
+    <description>
+      <p>Starting at 11th level, your manifestation's hands have a glowing aura, and small wings of light sprout from your back. </p>
+      <p class="indent"> On your next turn after your manifestation is evoked, you can use a bonus action to cast any spell you know that turn, regardless of the casting time for that spell.</p>
+    </description>
+    <sheet>
+      <description>On your next turn after your manifestation is evoked, you can cast one spell you know as a bonus action, regardless of the casting time.</description>
+    </sheet>
+  </element>
+  <element name="Chains From Above" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_CHAINS_FROM_ABOVE">
+    <description>
+      <p>Starting at 13th level, The strings on your wrists turn into glowing chains, and glowing chains appear on your feet and neck.</p>
+      <p class="indent">Your wrist chains now have the reach property.</p>
+      <p class="indent">As an action while in manifestation, you can extend your chains up to 30 ft. to touch a creature that you can see. You can use this action to cast a spell with the range of touch to the creature you touch.</p>
+    </description>
+    <sheet>
+      <description>
+        Your chains now have the reach property.
+        As an action while in manifestation, you can extend your chains up to 30 ft. to touch a creature that you can see and cast a spell with the range of touch.
+      </description>
+    </sheet>
+  </element>
+  <element name="Behold the Face of God" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_BEHOLD">
+    <description>
+      <p>Starting at level 15, your manifestation's skin turns completely white and everyting you say is in an ancient, incomprihensible language.</p>
+      <p class="indent">Your manifestation now has a 10 ft. aura around it. You deal 10 radiant damge to any creature in that aura at the start of your turn.</p>
+      <p class="indent">While you are not in manifestation, you can call upon your god to shed bright light in 10 ft. around you, and dim light for another 10 ft. </p>
+    </description>
+    <sheet>
+      <description>
+        While in manifestation, you deal 10 radiant damage to any creature within 10 ft. of you.
+        While not in manifestation, you can choose to shed bright light for 10 ft. around you, and dim light for 20 ft.
+      </description>
+    </sheet>
+  </element>
+  <element name="Divine Refuge" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_DIVINE_REFUGE">
+    <description>
+      <p>At level 18, you can feel the power of the god coursing through all of your being. </p>
+      <p class="indent">When you enter manifestation, you can choose spend 10 stress points to regain one level 1 and one level 2 spell slot. This feature can only be used once per short rest, and does not allow you to succeed the max number of spell slots. </p>
+    </description>
+    <sheet>
+      <description usage="Short Rest, 10 stress">
+        When you enter manifestation, you can choose regain one level 1 and one level 2 spell slot.
+      </description>
+    </sheet>
+  </element>
+  <element name="Godly Bondage" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_GODLY_BONDAGE">
+    <description>
+      <p>At level 20, the god completely takes hold. Your manifestation hovers 3 inches from the ground, and glowing skeleton wings appear behind it.</p>
+      <p class="indent"> Creatures restrained by Inhuman Bondage must pass a Wisdom saving throw or be be frightened for 1 minute.</p>
+      <p class="indent">Also, any allies in your Inhuman Bondage at the start of their turn is also healed for 10 hp.</p>
+    </description>
+    <sheet>
+      <description>
+        Creatures restrained by Inhuman Bondage must pass a Wisdom saving throw or be frightened for 1 minute.
+        Any allies in your Inhuman Bondage at the start of their turn is also healed for 10 hp.
+      </description>
+    </sheet>
+  </element>
+</elements>

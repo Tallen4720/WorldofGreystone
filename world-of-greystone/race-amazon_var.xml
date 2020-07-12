@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<elements>
+
+
+<element name="Amazon, Variant" id="ID_WIKI_RACE_AMAZON_VAR" source="D&amp;D Wiki" type="Race">
+
+
+<description>
+
+<h4>PHYSICAL DESCRIPTION</h4>
+
+<p>The Amazons are, each and every one of them, female and human. Taller and more muscular than the women of more 'civilized' regions of the world, kept in the peak of form by a superior diet and the lack of the diseases so prominent in larger cities. Every day in their forested homes is filled with an effort to survive everything the world can throw at them. Storms, predators, marauding bandits and armies, even the upkeep of their simple but strong wood-and-thatch homes requires them to be physically capable to a greater degree than anyone might expect. They are also, quite frequently, more attractive than all but the most high-born of the city-dwellers, having bred true with the most physically capable (and, therefore, classically attractive) of the men that they 'encounter'...usually by sneaking into cities and kidnapping them or waylaying them on the roadside. While it is rare, women that impress them in any one of many ways may find themselves 'recruited' as well, though said women might not always find this particularly objectionable.</p>
+
+<h4>HISTORY</h4>
+
+<p>No one knows for sure where the Amazons first came from, but what is known is that they fiercely defend their territories with ambushes and terror tactics. Entire armies have disappeared into the forests under their control and never been seen again. Over the years their borders have expanded very little, but their influence has grown as the nation/city-states strive to secure protection, or even just a lack of attack, for trade caravans passing through and near the territory. Young girls, trying to escape arranged marriages or simply in a fit of pique, have long since taken to running away in an effort to achieve 'freedom'. Often enough they reappear outside of the nearest town, village, or city looking non the worse for wear, but others are accepted amongst The Daughters of The Forest and become Sisters.</p>
+
+<h4>SOCIETY</h4>
+
+<p>As a warrior race, Amazons are ruled by the best fighters, and the rulers can change in mere minutes as a result. Any Daughter of the Forest can challenge the ruling Queen for the throne, and when a Queen passes away her successor is decided by ritual (non-lethal) combat. They are a solitary people whenever possible, and they put a great deal of effort into MAKING it possible, which leads to the world at large knowing little about them. They are proud and have their own code of honor, one which depends heavily on context and the cause for the conflict.</p>
+
+<h4>AMAZON NAMES</h4>
+
+<p>They follow conventional female naming methods, though of course Grecian names would be the most accurate and appropriate.</p>
+
+
+<p>
+
+<b>Female: </b>
+Nefeli, Calliope, Zoe, Alexandra, Thalia, Selene, Ainia, Diana, Cassandra, Andromeda. XGTE has a list of 50 Greecian female names on page 186 if you require more, and of course there is always google.
+</p>
+
+<h4>AMAZON TRAITS</h4>
+
+<p>A race of beautiful warrior women.</p>
+
+
+<p>
+
+<span class="feature">Ability Score Increase.</span>
+You are stronger, faster, tougher, and more beautiful then city-dwelling humans, but also have less of a formal education. Your Strength, Dexterity, Constitution, and Charisma scores each increase by 1, while your Intelligence decreases by 2.
+<br/>
+
+<span class="feature">Age.</span>
+Amazons reach adulthood in their mid-teens, and usually, live to be just over 200 years old. Their body's showing no sign of age until their final years.
+<br/>
+
+<span class="feature">Alignment.</span>
+Amazons despise the regimented and restricting lifestyle of the city-dwellers, believing it to destroy their freedoms and as a result weaken them and make them docile. As such, they tend towards Chaotic and Neutral alignments, though some degree of Lawful nature would be permissible amongst their version of the nobility or other forms of leaders (officers, sages, etc). Though their laws are loose and few, laws do still exist and are enforced rigorously.
+<br/>
+
+<span class="feature">Size.</span>
+Amazons typically stand roughly between 6 and 8 feet tall and weigh between 200 and 340 pounds. Your size is Medium.
+<br/>
+
+<span class="feature">Speed.</span>
+Your base walking speed is 35 feet.
+<br/>
+
+<span class="feature">Amazonian Arsenal.</span>
+You have proficiency with javelins, whips, spears, glaives, shortbows, longbows, daggers, longswords, shortswords, nets, slings, quarterstaves and shields. You cannot gain proficiency in other weapons, even if your class gives you the ability to do so. Warhammers, maces, flails, and the like do not exist in the forest!
+<br/>
+
+<span class="feature">An Uncivilized Life.</span>
+Amazons are not soft skinned like the city-dwellers, pampered and protected from the world by stone and mortar, and as such you can endure things that they cannot imagine. Your hit point maximum increases by 1, and it increases by 1 every time you gain a level. This trait DOES NOT STACK with the Tough Feat!
+<br/>
+
+<span class="feature">Savage Beauty.</span>
+All Daughters of the Forest have a beauty that is quite literally the stuff of legend, and tradition has passed down how to use it when necessary for the safety or advancement of The Sisterhood. Whenever you make an Charisma (Persuasion) or an Charisma (Intimidation) check against a humanoid creature, you are considered proficient in the Persuasion or Intimidation skill and if you are already proficient you may add double your proficiency bonus to the check, instead of your normal proficiency bonus.
+<br/>
+
+<span class="feature">Daughters of the Forest.</span>
+You gain Advantage in Dexterity (Stealth), Wisdom (Survival), Intelligence (Investigation), and Wisdom (Perception) checks while in forests and grasslands, but must roll at Disadvantage for the same when in cities and towns, regardless of other factors. This represents your total lack of knowledge about surviving outside of the wilderness.
+<br/>
+
+<span class="feature">Superior Nightvision.</span>
+Amazons spend their entire lives in the forests, with only campfires and the rare torch for light in the darkness. As such, their nightvision is far and above that of a normal human, but barely half as good as those of elven or dwarven descent. As such, while they have Darkvision, it is half as effective.You can see in None-Magical Darkness as if it were dim light for 60 feet.
+<br/>
+
+<span class="feature">Languages.</span>
+You can speak, read, and write Common.
+<br/>
+
+</p>
+
+</description>
+
+
+<setters>
+
+<set name="names" type="female">Nefeli, Calliope, Zoe, Alexandra, Thalia, Selene, Ainia, Diana, Cassandra, Andromeda.</set>
+
+<set name="names-format">{{name}}</set>
+
+<set name="height" modifier="2d12">6'0"</set>
+
+<set name="weight" modifier="1d6">200</set>
+
+</setters>
+
+
+<sheet display="false">
+
+<description>A race of beautiful warrior women.</description>
+
+</sheet>
+
+
+<rules>
+
+<stat name="strength" value="1"/>
+
+<stat name="dexterity" value="1"/>
+
+<stat name="constitution" value="1"/>
+
+<stat name="charisma" value="1"/>
+
+<stat name="intelligence" value="-2"/>
+
+<select name="Amazon" type="Ability Score Improvement" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_INTELLIGENCE"/>
+
+<grant id="ID_SIZE_MEDIUM" type="Size"/>
+
+<stat name="innate speed" value="35" bonus="base"/>
+
+<grant id="ID_WIKI_RACIAL_TRAIT_AMAZONIAN_ARSENAL" type="Racial Trait"/>
+
+<grant id="ID_WIKI_RACIAL_TRAIT_AN_UNCIVILIZED_LIFE" type="Racial Trait"/>
+
+<grant id="ID_WIKI_RACIAL_TRAIT_SAVAGE_BEAUTY" type="Racial Trait"/>
+
+<grant id="ID_WIKI_RACIAL_TRAIT_DAUGHTERS_OF_THE_FOREST" type="Racial Trait"/>
+
+<grant id="ID_WIKI_RACIAL_TRAIT_SUPERIOR_NIGHTVISION" type="Racial Trait"/>
+
+<grant id="ID_LANGUAGE_COMMON" type="Language"/>
+
+
+</rules>
+
+</element>
+
+
+<element name="Amazonian Arsenal" id="ID_WIKI_RACIAL_TRAIT_AMAZONIAN_ARSENAL" source="D&amp;D Wiki" type="Racial Trait">
+
+
+<description>
+
+<p>You have proficiency with javelins, whips, spears, glaives, shortbows, longbows, daggers, longswords, shortswords, nets, slings, quarterstaves and shields. You cannot gain proficiency in other weapons, even if your class gives you the ability to do so. Warhammers, maces, flails, and the like do not exist in the forest!</p>
+
+</description>
+
+
+<sheet>
+
+<description>You have proficiency with javelins, whips, spears, glaives, shortbows, longbows, daggers, longswords, shortswords, nets, slings, quarterstaves and shields.</description>
+
+</sheet>
+
+</element>
+
+
+<element name="An Uncivilized Life" id="ID_WIKI_RACIAL_TRAIT_AN_UNCIVILIZED_LIFE" source="D&amp;D Wiki" type="Racial Trait">
+
+
+<description>
+
+<p>Amazons are not soft skinned like the city-dwellers, pampered and protected from the world by stone and mortar, and as such you can endure things that they cannot imagine. Your hit point maximum increases by 1, and it increases by 1 every time you gain a level. This trait DOES NOT STACK with the Tough Feat!</p>
+
+</description>
+
+
+<sheet>
+
+<description>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level. This trait DOES NOT STACK with the Tough Feat!</description>
+
+</sheet>
+
+</element>
+
+
+<element name="Savage Beauty" id="ID_WIKI_RACIAL_TRAIT_SAVAGE_BEAUTY" source="D&amp;D Wiki" type="Racial Trait">
+
+
+<description>
+
+<p>All Daughters of the Forest have a beauty that is quite literally the stuff of legend, and tradition has passed down how to use it when necessary for the safety or advancement of The Sisterhood. Whenever you make a Charisma (Persuasion) or a Charisma (Intimidation) check against a humanoid creature, you are considered proficient in the Persuasion or Intimidation skill and if you are already proficient you may add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+
+</description>
+
+
+<sheet>
+
+<description>Whenever you make a Charisma (Persuasion) or a Charisma (Intimidation) check against a humanoid creature, you are considered proficient in the Persuasion or Intimidation skill and if you are already proficient you may add double your proficiency bonus to the check, instead of your normal proficiency bonus.</description>
+
+</sheet>
+
+</element>
+
+
+<element name="Daughters of the Forest" id="ID_WIKI_RACIAL_TRAIT_DAUGHTERS_OF_THE_FOREST" source="D&amp;D Wiki" type="Racial Trait">
+
+
+<description>
+
+<p>You gain Advantage in Dexterity (Stealth), Wisdom (Survival), Intelligence (Investigation), and Wisdom (Perception) checks while in forests and grasslands, but must roll at Disadvantage for the same when in cities and towns, regardless of other factors. This represents your total lack of knowledge about surviving outside of the wilderness.</p>
+
+</description>
+
+
+<sheet>
+
+<description>You gain Advantage in Dexterity (Stealth), Wisdom (Survival), Intelligence (Investigation), and Wisdom (Perception) checks while in forests and grasslands, but must roll at Disadvantage for the same when in cities and towns, regardless of other factors.</description>
+
+</sheet>
+
+</element>
+
+
+<element name="Superior Nightvision" id="ID_WIKI_RACIAL_TRAIT_SUPERIOR_NIGHTVISION" source="D&amp;D Wiki" type="Racial Trait">
+
+
+<description>
+
+<p>Amazons spend their entire lives in the forests, with only campfires and the rare torch for light in the darkness. As such, their nightvision is far and above that of a normal human, but barely half as good as those of elven or dwarven descent. As such, while they have Darkvision, it is half as effective. You can see in Non-Magical Darkness as if it were dim light for 60 feet.</p>
+
+</description>
+
+
+<sheet>
+
+<description>You can see in Non-Magical Darkness as if it were dim light for 60 feet.</description>
+
+</sheet>
+
+</element>
+
+</elements>

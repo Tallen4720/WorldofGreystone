@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Your Content</name>
+		<update version="1.0.0">
+			<file name="world-of-greystone.index" url="https://raw.githubusercontent.com/Tallen4720/test/master/world-of-greystone.index" />
+		</update>
+	</info>
+	<files>
+		<file name="class-priest.xml" url="https://raw.githubusercontent.com/Tallen4720/test/master/world-of-greystone/class-priest.xml" />
+		<file name="class-witch.xml" url="https://raw.githubusercontent.com/Tallen4720/test/master/world-of-greystone/class-witch.xml" />
+	</files>
+</index>
