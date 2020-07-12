@@ -1,7 +1,7 @@
 # repositoryname
 additional content to extend [Aurora](https://aurorabuilder.com/), by yourname
 
-index url: https://raw.githubusercontent.com/Tallen4720/test/master/world-of-greystone.index
+index url: https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone.index
 
 ---
 

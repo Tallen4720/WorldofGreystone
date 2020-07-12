@@ -3,11 +3,32 @@
 	<info>
 		<name>Your Content</name>
 		<update version="1.0.0">
-			<file name="world-of-greystone.index" url="https://raw.githubusercontent.com/Tallen4720/test/master/world-of-greystone.index" />
+			<file name="world-of-greystone.index" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone.index" />
 		</update>
 	</info>
 	<files>
-		<file name="class-priest.xml" url="https://raw.githubusercontent.com/Tallen4720/test/master/world-of-greystone/class-priest.xml" />
-		<file name="class-witch.xml" url="https://raw.githubusercontent.com/Tallen4720/test/master/world-of-greystone/class-witch.xml" />
+		<file name="class-priest.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/class-priest.xml" />
+		<file name="class-witch.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/class-witch.xml" />
+		<file name="Abomination_Class.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Abomination_Class.xml" />
+		<file name="barbarian-Silent-rage.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/barbarian-Silent-rage.xml" />
+		<file name="Bone-tiefling.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Bone-tiefling.xml" />
+		<file name="class-engineer2.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/class-engineer2.xml" />
+		<file name="class-witch-einar.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/class-witch-einar.xml" />
+		<file name="dhampir.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/dhampir.xml" />
+		<file name="Dragoon.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Dragoon.xml" />
+		<file name="Dragoon-weapons.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Dragoon-weapons.xml" />
+		<file name="fighter-Guardian.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/fighter-Guardian.xml" />
+		<file name="genasi-extras.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/genasi-extras.xml" />
+		<file name="Greystonecompanions.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Greystonecompanions.xml" />
+		<file name="historical-deities.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/historical-deities.xml" />
+		<file name="homebrew-items.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/homebrew-items.xml" />
+		<file name="item-engineer2-gadgets.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/item-engineer2-gadgets.xml" />
+		<file name="mystic.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/mystic.xml" />
+		<file name="race-amazon-var.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/race-amazon-var.xml" />
+		<file name="race-felis.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/race-felis.xml" />
+		<file name="race-tiefling-variant.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/race-tiefling-variant.xml" />
+		<file name="sorcerer-dunamancy.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/sorcerer-dunamancy.xml" />
+		<file name="spells-dartagnans-spells.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/spells-dartagnans-spells.xml" />
+		<file name="Sprinters-elf.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Sprinters-elf.xml" />
 	</files>
 </index>
