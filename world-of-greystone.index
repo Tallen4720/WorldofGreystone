@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.2" encoding="utf-8" ?>
 <index>
 	<info>
 		<name>Your Content</name>
-		<update version="1.0.0">
+		<update version="1.2.0">
 			<file name="world-of-greystone.index" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone.index" />
 		</update>
 	</info>
@@ -24,7 +24,7 @@
 		<file name="homebrew-items.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/homebrew-items.xml" />
 		<file name="mystic.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/mystic.xml" />
 		<file name="race-amazon-var.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/race-amazon-var.xml" />
-		<file name="race-felis.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/race-felis.xml" />
+		<file name="race-Felis.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/race-Felis.xml" />
 		<file name="race-tiefling-variant.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/race-tiefling-variant.xml" />
 		<file name="sorcerer-dunamancy.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/sorcerer-dunamancy.xml" />
 		<file name="spells-dartagnans-spells.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/spells-dartagnans-spells.xml" />
