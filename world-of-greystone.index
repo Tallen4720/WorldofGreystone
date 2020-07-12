@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Your Content</name>
-		<update version="1.2.0">
+		<update version="1.0.1">
 			<file name="world-of-greystone.index" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone.index" />
 		</update>
 	</info>
