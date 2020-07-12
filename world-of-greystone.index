@@ -22,7 +22,6 @@
 		<file name="Greystonecompanions.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Greystonecompanions.xml" />
 		<file name="historical-deities.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/historical-deities.xml" />
 		<file name="homebrew-items.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/homebrew-items.xml" />
-		<file name="items-engineer2-gadgets.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/items-engineer2-gadgets.xml" />
 		<file name="mystic.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/mystic.xml" />
 		<file name="race-amazon-var.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/race-amazon-var.xml" />
 		<file name="race-felis.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/race-felis.xml" />
@@ -30,5 +29,6 @@
 		<file name="sorcerer-dunamancy.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/sorcerer-dunamancy.xml" />
 		<file name="spells-dartagnans-spells.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/spells-dartagnans-spells.xml" />
 		<file name="Sprinters-elf.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Sprinters-elf.xml" />
+		<file name="items-engineer2-gadgets.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/items-engineer2-gadgets.xml" />
 	</files>
 </index>
