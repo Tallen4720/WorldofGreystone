@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <elements>
   <info>
-    <update version="0.0.1">
+    <update version="0.2.5">
         <file name="Abomination_Class.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Abomination_Class.xml" />
     </update>
   </info>
@@ -87,7 +87,7 @@
         <tr>
           <td>2nd</td>
           <td>2</td>
-          <td class="left">Stress,Eldritch Blood (WILDSHAPE RULES)</td>
+          <td class="left">Stress,Eldritch Blood</td>
         </tr>
         <tr>
           <td>3rd</td>
@@ -278,7 +278,7 @@
         </p>
       </center>
       <h6>Savage Stike</h6>
-      <p>If a melee or thown weapon attack hits, you can use 2 stress points to deal 1d6 additional damage of the weapons damage type. At level 8, you can spend a 3rd stress point add 1d6 damage. At level 14, you can add a fourth stress point to add another 1d6 damage.</p>
+      <p>If a melee or thown weapon attack hits, you can use up to 2 stress points to deal 1d6 additional damage of the weapons damage type per stress point spent. At level 8, you can spend a 3rd stress point add 1d6 damage. At level 14, you can add a fourth stress point to add another 1d6 damage.</p>
       <h6>Eldritch Blood</h6>
       <p>As a bonus action you can use 1 stress point to gain advantage to your next attack this round. The number of times you can use this is equal to half your abomination level rounded down, until your next long rest.</p>
     </description>
@@ -343,17 +343,17 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Class Feature" name="Improvement Option (Abomination 4)" supports="Improvement Option,Barbarian,4" level="4" />
-			<select type="Class Feature" name="Improvement Option (Abomination 8)" supports="Improvement Option,Barbarian,8" level="8" />
-			<select type="Class Feature" name="Improvement Option (Abomination 12)" supports="Improvement Option,Barbarian,12" level="12" />
-			<select type="Class Feature" name="Improvement Option Abomination 16)" supports="Improvement Option,Barbarian,16" level="16" />
-			<select type="Class Feature" name="Improvement Option (Abomination 19)" supports="Improvement Option,Barbarian,19" level="19" />
+			<select type="Class Feature" name="Improvement Option (Abomination 4)" supports="Improvement Option,Abomination,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Abomination 8)" supports="Improvement Option,Abomination,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Abomination 12)" supports="Improvement Option,Abomination,12" level="12" />
+			<select type="Class Feature" name="Improvement Option Abomination 16)" supports="Improvement Option,Abomination,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Abomination 19)" supports="Improvement Option,Abomination,19" level="19" />
 		</rules>
 	</element>
    <element name="Wrathful Gaze" type="Class Feature" source="The Abomination Class" id="ID_USER_CLASS_FEATURE_ABOMINATION_WRATHFUL_GAZE">
     <description>
       <p>At 4th level, you always have the eyes of your manifestation.</p>
-      <p class="indent"> As an action and 3 stress points, you can force a target looking at you to make a wisdom saving throw.  On a failed save, the target is stunned for 1 minute. The target may make a Wisdom saving throw at the beginning of its turn each round to end this effect. You must finish a short or long rest before using this feature again.</p>
+      <p class="indent"> As an action and 3 stress points, you can force a target looking at you to make a wisdom saving throw. On a failed save, the target is stunned for 1 minute. The target may make a Wisdom saving throw at the beginning of its turn each round to end this effect. You must finish a short or long rest before using this feature again.</p>
     </description>
     <sheet>
       <description usage="Long Rest, 3 Stress">As an action, you can force an enemy to make a wisdom save. On a fail they are stunned for 1 minute. They can repeat the saving throw every turn.</description>
@@ -463,7 +463,7 @@
       <p>Starting when you choose this path, you gain the following features while your manifestation is activated.</p>
         <li> You start to grow fur on your arms and legs, and your teeth start to sharpen.</li>
         <li>You gain an additional 10 ft. movement speed when moving towards enemies below half their hit point maximum.</li>
-        <li> You grow claws that are treated as finesse and you are proficient with them. Your claws deal 1d6 slashing damage and when you are in your manifestation they deal 1d8 slashing damage. Your claw damage increases at level 9 to 2d6/2d8, and at level 17 to 3d6/3d8.</li>
+        <li> You grow claws that are treated as finesse weapons you are proficient with. Your claws deal 1d6 slashing damage and when you are in your manifestation they deal 1d8 slashing damage. Your claw damage increases at level 9 to 2d6/2d8, and at level 17 to 3d6/3d8.</li>
     </description>
     <sheet>
       <description>
@@ -516,8 +516,8 @@
   </element>
 <element name="Fear" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_FEAR">
     <description>
-      <p>Starting at 13th level, your manifestations muscles start to swell, and thck fur covers your whole body. </p>
-      <p class="indent"> You can gain an amount of stress points equal to your level as a bonus action. So much stress at one time is harmful on your body, so you take 2d8 damage. You must finish a long rest before using this feature again.</p>
+      <p>Starting at 13th level, your manifestations muscles start to swell, and thick fur covers your whole body. </p>
+      <p class="indent"> You can gain an amount of stress points equal to your level as a bonus action. So much stress at one time is harmful on your body, so you take 2d8 poison damage. You must finish a long rest before using this feature again.</p>
     </description>
   <sheet acton="Bonus Action" usage="Long Rest">
       <description> You can take 2d8 damage to raise your stress points to your current maximum.</description>
@@ -525,9 +525,9 @@
   </element>
 <element name="Go for the Throat" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_LYCANTHROPE_GO_FOR_THE_THROAT">
     <description>
-      <p>Starting at level 15, your manifestation's nose and mouth turn into a snout, and your teeth turn into long sharp fangs.</p>
-      <p class="Indent"> If you score a critical hit against a creature with less than half their hit point you can shapeshift into your manifestation without max stress as a bonus action. You must finsish a long rest before you can use this feature again. </p>
-      <p class="indent"> Additionally, your manifestation gains a bite attack that does 4d10 damage</p>
+      <p>Starting at 15th level, your manifestation's nose and mouth turn into a snout, and your teeth turn into long sharp fangs.</p>
+      <p class="Indent"> If you score a critical hit against a creature with less than half their hit points, you can shapeshift into your manifestation without max stress as a bonus action. You must finsish a long rest before you can use this feature again. </p>
+      <p class="indent"> Additionally, your manifestation gains a bite attack that does 4d10 piercing damage</p>
   </description>
     <sheet usage="Long Rest">
       <description>If you score a critical hit, you can use a bonus action to to become your manifestation with your current stress points.
@@ -564,7 +564,8 @@
       <div element="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_FIERY_BLOOD" />
       <div element="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_SUMMONS" />
       <div element="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_BURNING_AURA" />
-     <div element="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_SIN_FORM" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_SIN_FORM" />
+      <div element="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_DEMONIC_BONDAGE" />
     </description>
     <rules>
       <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_DEMON_BEAST_DEMONIC_ENTITY" level="3" />
@@ -856,7 +857,7 @@
   <element name="Hyde's Goliath" type="Archetype" source="The Abomination Class" id="ID_USER_ARCHETYPE_HYDE_GOLIATH">
     <supports>Manifestation</supports>
     <description>
-      <p> Everyone has a dark side to their personality, usually a primal, murderous side. Due to some experiment gone wrong, you have had that dark side awakened, and it turned your body into a raging monster. Over the yers you managed some level of contro, but your instability is a danger to others.</p>
+      <p> Everyone has a dark side to their personality, usually a primal, murderous side. Due to some experiment gone wrong, you have had that dark side awakened, and it turned your body into a raging monster. Over the years you managed some level of control, but your instability is a danger to others.</p>
       <div element="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_DARK_SIDE" />
       <div element="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_FISTS_OF_RAGE" />
       <div element="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_TOXIC_BLOOD" />
@@ -905,9 +906,9 @@
     </sheet>
     <rules>
       <stat name="hyde:strike" value="6" bonus="base" />
-      <stat name="hyde:strike" value="8" level="11" bonus="base" />
-      <stat name="hyde:strike" value="10" level="14" bonus="base" />
-      <stat name="hyde:strike" value="12" level="18" bonus="base" />
+      <stat name="hyde:strike" value="8" level="7" bonus="base" />
+      <stat name="hyde:strike" value="10" level="11" bonus="base" />
+      <stat name="hyde:strike" value="12" level="15" bonus="base" />
     </rules>
   </element>
   <element name="Toxic Blood" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_TOXIC_BLOOD">
@@ -974,11 +975,12 @@
       </description>
     </sheet>
   </element>
+  
   <!-- Divine Puppet -->
   <element name="Divine Puppet" type="Archetype" source="The Abomination Class" id="ID_USER_ARCHETYPE_DIVINE_PUPPET">
     <supports>Manifestation</supports>
     <description>
-      <p> While the forces of hell are better known for taking control of humans, the gods will occasionally do so as well. Be it through an arcane ritual or some bored god's fancy, a human can be possessed by the gods and they will control the bodyof the human when they see fit. While some people will respect or even worship these puppets, the fickle nature of the gods can make them a great danger to the people near a puppet. </p>
+      <p> While the forces of hell are better known for taking control of humans, the gods will occasionally do so as well. Be it through an arcane ritual or some bored god's fancy, a human can be possessed by the gods and they will control the body of the human when they see fit. While some people will respect or even worship these puppets, the fickle nature of the gods can make them a great danger to the people near a puppet. </p>
       <div element="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_DIVINE_POWERS" />
       <div element="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_STRINGS_OF_FATE" />
       <div element="ID_USER_ARCHETYPE_FEATURE_DIVINE_PUPPET_HOLY_BLOOD" />
@@ -1319,4 +1321,114 @@
       </description>
     </sheet>
   </element>
+
+
+<!-- Wraith-Bound -->
+<element name="Wraith-Bound" type="Archetype" source="The Abomination Class" id="ID_USER_ARCHETYPE_WRAITH_BOUND">
+  <supports>Manifestation</supports>
+  <description>
+    <p> The souls of the dead are an angry and powerful force. Some unlucky people are possessed by these spirits and are partly bound to their will. These "Wraith-Bound" are controlled by the spirit that inhabits them, and they lash out at the living for vegenence. You have found a way to hold back your spirit, but the spirit make you a danger to everyone near you.</p>
+    <div element="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_SOUL_POWERED" />
+    <div element="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_ABYSS_SHRIEK" />
+    <div element="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_GHASTLY_BLOOD" />
+    <div element="ID_USER_ARCHETYPE_FEATURE_WRAItH_BOUND_INVISIBILITY" />
+    <div element="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_BONE_CHILLING_NATURE" />
+    <div element="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_PHASING_SPECTER" />
+    <div element="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_STEEL_SOUL" />
+    <div element="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_GHOSTLY_BONDAGE" />
+  </description>
+  <sheet display="false">
+  </sheet>
+  <rules>
+    <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_SOUL_POWERED" level="3" />
+    <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_ABYSS_SHRIEK" level="7" />
+    <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_GHASTLY_BLOOD" level="9" />
+    <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_WRAItH_BOUND_INVISIBILITY" level="11" />
+    <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_BONE_CHILLING_NATURE" level="13" />
+    <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_HYDE_WRAITH_BOUND_PHASING_SPECTER" level="15" />
+    <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_HYDE_GOLIATH_STEEL_SOUL" level="18" />
+    <grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_GHOSTLY_BONDAGE" level="20" />
+  </rules>
+</element>
+<element name="Soul Powered" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_SOUL_POWERED">
+  <description>
+    <p>Starting when you choose this path, you gain the following physical features while your manifestation is activated.</p>
+    <ul>
+      <li> Your skin Becomes a ghostly white. </li>
+      <li> Your eyes turn completely Black</li>
+      <li> Your fingers nails lengthen and turn a sick green.</li>
+    </ul>
+    <p class="indent"> Whenever you enter your manifestation, you can choose to have the spirit harness the power of your soul. While in this form, each attack yu make deals extra damage equal to half your abomination level rounded down, but for every stress you lose while in manifestation, you also lose one hitpoint. </p>
+  </description>
+  <sheet>
+    <description>
+      While you are in your manifestation, you can choose to to lose a hit point per stress loss to add half your level to any damage die.
+    </description>
+  </sheet>
+</element>
+<element name="Abyss Shriek" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_ABYSS_SHRIEK">
+  <description>
+    <p>Beginning at 7th level, your voice becomes the cries of torture spirits.</p>
+    <p class="indent"> As an action, you can choose to let out a blood-curdling shriek. Any creature that hears this shriek must succeed on a DC 15 Wisdom saving throw, or be frightened of you for one minute. Once you use this feature, you can't use it again until you finish a short rest</p>
+  </description>
+  <sheet action="Action" usage="Short Rest">
+    <description>You can let out a shriek that forces anyone who hears yoou to make DC 15 Wisdom saving throw, or be frightened for 1 minute.</description>
+  </sheet>
+</element>
+<element name="Ghastly Blood" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_GHASTLY_BLOOD">
+  <description>
+    <p>Beginning at 9th level, when you use your rain of blood feature, it does Psychic damage.</p>
+  </description>
+  <sheet>
+    <description>Your rain of Blood feature deals psychic damage.</description>
+  </sheet>
+</element>
+<element name="Invisibility" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_WRAItH_BOUND_INVISIBILITY">
+  <description>
+    <p>Starting at 11th level, the edges of your body start to fade in and out of vision. </p>
+    <p class="indent"> As a bonus action, you can choose to dissapear as if you are under the invisibility spell. This effect lasts for 1 minute, or until you attack an enemy. If you harness your soul while in manifestation, you can attack without losing your invisibilty for the duration of the manifestation. </p>
+    <p class="indent">YOu can use this feature once per long rest, or while you are harnessing your soul.</p>
+  </description>
+  <sheet action="Bonus Action" usage="Long Rest">
+    <description> You can turn invisible for one minute or until you attack. If your manifestation. harnesses your soul, you can attack without becoming visibe</description>
+  </sheet>
+</element>
+<element name="Bone-Chilling Nature" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_BONE_CHILLING_NATURE">
+  <description>
+    <p>Starting at 13th level, Your manifestation's eyes become empty sockets, and your breath leaves and eerie mist.</p>
+    <p class="indent"> While in Manifestation, if there is a creature within 5 ft. you can use your reaction and 3 stress to impose disadvantage on that creatures next attack. </p>
+  </description>
+  <sheet action="Reaction" usage="3 Stress">
+    <description> You can make a shockwave in a 30ft cone. Creatures must pass a Dexterity saving throw or take 3d6 + 4 thunder damage and be deafened for their next 3 turns.</description>
+  </sheet>
+</element>
+<element name="Phasing Specter" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_PHASING_SPECTER">
+  <description>
+    <p>Starting at level 15, while in manifestation, you can use a bonus action to turn intangible as if you are under the effect of the etherealness. If your manifestation harnesses your soul, every turn you move through another creature's space, the creatures you moved through take 2d6 psychic damage.</p>
+    <p class="indent">This feature can only be ised once per long rest.</p>
+  </description>
+  <sheet action="Bonus Action" usage="Long Rrest">
+    <description>
+      You can turn invisible while in manifestation. If your soul is harnessed, any creature you phase through takes 2d6 psychic damage.
+    </description>
+  </sheet>
+</element>
+<element name="Steel Soul" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_STEEL_SOUL">
+  <description>
+    <p>At level 18, your soul gains the strength to overcome the wraith's power. </p>
+    <p class="indent">If you harness your soul while in manifestfestion, you no longer lose hitpoints when you lose any stress.</p>
+  </description>
+  <sheet display="false">
+  </sheet>
+</element>
+<element name="Ghostly Bondage" type="Archetype Feature" source="The Abomination Class" id="ID_USER_ARCHETYPE_FEATURE_WRAITH_BOUND_GHOSTLY_BONDAGE">
+  <description>
+    <p>At level 20, Creatures restrained by Inhuman Bondage also have disadvantage on Constitution saving throws until the feature ends. </p>
+  </description>
+  <sheet>
+    <description>
+      Creatures restrained by Inhuman Bondage lso have disadvantage on Constitution saving throw
+    </description>
+  </sheet>
+</element>
 </elements>
