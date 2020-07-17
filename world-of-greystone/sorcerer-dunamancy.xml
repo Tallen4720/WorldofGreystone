@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-    	<update version="0.0.1">
+    	<update version="0.0.2">
         	<file name="sorcerer-dunamancy.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/sorcerer-dunamancy.xml" />
     	</update>
 	</info>
@@ -10,9 +10,9 @@
 	<element name="Dunamancy" type="Archetype" source="Races of Greystone" id="ID_TALLEN_ROG_SORCERER_ARCHETYPE_DUNAMANCY">
 		<supports>Sorcerous Origin</supports>
 		<description>
-			<p>Sometimes the spark of magic that fuels a sorcerer comes from a divine source that glimmers within the soul. Having such a blessed soul is a sign that your innate magic might come from a distant but powerful familial connection to a divine being. Perhaps your ancestor was an angel, transformed into a mortal and sent to fight in a god’s name. Or your birth might align with an ancient prophecy, marking you as a servant of the gods or a chosen vessel of divine magic.</p>
-			<p class="indent">A Divine Soul, with a natural magnetism, is seen as a threat by some religious hierarchies. As an outsider who commands sacred power, a Divine Soul can undermine an existing order by claiming a direct tie to the divine.</p>
-			<p class="indent">In some cultures, only those who can claim the power of a Divine Soul may command religious power. In these lands, ecclesiastical positions are dominated by a few bloodlines and preserved over generations.</p>			
+			<p>a sorcerer with any of the sorcerer blood lines who sees himself in a time paradox.</p>
+			<p class="indent">any rule of time dictates that one can not see one self. this sorcerer has looked into his own eyes and knew the outcome of his past or future selfs actions.</p>
+			<p class="indent">time sorcerers are the rarest of sorcerers. they live in thier own paradox. being able to call upon the multiple iterations of thier existance at a moments notice</p>			
 			<div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_MANIFEST_ECHO" />
 			<div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_UNLEASH_INCARNATION" />
 			<div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_SHADOW_MARTYR" />
@@ -20,7 +20,7 @@
 			<div element="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_CONVERGENT_FUTURE" />
 		</description>
 		<sheet>
-			<description>Sometimes the spark of magic that fuels a sorcerer comes from a divine source that glimmers within the soul.</description>
+			<description>Sometimes the spark of magic that fuels a sorcerer comes from the knowledge of your own future fueled with a past that has not happened yet.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_TALLEN_ROG_ARCHETYPE_FEATURE_DUNAMANCY_MANIFEST_ECHO" level="1" />

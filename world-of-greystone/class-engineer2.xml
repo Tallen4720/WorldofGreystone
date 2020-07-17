@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="class-engineer2.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/class-engineer2.xml" />
         </update>
     </info>
@@ -123,9 +123,6 @@
             <grant type="Class Feature" id="ID_DDWE_CLASS_FEATURE_ENGINEER_ENGINEERS_EXPERTISE" level="7" />
             <grant type="Class Feature" id="ID_DDWE_CLASS_FEATURE_ENGINEER_INDOMITABLE_MIND" level="14" />
             <grant type="Class Feature" id="ID_DDWE_CLASS_FEATURE_ENGINEER_CANNIBALISATION" level="18" />
-            <stat name="engineer:save-dc" value="8" />
-            <stat name="engineer:save-dc" value="proficiency" />
-            <stat name="engineer:save-dc" value="intelligence:modifier" />
         </rules>
         <multiclass id="ID_DDWE_MULTICLASS_ENGINEER">
             <prerequisite>Intelligence 13</prerequisite>
