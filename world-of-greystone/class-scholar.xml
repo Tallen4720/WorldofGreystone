@@ -1,0 +1,1399 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Scholar</name>
+    <description>The Scholar class from A.M.Black.</description>
+    <author url="https://www.gmbinder.com/share/-L8mx-EmCAJZL_cAw8Xx">A.M.Black</author>
+    <update version="0.2.8">
+      <file name="class-scholar.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/class-scholar.xml"/>
+    </update>
+  </info>
+
+ <element name="Scholar" type="Class" source="Homebrew" id="ID_WOTC_PHB_CLASS_SCHOLAR">
+    <description>
+      <p>A human general, clad in gleaming armor, studies the map on the table in front of him, covered in figurines that represent units of his soldiers and invading orcs. He consults a leather-bound journal filled with notes he’s made on the enemy’s tribe, their customs and battle tactics, and he moves two pieces confidently forward. </p>
+      <p class="indent">Deep within the once thought abandoned ruins, a halfling tends to his companions wounds as they rest. Countless long nights of study and training have conditioned him to keep going even when all others have exhausted themselves. He will see them through this.</p>
+      <p class="indent">A dwarf in fine robes addresses a gathering crowd. What was the making of an angry mob begins to disperse, his mere presence putting them at ease, giving his companions time to make their escape.</p>
+      <p class="indent">Scholars are master of the mundane arts, using methodical practices to turn the tables to their advantage. From years of study and testing, scholars take in the situation around them and quickly formulate the means to achieve whatever they have minds set to. Whatever pursuit they follow, a scholar will have a plan for anything that comes their way.</p>
+      <h4>THE PURSUIT OF KNOWLEDGE</h4>
+      <p>A true scholar is never satisfied. They are always seeking out a new answer to a new question. This often goes hand-in-hand with seeking a life of adventure, to explore new, hidden areas, or accompany those that do. The life of a scholar often times begins in the mundane, as a teacher or sage. Sometimes they serve as doctors, diplomats, or as members of the military.</p>
+      <p class="indent">For scholars, mundane life is often too slow. When life becomes stagnant or when an answer cannot be found, the call to adventure rings louder. Scholars will often go to ancient, forgotten, and often dangerous places to find something to quench their thirst for knowledge.</p>
+      <h4>CREATING A SCHOLAR </h4>
+      <p>As you create a scholar, it's important to think of where you gained your knowledge. Did you serve as an apprentice under a master? Did you attend college or other formal education? Perhaps you gained it on your own, searching out and pouring over dusty tomes found in forgotten places.</p>
+      <p class="indent">Where did your thirst for knowledge come from? Insatiable curiosity? Always wanting to know the right answer? Or do you have something to prove? Think about what field you wish to pursue and think of what is driving you in that direction.</p>
+      <h5>QUICK BUILD</h5>
+      <p>You can make a scholar quickly by following these suggestions. First make Intelligence your highest ability score. Your next-highest score should be Dexterity. Second choose the Sage background if you plan on following the Physician pursuit, the Noble background if you plan on following the Politician pursuit, or the Soldier background if you plan on following the Tactician pursuit.</p>
+      <h3>CLASS FEATURES</h3>
+      <p>As a scholar, you gain the following class features.</p>
+      <h5>HIT POINTS</h5>
+      <p>
+        <span class="emphasis">Hit Dice:</span>1d8 per scholar level<br/>
+        <span class="emphasis">Hit Points at 1st Level:</span>8 + your Constitution modifier<br/>
+        <span class="emphasis">Hit Points at Higher Levels:</span>1d8 (or 5) + your Constitution modifier per scholar level after 1st<br/>
+      </p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>Light armor<br/>
+        <span class="emphasis">Weapons:</span> simple weapons, hand crossbows, shortswords<br/>
+        <span class="emphasis">Tools:</span>Any two<br/>
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>Dexterity, Intelligence<br/>
+        <span class="emphasis">Skills:</span>Choose three from Arcana, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Persuasion, Religion, and Survival<br/>
+      </p>
+      <h5>EQUIPMENT</h5>
+      <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+      <ul>
+        <li>(a) any simple weapon or (b) a light crossbow and 20 bolts</li>
+        <li>(a) scholar's pack or (b) explorer's pack</li>
+        <li>Any simple weapon</li>
+        <li>A set of leather armor</li>
+        <li>Any two tools of your choice</li>
+      </ul>
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_ACADEMIC_SUPERIORITY" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_CRITICAL_ANALYSIS" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_SAGE_ADVICE" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_EXPERTISE" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_PURSUIT" />  
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_ABILITYSCOREIMPROVEMENT_SCHOLAR" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_UNWAVERING_MIND" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_CALCULATED_DEFENSES" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_LIGHTNING_EXECUTION" /> />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_GENIUS_UNBOUND" />
+    </description>
+    <sheet display="false">
+      <description>An intellectual who seeks knowledge and uses their discoveries to their advantage</description>
+    </sheet>
+    <setters>
+      <set name="short">An intellectual who seeks knowledge and uses their discoveries to their advantage</set>
+      <set name="hd">d8</set>
+    </setters>
+    <rules>
+        
+
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_SCHOLAR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_WOTC_PHB_MULTICLASS_SCHOLAR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_SCHOLAR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" requirements="!ID_WOTC_PHB_MULTICLASS_SCHOLAR"/>
+       <select type="Proficiency" name="Tool Proficiency (Scholar)" supports="Artisan tools" number="2" requirements="!ID_WOTC_PHB_MULTICLASS_SCHOLAR" />
+      
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_WOTC_PHB_MULTICLASS_SCHOLAR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WOTC_PHB_MULTICLASS_SCHOLAR"/>
+
+      <select type="Proficiency" name="Skill Proficiency (scholar)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SURVIVAL" number="3" requirements="!ID_WOTC_PHB_MULTICLASS_SCHOLAR"/>
+      
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_ACADEMIC_SUPERIORITY" level="1"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_CRITICAL_ANALYSIS" level="1" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY" level="2" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_SAGE_ADVICE" level="2" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_EXPERTISE" level="3" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_PURSUIT" level="3" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_ABILITYSCOREIMPROVEMENT_SCHOLAR" level="4" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_UNWAVERING_MIND" level="7" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_CALCULATED_DEFENSES" level="14" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_LIGHTNING_EXECUTION" level="18" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_GENIUS_UNBOUND" level="20" />
+    </rules>
+    <multiclass id="ID_WOTC_PHB_MULTICLASS_SCHOLAR">
+      <prerequisite>Intelligence 13</prerequisite>
+      <requirements>[int:13]</requirements>
+      <setters>
+        <set name="multiclass proficiencies">—</set>
+      </setters>
+      <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+      </rules>
+    </multiclass>
+  </element>
+  <element name="Academic Superiority" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_ACADEMIC_SUPERIORITY">
+    <description>
+      <p>Beginning at 1st level, you know how to apply your studies in practical ways known as maneuvers. Your maneuvers are fueled by special dice called superiority dice.
+        <br/>
+        <span class="feature">Maneuvers.</span>You know 2 maneuvers of your choice, which are detailed under “Maneuvers” below. You may only use a particular maneuver once per turn. Many of your maneuvers enhance an attack in some way, you can use only one maneuver per attack. You learn two additional maneuvers of your choice at 3rd, 6th, 11th, and 17th level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.
+        <br/>
+        <span class="feature">Superiority Dice.</span>You have a number of superiority dice as shown in the Superiority Dice column of the Scholar class table which are d6s. This die changes as you gain Scholar levels, as shown in the Academic Superiority column of the Scholar table. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest.
+        <br/>
+        <span class="feature">Saving Throws.</span>Some of your maneuvers require your target to make a saving throw to resist the maneuver’s effects. The saving throw DC is calculated as follows:
+        <br/>
+        <b>Maneuver save DC</b> = 
+        <b>8</b> + your proficiency bonus + your Intelligence modifier.
+      
+      </p>
+    </description>
+    <sheet>
+      <description>You learn maneuvers that are fueled by special dice called superiority dice. You have {{superiority dice:amount}} superiority dice which are d{{superiority dice:size}}s. DC {{superiority dice:dc}}</description>
+    </sheet>
+    <rules>
+      <stat name="superiority dice:amount" value="3" />
+      <stat name="superiority dice:amount" value="1" level="3" />
+      <stat name="superiority dice:amount" value="1" level="5" />
+      <stat name="superiority dice:amount" value="1" level="7" />
+      <stat name="superiority dice:amount" value="1" level="9" />
+      <stat name="superiority dice:amount" value="1" level="13" />
+      <stat name="superiority dice:amount" value="1" level="17" />
+      <stat name="superiority dice:size" value="6" bonus="size"/>
+      <stat name="superiority dice:size" value="8" level="5" bonus="size"/>
+      <stat name="superiority dice:size" value="10" level="9" bonus="size"/>
+      <stat name="superiority dice:size" value="12" level="15" bonus="size"/>
+      <stat name="superiority dice:dc" value="8" />
+      <stat name="superiority dice:dc" value="proficiency" />
+      <stat name="superiority dice:dc:ability" value="intelligence:modifier" bonus="ability"/>
+      <stat name="superiority dice:dc" value="superiority dice:dc:ability" />
+      <select type="Class Feature" name="Academic Superiority (Level 1)" supports="Maneuver" number="2" />
+      <select type="Class Feature" name="Academic Superiority (Level 3)" supports="Maneuver" number="2" level="3" />
+      <select type="Class Feature" name="Academic Superiority (Level 6)" supports="Maneuver" number="2" level="6" />
+      <select type="Class Feature" name="Academic Superiority (Level 11)" supports="Maneuver" number="2" level="11" />
+      <select type="Class Feature" name="Academic Superiority (Level 17)" supports="Maneuver" number="2" level="17" />
+    </rules>
+  </element>
+      <!-- Maneuvers -->
+  <element name="Administer Aid" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_ADMINISTER_AID">
+    <supports>Maneuver</supports>
+    <description>
+      <p>As an action, you can expend a superiority die to tend to a creature you can touch. The creature regains a number of hit points equal to the number rolled + your Intelligence modifier.</p>
+    </description>
+    <sheet>
+      <description>As an action, you can expend a superiority die to tend to a creature you can touch. The creature regains a number of hit points equal to the number rolled + your Intelligence modifier.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Assess the Situation" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_ASSESS_THE_SITUATION">
+    <supports>Maneuver</supports>
+    <description>
+      <p>You can expend one superiority die to make a Wisdom (Perception) or Intelligence (Investigation) check as a bonus action, adding the superiority die to the check.</p>
+    </description>
+    <sheet>
+      <description>You can expend one superiority die to make a Wisdom (Perception) or Intelligence (Investigation) check as a bonus action, adding the superiority die to the check.</description>
+    </sheet>
+    <rules/>
+    </element>
+  <element name="Deliberate Movement" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_DELIBERATE_MOVEMENT">
+    <supports>Maneuver</supports>
+    <description>
+      <p>You can expend one superiority die to use the Disengage action as a bonus action and ignore the effects of nonmagical difficult terrain until the end of your turn.</p>
+    </description>
+    <sheet>
+      <description>You can expend one superiority die to use the Disengage action as a bonus action and ignore the effects of nonmagical difficult terrain until the end of your turn.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Distracting Strike" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_DISTRACTING_STRIKE">
+    <supports>Maneuver</supports>
+    <description>
+      <p>When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack’s damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.</p>
+    </description>
+    <sheet>
+      <description>When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack’s damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Evasive Footwork" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_EVASIVE_FOOTWORK">
+    <supports>Maneuver</supports>
+    <description>
+      <p>When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving.</p>
+    </description>
+    <sheet>
+      <description>When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Exploit Weakness" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_EXPLOIT_WEAKNESS">
+    <supports>Maneuver</supports>
+    <description>
+      <p> When you hit a creature with a weapon attack, you can expend a superiority die and deal additional damage equal to the number rolled. This damage cannot be reduced in any way.</p>
+    </description>
+    <sheet>
+      <description> When you hit a creature with a weapon attack, you can expend a superiority die and deal additional damage equal to the number rolled. This damage cannot be reduced in any way.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Measured Action" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_MEASURED_ACTION">
+    <supports>Maneuver</supports>
+    <description>
+      <p>As a reaction when you make a roll for a contested skill check, you can expend a superiority die to add to the roll. You can use this maneuver before or after making the contested skill check roll, but before any effects of the contested skill check are determined.</p>
+    </description>
+    <sheet>
+      <description>As a reaction when you make a roll for a contested skill check, you can expend a superiority die to add to the roll. You can use this maneuver before or after making the contested skill check roll, but before any effects of the contested skill check are determined.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="One Step Ahead" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_ONE_STEP_AHEAD">
+    <supports>Maneuver</supports>
+    <description>
+      <p>As a reaction when you roll initiative, you can expend a superiority die and add the number rolled to your initiative.</p>
+    </description>
+    <sheet>
+      <description>As a reaction when you roll initiative, you can expend a superiority die and add the number rolled to your initiative.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Reasoned Defense" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_REASONED_DEFENSE">
+    <supports>Maneuver</supports>
+    <description>
+      <p>As a reaction when you are forced to make a saving throw against an effect you can see, you can expend a superiority die and add the number rolled to your saving throw. You can use this maneuver before or after making the saving throw roll, but before any effects of the saving throw are determined.</p>
+    </description>
+    <sheet>
+      <description>As a reaction when you are forced to make a saving throw against an effect you can see, you can expend a superiority die and add the number rolled to your saving throw. You can use this maneuver before or after making the saving throw roll, but before any effects of the saving throw are determined.</description>
+    </sheet>
+  </element>
+    <element name="Dazing Strike" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_DAZING_STRIKE">
+    <supports>Maneuver</supports>
+    <prerequisite>Physician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_PHYSICIAN</requirements>
+    <description>
+      <p>When you hit a creature with a melee weapon attack, you can expend a superiority die to temporarily daze the creature. Add the number rolled to the damage of the weapon attack and the creature must succeed a Constitution saving throw or be stunned until the end of their next turn.</p>
+    </description>
+    <sheet>
+      <description>When you hit a creature with a melee weapon attack, you can expend a superiority die to temporarily daze the creature. Add the number rolled to the damage of the weapon attack and the creature must succeed a Constitution saving throw or be stunned until the end of their next turn.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Dull the Pain" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_DULL_THE_PAIN">
+    <supports>Maneuver</supports>
+    <prerequisite>Physician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_PHYSICIAN</requirements>
+    <description>
+      <p>You can use an action and expend one superiority die to dull the feeling of a creature. When you do so, a creature you can touch gains temporary hit points equal to the superiority die roll + your Intelligence modifier. These temporary hit points last 1 minute.</p>
+    </description>
+    <sheet>
+      <description>You can use an action and expend one superiority die to dull the feeling of a creature. When you do so, a creature you can touch gains temporary hit points equal to the superiority die roll + your Intelligence modifier. These temporary hit points last 1 minute.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Hamstring" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_HAMSTRING">
+    <supports>Maneuver</supports>
+    <prerequisite>Physician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_PHYSICIAN</requirements>
+    <description>
+      <p>When you hit a creature with a weapon attack, you can expend one superiority die to cripple the creature. You add the superiority die to the attack's damage roll and the creature's speed is reduced by 10 feet until the end of their next turn.</p>
+    </description>
+    <sheet>
+      <description>When you hit a creature with a weapon attack, you can expend one superiority die to cripple the creature. You add the superiority die to the attack's damage roll and the creature's speed is reduced by 10 feet until the end of their next turn.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Lacerate" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_LACERATE">
+    <supports>Maneuver</supports>
+    <prerequisite>Physician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_PHYSICIAN</requirements>
+    <description>
+      <p>When you hit a creature with a melee weapon attack, you can expend a superiority die to cause a lacerating wound. Add the number rolled to the damage of the weapon attack and the creature must succeed a Constitution saving throw or take 1d4 necrotic damage at the end of each of its turns for 1 minute or until it or another creature uses its action to stop the bleeding.</p>
+    </description>
+    <sheet>
+      <description>When you hit a creature with a melee weapon attack, you can expend a superiority die to cause a lacerating wound. Add the number rolled to the damage of the weapon attack and the creature must succeed a Constitution saving throw or take 1d4 necrotic damage at the end of each of its turns for 1 minute or until it or another creature uses its action to stop the bleeding.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Neuroblock" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_NEUROBLOCK">
+    <supports>Maneuver</supports>
+    <prerequisite>Physician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_PHYSICIAN</requirements>
+    <description>
+      <p>When you hit a creature with a melee weapon attack, you can expend a superiority die to halt its ability to heal. Add the number rolled to the damage of the weapon attack and the creature cannot regain hit points until the end of your next turn.</p>
+    </description>
+    <sheet>
+      <description>When you hit a creature with a melee weapon attack, you can expend a superiority die to halt its ability to heal. Add the number rolled to the damage of the weapon attack and the creature cannot regain hit points until the end of your next turn.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Rapid Response" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_RAPID_RESPONSE">
+    <supports>Maneuver</supports>
+    <prerequisite>Physician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_PHYSICIAN</requirements>
+    <description>
+      <p>While moving, you can expend a superiority die and add 5 times the number rolled to your movement speed.</p>
+    </description>
+    <sheet>
+      <description>While moving, you can expend a superiority die and add 5 times the number rolled to your movement speed.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Reassure" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_REASSURE">
+    <supports>Maneuver</supports>
+    <prerequisite>Physician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_PHYSICIAN</requirements>
+    <description>
+      <p>As an action, you can call out to a creature within 60 feet that can hear or see you that has been charmed or frightened. When you do, expend a superiority die and the creature can immediately make another saving throw with advantage to end the effect.</p>
+    </description>
+    <sheet>
+      <description>As an action, you can call out to a creature within 60 feet that can hear or see you that has been charmed or frightened. When you do, expend a superiority die and the creature can immediately make another saving throw with advantage to end the effect.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Remove Toxins" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_REMOVE_TOXINS">
+    <supports>Maneuver</supports>
+    <prerequisite>Physician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_PHYSICIAN</requirements>
+    <description>
+      <p>As an action, you can expend a superiority die to purge the toxins from a creature you can touch. The target regains hit points equal to the number rolled and is the target is cured of one disease or one poison affecting it.</p>
+    </description>
+    <sheet>
+      <description>As an action, you can expend a superiority die to purge the toxins from a creature you can touch. The target regains hit points equal to the number rolled and is the target is cured of one disease or one poison affecting it.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Smelling Salts" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_SMELLING_SALTS">
+    <supports>Maneuver</supports>
+    <prerequisite>Physician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_PHYSICIAN</requirements>
+    <description>
+      <p>As a bonus action, you can expend a superiority die to heal a creature you can touch a number of hit points equal to the number rolled.</p>
+    </description>
+    <sheet>
+      <description>As a bonus action, you can expend a superiority die to heal a creature you can touch a number of hit points equal to the number rolled.</description>
+    </sheet>
+    <rules />
+  </element>    
+  <element name="Call to Arms" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_CALL_TO_ARMS">
+    <supports>Maneuver</supports>
+    <prerequisite>Politician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_POLITICIAN</requirements>
+    <description>
+      <p>If you are surprised at the beginning of combat and aren't incapacitated, you can expend one superiority die to act normally. On your first turn as a bonus action you can make a call to arms. When you do so, creatures you choose within 30 feet who can see or hear you who haven't gone yet may act normally on their first turn.</p>
+    </description>
+    <sheet>
+      <description>If you are surprised at the beginning of combat and aren't incapacitated, you can expend one superiority die to act normally. On your first turn as a bonus action you can make a call to arms. When you do so, creatures you choose within 30 feet who can see or hear you who haven't gone yet may act normally on their first turn.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Overwhelming Presence" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_OVERWHELMING_PRESENCE">
+    <supports>Maneuver</supports>
+    <prerequisite>Politician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_POLITICIAN</requirements>
+    <description>
+      <p>As an action, you can make a Charisma (Persuasion) or Charisma (Intimidation) skill check and expend one superiority die to attempt to charm or frightened a humanoid creature who can see or hear you within 60 feet. Add the superiority die to the roll. The target makes a contested Wisdom (Insight) check. If your check succeeds, the target is charmed by you if you used Persuasion, or frightened of you if you used Intimidation, until the end of your next turn.</p>
+    </description>
+    <sheet>
+      <description>As an action, you can make a Charisma (Persuasion) or Charisma (Intimidation) skill check and expend one superiority die to attempt to charm or frightened a humanoid creature who can see or hear you within 60 feet. Add the superiority die to the roll. The target makes a contested Wisdom (Insight) check. If your check succeeds, the target is charmed by you if you used Persuasion, or frightened of you if you used Intimidation, until the end of your next turn.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Charge" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_CHARGE">
+    <supports>Maneuver</supports>
+    <prerequisite>Politician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_POLITICIAN</requirements>
+    <description>
+      <p>As a bonus action on your turn, you can expend one superiority die to spurn your allies to move. Until the start of your next turn, creatures you choose within 30 feet who can see or hear you, have their speed increased by 10 feet and ignore nonmagical difficult terrain.</p>
+    </description>
+    <sheet>
+      <description>As a bonus action on your turn, you can expend one superiority die to spurn your allies to move. Until the start of your next turn, creatures you choose within 30 feet who can see or hear you, have their speed increased by 10 feet and ignore nonmagical difficult terrain.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Goading Attack" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_GOADING_ATTACK">
+    <supports>Maneuver</supports>
+    <prerequisite>Politician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_POLITICIAN</requirements>
+    <description>
+      <p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attack you. You add the superiority die to the attacks damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.</p>
+    </description>
+    <sheet>
+      <description>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attack you. You add the superiority die to the attacks damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Inspiring Defense" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_INSPIRING_DEFENSE">
+    <supports>Maneuver</supports>
+    <prerequisite>Politician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_POLITICIAN</requirements>
+    <description>
+      <p>As a reaction when an ally you can see within 30 feet who can see or hear you, makes a saving throw, you can expend a superiority die. Add the number rolled to the targets saving throw. You can use this maneuver before or after making the saving throw, but before any effects of the saving throw are determined.</p>
+    </description>
+    <sheet>
+      <description>As a reaction when an ally you can see within 30 feet who can see or hear you, makes a saving throw, you can expend a superiority die. Add the number rolled to the targets saving throw. You can use this maneuver before or after making the saving throw, but before any effects of the saving throw are determined.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Rally" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_RALLY">
+    <supports>Maneuver</supports>
+    <prerequisite>Politician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_POLITICIAN</requirements>
+    <description>
+      <p>On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to your superiority die.</p>
+    </description>
+    <sheet>
+      <description>On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to your superiority die.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Targeted Feint" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_TARGETED_FEINT">
+    <supports>Maneuver</supports>
+    <prerequisite>Politician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_POLITICIAN</requirements>
+    <description>
+      <p>You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 30 feet of you as your target. You have advantage on your next attack roll against that creature. If that attack hits, add the superiority die to the attacks damage roll.</p>
+    </description>
+    <sheet>
+      <description>You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 30 feet of you as your target. You have advantage on your next attack roll against that creature. If that attack hits, add the superiority die to the attacks damage roll.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Tyrannical Strike" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_TYRANNICAL_STRIKE">
+    <supports>Maneuver</supports>
+    <prerequisite>Politician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_POLITICIAN</requirements>
+    <description>
+      <p>When you hit a creature with a weapon attack, you can expend one superiority die and issue a one-word command to a creature who can see or hear you. You add the superiority die to the attacks damage roll, and the target must succeed on a Wisdom saving throw. On a failed save, the target must follow the command on its next turn. The target automatically succeeds if it is Undead, can't be charmed, it doesn’t understand your language, or if your command is directly harmful to it.</p>
+    </description>
+    <sheet>
+      <description>When you hit a creature with a weapon attack, you can expend one superiority die and issue a one-word command to a creature who can see or hear you. You add the superiority die to the attacks damage roll, and the target must succeed on a Wisdom saving throw. On a failed save, the target must follow the command on its next turn. The target automatically succeeds if it is Undead, can't be charmed, it doesn’t understand your language, or if your command is directly harmful to it.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Commander's Strike" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_COMMANDER_STRIKE">
+    <supports>Maneuver</supports>
+    <prerequisite>Tactician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_TACTICIAN</requirements>
+    <description>
+      <p>When you take the Attack action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature within 60 feet who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding your superiority die to the attack’s damage roll.</p>
+    </description>
+    <sheet>
+      <description>When you take the Attack action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature within 60 feet who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding your superiority die to the attack’s damage roll.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Disarming Attack" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_DISARMING_ATTACK">
+    <supports>Maneuver</supports>
+    <prerequisite>Tactician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_TACTICIAN</requirements>
+    <description>
+      <p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it's holding. You add the superiority die to the attack's damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet.</p>
+    </description>
+    <sheet>
+      <description>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it's holding. You add the superiority die to the attack's damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Lunging Attack" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_LUNGING_ATTACK">
+    <supports>Maneuver</supports>
+    <prerequisite>Tactician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_TACTICIAN</requirements>
+    <description>
+      <p>When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet. If you hit, you add the superiority die to the attack's damage roll.</p>
+    </description>
+    <sheet>
+      <description>When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet. If you hit, you add the superiority die to the attack's damage roll.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Maneuvering Attack" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_MANEUVERING_ATTACK">
+    <supports>Maneuver</supports>
+    <prerequisite>Tactician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_TACTICIAN</requirements>
+    <description>
+      <p>When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack.</p>
+    </description>
+    <sheet>
+      <description>When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Pushing Attack" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_PUSHING_ATTACK">
+    <supports>Maneuver</supports>
+    <prerequisite>Tactician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_TACTICIAN</requirements>
+    <description>
+      <p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.</p>
+    </description>
+    <sheet>
+      <description>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Riposte" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_RIPOSTE">
+    <supports>Maneuver</supports>
+    <prerequisite>Tactician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_TACTICIAN</requirements>
+    <description>
+      <p>When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll.</p>
+    </description>
+    <sheet>
+      <description>When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Scholar's Parry" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_SCHOLAR_PARRY">
+    <supports>Maneuver</supports>
+    <prerequisite>Tactician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_TACTICIAN</requirements>
+    <description>
+      <p>When a creature damages you with a weapon attack, you can use your reaction and expend one superiority die to reduce the damage by your superiority die + your Intelligence modifier.</p>
+    </description>
+    <sheet>
+      <description>When a creature damages you with a weapon attack, you can use your reaction and expend one superiority die to reduce the damage by your superiority die + your Intelligence modifier.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Sweeping Attack" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_SWEEPING_ATTACK">
+    <supports>Maneuver</supports>
+    <prerequisite>Tactician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_TACTICIAN</requirements>
+    <description>
+      <p>When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you rolled on your superiority die. The damage is of the same type dealt by the original attack.</p>
+    </description>
+    <sheet>
+      <description>When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you rolled on your superiority die. The damage is of the same type dealt by the original attack.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Targeted Attack" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_TARGETED_ATTACK">
+    <supports>Maneuver</supports>
+    <prerequisite>Tactician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_TACTICIAN</requirements>
+    <description>
+      <p>When you make a weapon attack roll, you can expend one superiority die to add it to the roll. You can use this maneuver before or after making the attack roll, but before any effects of the attack are applied.</p>
+    </description>
+    <sheet>
+      <description>When you make a weapon attack roll, you can expend one superiority die to add it to the roll. You can use this maneuver before or after making the attack roll, but before any effects of the attack are applied.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Trip Attack" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_MANEUVER_TRIP_ATTACK">
+    <supports>Maneuver</supports>
+    <prerequisite>Tactician Archetype</prerequisite>
+    <requirements>ID_WOTC_PHB_ARCHETYPE_TACTICIAN</requirements>
+    <description>
+      <p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.</p>
+    </description>
+    <sheet>
+      <description>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.</description>
+    </sheet>
+    <rules />
+  </element>            
+  <element name="Critical Analysis" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_CRITICAL_ANALYSIS">
+    <description>
+      <p>At 1st level, you are able to analyze a target, develop a plan on how to best overcome any potential obstacle, and execute that plan with ruthless efficiency. As a bonus action on your turn, you can analyze a target you can see within 60 feet of you. For the next minute, or until you analyze another target, attack rolls and damage rolls made with a finesse or ranged weapon may use your Intelligence modifier instead of Strength or Dexterity.</p>
+      <p>Additionally, once per turn when you use a maneuver targeting your analyzed target, you can roll an additional d4 and add the number rolled to the total.</p>
+      <p>The die increases to a d6 at 5th level, a d8 at 10th level, and a d10 at 15th level.</p>
+    </description>
+    <sheet>
+      <description>With a bonus action, you can analyze a target you can see within 60 feet of you. For the next minute, or until you analyze another target, attack rolls and damage rolls made with a finesse or ranged weapon may use your Intelligence modifier instead of Strength or Dexterity. You have an analysis dice which is a d{{analysis dice:size}}.</description>
+    </sheet>
+    <rules>
+      <stat name="analysis dice:size" value="4" bonus="size"/>
+      <stat name="analysis dice:size" value="6" level="5" bonus="size"/>
+      <stat name="analysis dice:size" value="8" level="9" bonus="size"/>
+      <stat name="analysis dice:size" value="10" level="15" bonus="size"/>
+    </rules>
+  </element>
+  <element name="Discovery" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY">
+    <description>
+      <p>As you adventure, your studies have helped you discover new practices you can apply to your skills.</p>
+      <p>At 2nd level, you master two discoveries of your choice. Your discovery options are detailed at the end of the class description. When you gain certain scholar levels, you gain additional discoveries of your choice, as shown in the Discoveries column of the Scholar table.</p>
+      
+      <p>Additionally, when you gain a level in this class, you can choose one of the discoveries you know and replace it with another discovery that you could learn at that level.</p>
+    </description>
+    <sheet />
+    <rules>
+      <select type="Class Feature" name="Discovery" supports="Discovery" level="2" number="2"/>
+      <select type="Class Feature" name="Discovery" supports="Discovery" level="5" />
+      <select type="Class Feature" name="Discovery" supports="Discovery" level="7" />
+      <select type="Class Feature" name="Discovery" supports="Discovery" level="9" />
+      <select type="Class Feature" name="Discovery" supports="Discovery" level="12" />
+      <select type="Class Feature" name="Discovery" supports="Discovery" level="15" />
+      <select type="Class Feature" name="Discovery" supports="Discovery" level="18" />
+    </rules>
+  </element>
+  <!-- Discoveries -->
+  <element name="Adaptive" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_ADAPTIVE">
+   <supports>Discovery</supports>
+   <prerequisite>7th level</prerequisite>
+   <requirements>[scholar:7]</requirements>
+   <description>
+     <p>When the target of your critical analysis feature is reduced to 0 hit points, you can use your reaction to change the target of your analysis to another creature within range.</p>
+   </description>
+   <sheet>
+     <description>When the target of your critical analysis feature is reduced to 0 hit points, you can use your reaction to change the target of your analysis to another creature within range.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Arcane Amateur" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_ARCANE_AMATEUR">
+   <supports>Discovery</supports>
+   <requirements />
+   <description>
+     <p>Choose one 1st-level spell from the Wizard spell list. You learn that spell and can cast it at its lowest level without expending a spell slot. Once you cast it in this way, you must finish a long rest before you can cast itagain. Your spellcasting ability for this spell is Intelligence.</p>
+   </description>
+   <sheet>
+     <description>You learn that spell and can cast it at its lowest level without expending a spell slot. Once you cast it in this way, you must finish a long rest before you can cast itagain. Your spellcasting ability for this spell is Intelligence.</description>
+   </sheet>
+   <spellcasting name="Arcane Amateur" ability="Intelligence" prepare="false" allowReplace="true">
+      <list>Wizard</list>
+    </spellcasting>
+    <rules>
+      <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+
+      <stat name="arcane amateur:spellcasting:slots:1" value="1" level="2" />
+      <select type="Spell" name="Spellcasting (Arcane Amateur)" supports="($(spellcasting:list)||Wizard), 1" level="2" number="1" spellcasting="Arcane Amateur" allowReplace="false" />
+   </rules>
+  </element>
+  <element name="Backstab" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_BACKSTAB">
+   <supports>Discovery</supports>
+   <prerequisite>15th level, Politician Pursuit</prerequisite>
+   <requirements>[scholar:15],ID_WOTC_PHB_ARCHETYPE_POLITICIAN</requirements>
+   <description>
+     <p>When you hit a creature that is charmed or frightened of you, the attack is a critical hit. You can’t use this feature again on the same creature until you finish a short or long rest.</p>
+   </description>
+   <sheet>
+     <description>When you hit a creature that is charmed or frightened of you, the attack is a critical hit. You can’t use this feature again on the same creature until you finish a short or long rest.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Charming Feint" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_CHARMING_FEINT">
+   <supports>Discovery</supports>
+   <prerequisite>12th level, Politician Pursuit</prerequisite>
+   <requirements>[scholar:12],ID_WOTC_PHB_ARCHETYPE_POLITICIAN</requirements>
+   <description>
+     <p>Add your Charisma modifier to melee attack rolls you make against humanoids within 5 feet.</p>
+   </description>
+   <sheet>
+     <description>Add your Charisma modifier to melee attack rolls you make against humanoids within 5 feet.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Clever Applications" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_CLEVER_APPLICATION">
+   <supports>Discovery</supports>
+   <requirements />
+   <description>
+     <p>You become proficient in Improvised Weapons. Additionally, when you make an attack with an improvised weapon, it deals 1d6 damage instead.</p>
+   </description>
+   <sheet>
+     <description>You become proficient in Improvised Weapons. Additionally, when you make an attack with an improvised weapon, it deals 1d6 damage instead.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Cold Logic" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_COLD_LOGIC">
+   <supports>Discovery</supports>
+   <prerequisite>Politician Pursuit</prerequisite>
+   <requirements>ID_WOTC_PHB_ARCHETYPE_POLITICIAN</requirements>
+   <description>
+     <p>You may use your Intelligence modifier instead of your Charisma modifier when you make an Intimidation skill check.</p>
+   </description>
+   <sheet>
+     <description>You may use your Intelligence modifier instead of your Charisma modifier when you make an Intimidation skill check.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Contingency Plan" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_CONTINGENCY_PLAN">
+   <supports>Discovery</supports>
+   <prerequisite>9th level, Tactician Pursuit</prerequisite>
+   <requirements>[scholar:9],ID_WOTC_PHB_ARCHETYPE_TACTICIAN</requirements>
+   <description>
+     <p>When the target of your critical analysis feature attacks you and scores a critical hit, you can expend a superiority die to treat the attack as a normal hit instead.</p>
+     <p class="indent">Once you use this feature, you can’t do so again until you finish a long rest.</p>
+   </description>
+   <sheet>
+     <description>When the target of your critical analysis feature attacks you and scores a critical hit, you can expend a superiority die to treat the attack as a normal hit instead.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Developed Resistance" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_DEVELOPED_RESISTANCE">
+   <supports>Discovery</supports>
+   <prerequisite>9th level</prerequisite>
+   <requirements>[scholar:9]</requirements>
+   <description>
+     <p>You gain resistance to poison damage and advantage on saving throws against poison.</p>
+   </description>
+   <sheet>
+     <description>You gain resistance to poison damage and advantage on saving throws against poison.</description>
+   </sheet>
+   <rules>
+		 <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+	</rules>
+  </element>
+  <element name="Discerning Eyes" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_DISCERNING_EYES">
+   <supports>Discovery</supports>
+   <prerequisite>5th level</prerequisite>
+   <requirements>[scholar:5]</requirements>
+   <description>
+     <p>You have advantage on saving throws against illusions and on Intelligence checks to discern them from reality.</p>
+   </description>
+   <sheet>
+     <description>You have advantage on saving throws against illusions and on Intelligence checks to discern them from reality.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Dominating Presence" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_DOMINATING_PRESENCE">
+   <supports>Discovery</supports>
+   <prerequisite>15th level, Politician Pursuit</prerequisite>
+   <requirements>[scholar:15],ID_WOTC_PHB_ARCHETYPE_POLITICIAN</requirements>
+   <description>
+     <p>As an action, you can call out to a humanoid who can undstand you that is charmed by you or frightened of you to direct their next action. The target must succeed a Wisdom saving throw (DC 8 + your proficiency bonus + your Intelligence modifier) or until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do.</p>
+     <p class="indent">During this time you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.</p>
+     <p class="indent">Once you use this feature, you can’t do so again until you finish a long rest.</p>
+   </description>
+   <sheet>
+     <description>As an action, you can call out to a humanoid who can undstand you that is charmed by you or frightened of you to direct their next action. The target must succeed a Wisdom saving throw (DC 8 + your proficiency bonus + your Intelligence modifier)</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Dungeoneer" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_DUNGEONEER">
+   <supports>Discovery</supports>
+   <requirements />
+   <description>
+     <p>You have advantage on Perception (Wisdom) checks and Investigation (Intelligence) checks to locate any secret doors or traps.</p>
+   </description>
+   <sheet>
+     <description>You have advantage on Perception (Wisdom) checks and Investigation (Intelligence) checks to locate any secret doors or traps.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Explorer" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_EXPLORER">
+   <supports>Discovery</supports>
+   <requirements />
+   <description>
+     <p>When you make a Survival skill check, you may use your Intelligence modifier instead of your Wisdom modifier.</p>
+   </description>
+   <sheet>
+     <description>When you make a Survival skill check, you may use your Intelligence modifier instead of your Wisdom modifier.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Extra Attack" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_EXTRA_ATTACK">
+   <supports>Discovery</supports>
+   <prerequisite>5th level, Tactician Pursuit</prerequisite>
+   <requirements>[level:5],ID_WOTC_PHB_ARCHETYPE_TACTICIAN</requirements>
+   <description>
+     <p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+   </description>
+   <sheet>
+     <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Fighting Style" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_FIGHTING_STYLE">
+   <supports>Discovery</supports>
+   <prerequisite>Tactician Pursuit</prerequisite>
+   <requirements>ID_WOTC_PHB_ARCHETYPE_TACTICIAN</requirements>
+   <description>
+     <p>You adopt a particular style of fighting as your specialty. Choose one of the options available to the Fighter class. You can’t take a Fighting Style option more than once, even if you later get to choose again</p>
+   </description>
+   <sheet>
+     <description>You adopt a particular style of fighting as your specialty. Choose one of the options available to the Fighter class.</description>
+   </sheet>
+   <rules>
+    <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE" level="1"/>
+   </rules>
+  </element>
+  <element name="Hardened Mind" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_HARDENED_MIND">
+   <supports>Discovery</supports>
+   <prerequisite>15th level</prerequisite>
+   <requirements>[level:15]</requirements>
+   <description>
+     <p>You gain resistance to Psychic damage.</p>
+   </description>
+   <sheet>
+     <description>You gain resistance to Psychic damage.</description>
+   </sheet>
+   <rules>
+		 <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+	 </rules>
+  </element>
+  <element name="Lifelong Learning" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_LIFELONG_LEARNING">
+   <supports>Discovery</supports>
+   <requirements />
+   <description>
+     <p>Gain proficiency in two skills or two tools, or one skill and one tool.</p>
+   </description>
+   <sheet>
+     <description>Gain proficiency in two skills or two tools, or one skill and one tool.</description>
+   </sheet>
+   <rules>
+		 <select name="Lifelong Learning" type="Proficiency" supports="Skill||Tool" number="2" />
+	</rules>
+  </element>
+  <element name="Lingering Advice" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_LINGERING_ADVICE">
+   <supports>Discovery</supports>
+   <prerequisite>7th level</prerequisite>
+   <requirements>[level:7]</requirements>
+   <description>
+     <p>When you use your sage advice feature, the targeted creatures retain the benefit from your instruction for the full duration.</p>
+   </description>
+   <sheet>
+     <description>When you use your sage advice feature, the targeted creatures retain the benefit from your instruction for the full duration.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Linguist" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_LINGUIST">
+   <supports>Discovery</supports>
+   <requirements />
+   <description>
+     <p>You learn two additional languages.</p>
+   </description>
+   <sheet>
+     <description>You learn two additional languages.</description>
+   </sheet>
+   <rules>
+		 <select name="Linguist" type="Language" number="2" />
+	 </rules>
+  </element>
+  <element name="Master's Advice" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_MASTER_ADVICE">
+   <supports>Discovery</supports>
+   <prerequisite>15th level</prerequisite>
+   <requirements>[level:15]</requirements>
+   <description>
+     <p>When you use your sage advice feature, the first time each targeted creature makes the chosen skill check, they gain an additional +10 bonus to the roll.</p>
+   </description>
+   <sheet>
+     <description>When you use your sage advice feature, the first time each targeted creature makes the chosen skill check, they gain an additional +10 bonus to the roll.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Medical Genius" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_MEDICAL_GENIUS">
+   <supports>Discovery</supports>
+   <prerequisite>Physician Pursuit</prerequisite>
+   <requirements>ID_WOTC_PHB_ARCHETYPE_PHYSICIAN</requirements>
+   <description>
+     <p>When you make a Medicine skill check, you may use your Intelligence modifier instead of your Wisdom modifier.</p>
+   </description>
+   <sheet>
+     <description>When you make a Medicine skill check, you may use your Intelligence modifier instead of your Wisdom modifier.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Mortician" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_MORTICIAN">
+   <supports>Discovery</supports>
+   <prerequisite>Physician Pursuit</prerequisite>
+   <requirements>ID_WOTC_PHB_ARCHETYPE_PHYSICIAN</requirements>
+   <description>
+     <p>You can use your critical analysis feature to examine a body that has died within the last 7 days. At the DM’s discretion, you are able to accurately determine the cause of death. This may require additional checks, such as determining a spell, type of poison, or bite marks of a creature.</p>
+   </description>
+   <sheet>
+     <description>You can use your critical analysis feature to examine a body that has died within the last 7 days. At the DM’s discretion, you are able to accurately determine the cause of death. This may require additional checks, such as determining a spell, type of poison, or bite marks of a creature.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Perfect Maneuver" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_PERFECT_MANEUVER">
+   <supports>Discovery</supports>
+   <prerequisite>15th level</prerequisite>
+   <requirements>[level:15]</requirements>
+   <description>
+     <p>When you roll a superiority die, you can choose to take the maximum result. If you were to roll multiple die, it only applies to one. You can’t do so again until you finish a short or long rest.</p>
+   </description>
+   <sheet>
+     <description>When you roll a superiority die, you can choose to take the maximum result. If you were to roll multiple die, it only applies to one. You can’t do so again until you finish a short or long rest.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Physical Conditioning" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_PHYSICAL_CONDITIONING">
+   <supports>Discovery</supports>
+   <requirements />
+   <description>
+     <p>Your hit point maximum increases by 1 for every level you have in the scholar class, and increases by 1 again whenever you gain a level in this class.</p>
+   </description>
+   <sheet>
+     <description>Your hit point maximum increases by 1 for every level you have in the scholar class, and increases by 1 again whenever you gain a level in this class.</description>
+   </sheet>
+   <rules>
+			<stat name="hp" value="level:scholar" />
+	 </rules>
+  </element>
+  <element name="Quick Analysis" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_QUICK_ANALYSIS">
+   <supports>Discovery</supports>
+   <prerequisite>7th level</prerequisite>
+   <requirements>[level:7]</requirements>
+   <description>
+     <p>When you roll initiative and aren't surprised, you can use your reaction to use your critical analysis feature.</p>
+   </description>
+   <sheet>
+     <description>When you roll initiative and aren't surprised, you can use your reaction to use your critical analysis feature.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Reliable Sources" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_RELIABLE_SOURCES">
+   <supports>Discovery</supports>
+   <prerequisite>12th level</prerequisite>
+   <requirements>[level:12]</requirements>
+   <description>
+     <p>When you make an Arcana, History, Nature, or Religion skill check and may add your proficiency bonus to the check, treat any roll of 9 or lower as if you had rolled a 10.</p>
+   </description>
+   <sheet>
+     <description>When you make an Arcana, History, Nature, or Religion skill check and may add your proficiency bonus to the check, treat any roll of 9 or lower as if you had rolled a 10.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Reliable Words" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_RELIABLE_WORDS">
+   <supports>Discovery</supports>
+   <prerequisite>12th level, Politician Pursuit</prerequisite>
+   <requirements>[level:12],ID_WOTC_PHB_ARCHETYPE_POLITICIAN</requirements>
+   <description>
+     <p>When you make a Deception, Insight, Intimidation, or Persuasion skill check and may add your proficiency bonus to the check, treat any roll 9 or lower as if you had rolled a 10.</p>
+   </description>
+   <sheet>
+     <description>When you make a Deception, Insight, Intimidation, or Persuasion skill check and may add your proficiency bonus to the check, treat any roll 9 or lower as if you had rolled a 10.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Resolute" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_RESOLUTE">
+   <supports>Discovery</supports>
+   <prerequisite>9th level</prerequisite>
+   <requirements>[level:9]</requirements>
+   <description>
+     <p>You have advantage on saving throws to resist charm and fear effects.</p>
+   </description>
+   <sheet>
+     <description>You have advantage on saving throws to resist charm and fear effects.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Reasoned Vigilance" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_REASONED_VIGILANCE">
+   <supports>Discovery</supports>
+   <requirements />
+   <description>
+     <p>You may add your Intelligence modifier to your Initiative roll.</p>
+   </description>
+   <sheet>
+     <description>You may add your Intelligence modifier to your Initiative roll.</description>
+   </sheet>
+   <rules>
+			<stat name="initiative" value="intelligence:modifier" />
+	 </rules>
+  </element>
+  <element name="Ruthless Execution" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_RUTHLESS_EXECUTION">
+   <supports>Discovery</supports>
+   <prerequisite>9th level</prerequisite>
+   <requirements>[level:9]</requirements>
+   <description>
+     <p>When you would expend one or more superiority dice, you can expend one additional die, add the number rolled to the total.</p>
+   </description>
+   <sheet>
+     <description>When you would expend one or more superiority dice, you can expend one additional die, add the number rolled to the total.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Sound Reasoning" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_SOUND_REASONING">
+   <supports>Discovery</supports>
+   <prerequisite>Politician Pursuit</prerequisite>
+   <requirements>ID_WOTC_PHB_ARCHETYPE_POLITICIAN</requirements>
+   <description>
+     <p>You may use your Intelligence modifier instead of your Charisma modifier when you make a Persuasion skill check.</p>
+   </description>
+   <sheet>
+     <description>You may use your Intelligence modifier instead of your Charisma modifier when you make a Persuasion skill check.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Surgical Precision" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_COLD_LOGIC">
+   <supports>Discovery</supports>
+   <prerequisite>5th level, Physician Pursuit</prerequisite>
+   <requirements>[level:5],ID_WOTC_PHB_ARCHETYPE_PHYSICIAN</requirements>
+   <description>
+     <p>When you hit a creature with a weapon attack, it takes additional damage equal to your Intelligence modifier.</p>
+   </description>
+   <sheet>
+     <description>When you hit a creature with a weapon attack, it takes additional damage equal to your Intelligence modifier.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Tactical Retreat" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_TACTICAL_RETREAT">
+   <supports>Discovery</supports>
+   <prerequisite>Tactician Pursuit</prerequisite>
+   <requirements>ID_WOTC_PHB_ARCHETYPE_TACTICIAN</requirements>
+   <description>
+     <p>When you take the dash action, opportunity attacks made against you are made at disadvantage.</p>
+   </description>
+   <sheet>
+     <description>When you take the dash action, opportunity attacks made against you are made at disadvantage.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Targeted Analysis" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_TARGETED_ANALYSIS">
+   <supports>Discovery</supports>
+   <requirements />
+   <description>
+     <p>Attack rolls made against the target of your critical analysis feature cannot suffer from disadvantage.</p>
+   </description>
+   <sheet>
+     <description>Attack rolls made against the target of your critical analysis feature cannot suffer from disadvantage.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Tend the Wounded" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_TEND_THE_WOUNDED">
+   <supports>Discovery</supports>
+   <prerequisite>5th level, Physician Pursuit</prerequisite>
+   <requirements>[level:5],ID_WOTC_PHB_ARCHETYPE_PHYSICIAN  </requirements>
+   <description>
+     <p>If you or any friendly creatures you can touch regain hit points by spending Hit Dice at the end of the Short Rest, each of those creatures regain additional hit points equal to your superiority die.</p>
+   </description>
+   <sheet>
+     <description>If you or any friendly creatures you can touch regain hit points by spending Hit Dice at the end of the Short Rest, each of those creatures regain additional hit points equal to your superiority die.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Theoretical Advice" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_THEORETICAL_ADVICE">
+   <supports>Discovery</supports>
+   <prerequisite>12th level</prerequisite>
+   <requirements>[level:12]</requirements>
+   <description>
+     <p>When you use your sage advice feature, you may choose a skill you are not proficient in. When you do, targeted creatures add half their proficiency bonus (rounded down) instead.</p>
+   </description>
+   <sheet>
+     <description>When you use your sage advice feature, you may choose a skill you are not proficient in. When you do, targeted creatures add half their proficiency bonus (rounded down) instead.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Tyrant’s Ferocity" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_TYRENT_FEROCITY">
+   <supports>Discovery</supports>
+   <prerequisite>Politician Pursuit</prerequisite>
+   <requirements>ID_WOTC_PHB_ARCHETYPE_POLITICIAN</requirements>
+   <description>
+     <p>You have advantage on any attack against a creature that is charmed by you or frightened of you.</p>
+   </description>
+   <sheet>
+     <description>You have advantage on any attack against a creature that is charmed by you or frightened of you.</description>
+   </sheet>
+   <rules />
+  </element>
+  <element name="Unarmored Defense" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_UNARMORED_DEFENSE">
+   <supports>Discovery</supports>
+   <requirements />
+   <description>
+     <p>While wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Intelligence modifier.</p>
+   </description>
+   <sheet>
+     <description>While wearing no armor and not wielding a shield, your AC equals {{ac:unarmored defense scholar}}.</description>
+   </sheet>
+   <rules>
+		<stat name="ac:unarmored defense scholar:base" value="10" />
+		<stat name="ac:unarmored defense scholar:dexterity" value="dexterity:modifier" />
+		<stat name="ac:unarmored defense scholar:intelligence" value="intelligence:modifier" />
+
+		<stat name="ac:unarmored defense scholar" value="ac:unarmored defense scholar:base" />
+		<stat name="ac:unarmored defense scholar" value="ac:unarmored defense scholar:dexterity" />
+		<stat name="ac:unarmored defense scholar" value="ac:unarmored defense scholar:intelligence" />
+
+		<stat name="ac:calculation" value="ac:unarmored defense scholar" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Scholar)" />
+   </rules>
+  </element>
+  <element name="Universal Language" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_DISCOVERY_UNIVERSAL_LANGUAGE">
+   <supports>Discovery</supports>
+   <requirements />
+   <description>
+     <p>You can communicate simple ideas with any creature with an Intelligence of 6 or more through basic expressions and gestures.</p>
+   </description>
+   <sheet>
+     <description>You can communicate simple ideas with any creature with an Intelligence of 6 or more through basic expressions and gestures.</description>
+   </sheet>
+   <rules />
+  </element>    
+  <element name="Sage Advice" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_SAGE_ADVICE">
+    <description>
+      <p>When you reach 2nd level, you can spend 1 minute advising spread your knowledge and experience to those around you. When you do so, choose a skill or tool you are proficient with and a number of friendly creatures up to your Intelligence modifier within 30 feet of you who can hear you and who can understand you. Once within the next hour, the next time each creature would make an ability check with the chosen skill or tool, they may add their proficiency modifier to the roll, or double their proficiency if they are already proficient. A creature may only benefit from this feature once, if a creature is targeted by this feature again before using it, they can choose to retain the first benefit or replace it with the new skill or tool instead.</p>
+      <p>Once you’ve used this feature, it cannot be used again until you complete a short or long rest. Starting at 13th level, you can use it twice before a rest.</p>
+      
+      <p>Spending 1 minute, you can choose a skill or tool you are proficient with and a number of friendly creatures up to your Intelligence modifier within 30 feet of you who can hear you and who can understand you. Once within the next hour, the next time each creature would make an ability check with the chosen skill or tool, they may add their proficiency modifier to the roll, or double their proficiency if they are already proficient. </p>
+    </description>
+    <sheet />
+  </element>
+  <element name="Expertise" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_EXPERTISE">
+    <description>
+      <p> At 3rd level, choose two of your skill proficiencies, or one of your skill proficiencies and one of your tool proficiencies, or two of your tool proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+      <p> At 10th level, you can choose another two proficiencies (in skills or tools) to gain this benefit.</p>
+    </description>
+    <sheet display="false">
+      <description>Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</description>
+    </sheet>
+    <rules>
+      <select type="Class Feature" name="Expertise (Scholar)" level="3" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+      <select type="Class Feature" name="Expertise (Scholar)" level="10" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+    </rules>
+  </element>
+  <element name="Pursuit" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_PURSUIT">
+    <description>
+      <p>At 3rd level, you dedicate your studies towards a pursuit of your choice: physician, politician, or tactician, detailed at the end of the class description. The pursuit you choose grants you features at 3rd level, and again at 6th, 11th, and 17th level.</p>
+    </description>
+    <sheet />
+    <rules>
+      <select type="Archetype" name="Pursuit" supports="Pursuit" />
+    </rules>
+  </element>
+  <element name="Ability Score Improvement (Scholar)" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_ABILITYSCOREIMPROVEMENT_SCHOLAR">
+    <description>
+      <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Class Feature" name="Improvement Option (Scholar 4)" supports="Improvement Option,Scholar,4" level="4" />
+      <select type="Class Feature" name="Improvement Option (Scholar 8)" supports="Improvement Option,Scholar,8" level="8" />
+      <select type="Class Feature" name="Improvement Option (Scholar 12)" supports="Improvement Option,Scholar,12" level="12" />
+      <select type="Class Feature" name="Improvement Option (Scholar 16)" supports="Improvement Option,Scholar,16" level="16" />
+      <select type="Class Feature" name="Improvement Option (Scholar 19)" supports="Improvement Option,Scholar,19" level="19" />
+    </rules>
+  </element>
+  <element name="Unwavering Mind" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_UNWAVERING_MIND">
+    <description>
+      <p>Starting at 7th level, you gain proficiency in Wisdom saving throws.</p>
+    </description>
+    <sheet>
+      <description>Starting at 7th level, you gain proficiency in Wisdom saving throws.</description>
+    </sheet>
+  </element>
+  <element name="Calculated Defenses" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_CALCULATED_DEFENSES">
+    <description>
+      <p>Beginning at 14th level, whenever you make a saving throw from an effect you can see, you gain a bonus to the saving throw equal to your Intelligence modifier.</p>
+    </description>
+    <sheet>
+      <description>whenever you make a saving throw from an effect you can see, you gain a bonus to the saving throw equal to your Intelligence modifier.</description>
+    </sheet>
+  </element>
+  <element name="Lightning Execution" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_LIGHTNING_EXECUTION">
+    <description>
+      <p>At 18th level, you have achieved such mastery over certain spells that you can cast them at will. Choose a 1st-level scholar spell and a 2nd-­level scholar spell that are in your spellbook. You can cast those spells at their lowest level without expending a spell slot when you have them prepared. If you want to cast either spell at a higher level, you must expend a spell slot as normal.</p>
+      <p>By spending 8 hours in study, you can exchange one or both of the spells you chose for different spells of the same levels.</p>
+    </description>
+    <sheet>
+      <description>You have achieved such mastery over certain spells that you can cast them at will.</description>
+    </sheet>
+  </element>
+  <element name="Genius Unbound" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_SCHOLAR_GENIUS_UNBOUND">
+    <description>
+      <p>When you reach 20th level, your genius is has no equal. Your Intelligence score increases by 4. Your maximum for that score is now 24. Additionally, you may use any maneuver you know without expending a superiority die, rolling a d6 instead.</p>
+    </description>
+    <sheet>
+      <description>Your Intelligence score increases by 4. Your maximum for that score is now 24. Additionally, you may use any maneuver you know without expending a superiority die, rolling a d6 instead.</description>
+    </sheet>
+     <rules>
+      <stat name="intelligence" value="4" />
+      <stat name="intelligence:max" value="4" />
+    </rules>
+  </element>
+
+
+
+  <!-- Physician -->
+  <element name="Physician" type="Archetype" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_PHYSICIAN">
+    <supports>Pursuit</supports>
+    <description>
+      <p>The Physician pursuit reflects your studies into the medical, anatomical, and biological sciences. Those who follow this pursuit use their knowledge to men their allies on the field and deal crippling blows with surgical accuracy.</p>
+      <p class="indent">Those who follow this pursuit use their knowledge to men their allies on the field and deal crippling blows with surgical accuracy.</p>
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_PHYSICIAN_BONUSPROFICIENCY" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_PHYSICIAN_MEDICAL_PRACTITIONER" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_PHYSICIAN_FIELD_SURGEON" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_PHYSICIAN_RESUSCITATE" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_PHYSICIAN_PANACEA" />
+    </description>
+    <sheet>
+      <description>Those who follow this pursuit use their knowledge to men their allies on the field and deal crippling blows with surgical accuracy.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PHYSICIAN_BONUSPROFICIENCY" level="3"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PHYSICIAN_MEDICAL_PRACTITIONER" level="3"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PHYSICIAN_FIELD_SURGEON" level="6"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PHYSICIAN_RESUSCITATE" level="11"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PHYSICIAN_PANACEA" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PHYSICIAN_BONUSPROFICIENCY">
+    <description>
+      <p>Beginning at 3rd level when you select this pursuit, you gain proficiency in the Medicine and Nature skills, and with alchemist’s supplies.</p>
+    </description>
+    <sheet>
+      <description>you gain proficiency in the Medicine and Nature skills, and with alchemist’s supplies.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+    </rules>
+  </element>
+  <element name="Medical Practiotioner" type="Archetype Feature" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PHYSICIAN_MEDICAL_PRACTITIONER">
+    <requirements />
+    <description>
+      <p>At 3rd level, you gain access to new maneuvers which reflect the progress of your studies into the medical arts. Whenever you learn a new maneuver, you can choose from any of the following as well. The maneuvers are listed in alphabetical order.</p>
+    </description>
+    <sheet>
+      <description>You gain access to new maneuvers which reflect the progress of your studies into the medical arts. Whenever you learn a new maneuver, you can choose from any of the following as well. The maneuvers are listed in alphabetical order.</description>
+    </sheet>
+  </element>
+  <element name="Field Surgeon" type="Archetype Feature" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PHYSICIAN_FIELD_SURGEON">
+    <description>
+      <p>At 6th level, whenever you expend superiority dice to restore hit points or grant temporary hit points to a creature, you can expend up to two dice instead of just one, adding both to the roll. Both dice are expended as normal. When you do, if the target regaining hit points is the target of your Critical Analysis feature, you also roll your Critical Analysis dice twice, adding both to the roll.</p>
+    </description>
+    <sheet>
+      <description>whenever you expend superiority dice to restore hit points or grant temporary hit points to a creature, you can expend up to two dice instead of just one, adding both to the roll. Both dice are expended as normal. When you do, if the target regaining hit points is the target of your Critical Analysis feature, you also roll your Critical Analysis dice twice, adding both to the roll.</description>
+    </sheet>
+  </element>
+  <element name="Resuscitate" type="Archetype Feature" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PHYSICIAN_RESUSCITATE">
+    <description>
+      <p>Beginning at 11th level, your medical studies have revealed to you how to cheat death itself. As an action, you can tend to a creature you can touch that has died since the end of your last turn to bring it back to life with 1 hit point remaining.</p>
+      <p class="indent">A creature can only regain hit points this way once before that creature finishes a short or long rest.</p>
+      <p class="indent">Additionally, as a bonus action, you can stabilize a creature you can touch that has 0 hit points.</p>
+    </description>
+    <sheet>
+      <description>As an action, you can tend to a creature you can touch that has died since the end of your last turn to bring it back to life with 1 hit point remaining.</description>
+    </sheet>
+  </element>
+  <element name="Panacea" type="Archetype Feature" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PHYSICIAN_PANACEA">
+    <description>
+      <p>When you reach 17th level, you developed the formula to concoct a cure-all miracle solution: a panacea. Over the course of 10 minutes, you can expend rare medicinal herbs and oils worth 100 gp to create your panacea in a simple vial. The panacea retains its potency for 24 hours.</p>
+      <p class="indent">As an action, a creature can drink the elixir or administer it to another creature. The drinker has their exhaustion level reduced by one or has one of the following debilitating effects end:</p>
+    <ul>
+	  	<li>One effect that petrified or cursed the target.</li>
+	  	<li>One magical effect afflicting the creature.</li>
+		  <li>Any reduction to one of the target's ability scores.</li>
+      <li>One effect reducing the target's hit point maximum.</li>
+	  </ul>
+      <p class="indent">Once you create a panacea, you can't create another until you finish a short or long rest.</p>
+    </description>
+    <sheet>
+      <description>You can expend rare medicinal herbs and oils worth 100 gp to create your panacea in a simple vial. The panacea retains its potency for 24 hours.</description>
+    </sheet>
+  </element>
+
+  <!-- Politician -->
+  <element name="Politician" type="Archetype" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_POLITICIAN">
+    <supports>Pursuit</supports>
+    <description>
+      <p>Scholars who choose to follow the Politician pursuit are those who study social and political sciences. They use their knowledge of the people to manipulate the masses into doing their bidding or allow them and their allies to carry out their business without being impeded.</p>
+      <p class="indent">They use their knowledge of the people to manipulate the masses into doing their bidding or allow them and their allies to carry out their business without being impeded.</p>
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_POLITICIAN_SILVER_TONGUE" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_POLITICIAN_LEARNED_DIPLOMAT" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_POLITICIAN_FORCE_OF_PERSONALITY" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_POLITICIAN_BEGUILING_PRESENCE" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_POLITICIAN_CALL_TO_VICTORY" />
+    </description>
+    <sheet>
+      <description>They use their knowledge of the people to manipulate the masses into doing their bidding or allow them and their allies to carry out their business without being impeded.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_POLITICIAN_SILVER_TONGUE" level="3"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_POLITICIAN_LEARNED_DIPLOMAT" level="3"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_POLITICIAN_FORCE_OF_PERSONALITY" level="6"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_POLITICIAN_BEGUILING_PRESENCE" level="11"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_POLITICIAN_CALL_TO_VICTORY" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Silver Tongue" type="Archetype Feature" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_POLITICIAN_SILVER_TONGUE">
+    <description>
+      <p>Beginning at 3rd level you add half your proficiency bonus to any Charisma skill check you are not already proficient in. Additionally, You learn one additional language of your choice.</p>
+    </description>
+    <sheet>
+      <description>you add half your proficiency bonus to any Charisma skill check you are not already proficient in. Additionally, You learn one additional language of your choice.</description>
+    </sheet>
+    <rules>
+	   <stat name="deception:misc" value="proficiency:half:up" requirements="!ID_PROFICIENCY_SKILL_DECEPTION"/>
+	   <stat name="intimidation:misc" value="proficiency:half:up" requirements="!ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+	   <stat name="performance:misc" value="proficiency:half:up" requirements="!ID_PROFICIENCY_SKILL_PERFORMANCE"/>
+	   <stat name="persuasion:misc" value="proficiency:half:up" requirements="!ID_PROFICIENCY_SKILL_PERSUASION"/>
+     <select type="Language" name="Language (Politician)" number="1" />
+    </rules>
+  </element>
+  <element name="Learned Diplomat" type="Archetype Feature" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_POLITICIAN_LEARNED_DIPLOMAT">
+    <requirements />
+    <description>
+      <p>At 3rd level, you gain access to new maneuvers which reflect the progress of your studies into the political world. Whenever you learn a new maneuver, you can choose from any of the following as well. The maneuvers are listed in alphabetical order.</p>
+    </description>
+    <sheet>
+      <description>You gain access to new maneuvers which reflect the progress of your studies into the political world. Whenever you learn a new maneuver, you can choose from any of the following as well. The maneuvers are listed in alphabetical order.</description>
+    </sheet>
+  </element>
+  <element name="Force of Personality" type="Archetype Feature" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_POLITICIAN_FORCE_OF_PERSONALITY">
+    <description>
+      <p>At 6th level, as an action, you suggest a course of activity (limited to a sentence or two) to influence a creature you can see within range that can hear and understand you. Creatures that can’t be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the effect.</p>
+      <p class="indent">The target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for up to 24 hours. If the suggested activity can be completed in a shorter time, the effect ends when the subject finishes what it was asked to do.</p>
+      <p class="indent">You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn’t met before the effect ends, the activity isn’t performed.</p>
+      <p class="indent">If you or any of your companions damage the target, the effect ends.</p>
+      <p class="indent">You may only use this feature once before finishing a short or long rest.</p>
+    </description>
+    <sheet>
+      <description>as an action, you suggest a course of activity (limited to a sentence or two) to influence a creature you can see within range that can hear and understand you. Creatures that can’t be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the effect.</description>
+    </sheet>
+  </element>
+  <element name="Beguiling Presence" type="Archetype Feature" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_POLITICIAN_BEGUILING_PRESENCE">
+    <description>
+      <p>Beginning at 11th level, humanoids within 30 feet are particularly susceptible to your presence. Humanoids within range have disadvantage on saving throws against any charm or fear effects from you. Creatures who can’t be charmed are immune to this effect.</p>
+    </description>
+    <sheet>
+      <description>As an action, you can tend to a creature you can touch that has died since the end of your last turn to bring it back to life with 1 hit point remaining.</description>
+    </sheet>
+  </element>
+  <element name="Call to Victory" type="Archetype Feature" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_POLITICIAN_CALL_TO_VICTORY">
+    <description>
+      <p>Starting at 17th level, you can call out to your allies, beckoning them to victory. As an action, you can expend any number of superiority die, giving each to a creature of your choice within 60 feet who can see or hear you.</p>
+      <p class="indent">Once, within the next minute, a creature may roll their die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20, but before any effects are determined. Once the superiority die is rolled, it is lost. A creature can have only one superiority die at a time.</p>
+    </description>
+    <sheet>
+      <description>Once, within the next minute, a creature may roll their die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20, but before any effects are determined. Once the superiority die is rolled, it is lost. A creature can have only one superiority die at a time.</description>
+    </sheet>
+  </element>
+
+
+  <!-- Tactician -->
+  <element name="Tactician" type="Archetype" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_TACTICIAN">
+    <supports>Pursuit</supports>
+    <description>
+      <p>Scholars who choose to follow the Politician pursuit are those who study social and political sciences. They use their knowledge of the people to manipulate the masses into doing their bidding or allow them and their allies to carry out their business without being impeded.</p>
+      <p class="indent">They use their knowledge of the people to manipulate the masses into doing their bidding or allow them and their allies to carry out their business without being impeded.</p>
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_TACTICIAN_BONUSPROFICIENCY" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_TACTICIAN_TACTIC_MAESTRY" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_TACTICIAN_COMBAT_SURVEY" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_TACTICIAN_MULTI_TARGET_ANALYSIS" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_TACTICIAN_ALL_OUT_ATTACK" />
+    </description>
+    <sheet>
+      <description>They use their knowledge of the people to manipulate the masses into doing their bidding or allow them and their allies to carry out their business without being impeded.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TACTICIAN_BONUSPROFICIENCY" level="3"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TACTICIAN_TACTIC_MAESTRY" level="3"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TACTICIAN_COMBAT_SURVEY" level="6"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TACTICIAN_MULTI_TARGET_ANALYSIS" level="11"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TACTICIAN_ALL_OUT_ATTACK" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TACTICIAN_BONUSPROFICIENCY">
+    <description>
+      <p>Beginning at 3rd level when you select this pursuit, you gain proficiency in martial weapons, medium armor, and shields.</p>
+    </description>
+    <sheet>
+      <description>you gain proficiency in martial weapons, medium armor, and shields.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+    </rules>
+  </element>
+  <element name="Tactic Mastery" type="Archetype Feature" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TACTICIAN_TACTIC_MAESTRY">
+    <requirements />
+    <description>
+      <p>At 3rd level, you gain access to new maneuvers which reflect your mastery in the field of combat. Whenever you learn a new maneuver, you can choose from any of the following as well. The maneuvers are listed in alphabetical order.</p>
+      <p class="indent">Additionally, You learn one additional maneuver of your choice.</p>
+    </description>
+    <sheet>
+      <description>you gain access to new maneuvers which reflect your mastery in the field of combat. Whenever you learn a new maneuver, you can choose from any of the following as well. The maneuvers are listed in alphabetical order.</description>
+    </sheet>
+    <rules>
+      <select type="Class Feature" name="Academic Superiority (Tactic Maestry)" supports="Maneuver" />
+    </rules>
+  </element>
+  <element name="Combat Survey" type="Archetype Feature" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TACTICIAN_COMBAT_SURVEY">
+    <description>
+      <p>At 6th level, as an action, you suggest a course of activity (limited to a sentence or two) to influence a creature you can see within range that can hear and understand you. Creatures that can’t be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the effect.</p>
+      <p class="indent">You can use this feature once before finishing a short or long rest.</p>
+    </description>
+    <sheet>
+      <description>as an action, you suggest a course of activity (limited to a sentence or two) to influence a creature you can see within range that can hear and understand you. Creatures that can’t be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the effect.</description>
+    </sheet>
+  </element>
+  <element name="Multi-Target Analysis" type="Archetype Feature" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TACTICIAN_MULTI_TARGET_ANALYSIS">
+    <description>
+      <p>At 11th level, when you use your Critical Analysis feature, you can analyze two targets within range at once and can have two analyzed targets at any one time.</p>
+    </description>
+    <sheet>
+      <description>when you use your Critical Analysis feature, you can analyze two targets within range at once and can have two analyzed targets at any one time.</description>
+    </sheet>
+  </element>
+  <element name="All-Out Attack" type="Archetype Feature" source="Homebrew" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TACTICIAN_ALL_OUT_ATTACK">
+    <description>
+      <p>At 17th level, you can use your action to initiate an all-out attack. Choose a number of allies up to your Intelligence modifier within 60 feet who can see or hear you. The chosen allies may then immediately use their reaction to make one weapon attack against a target of your choice. You may choose the target for each attack separately.</p>
+      <p class="indent">Once you use this feature, you cannot use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet>
+      <description>you can use your action to initiate an all-out attack. Choose a number of allies up to your Intelligence modifier within 60 feet who can see or hear you. The chosen allies may then immediately use their reaction to make one weapon attack against a target of your choice. You may choose the target for each attack separately.</description>
+    </sheet>
+  </element>
+</elements>
