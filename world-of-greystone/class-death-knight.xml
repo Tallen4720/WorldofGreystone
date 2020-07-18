@@ -2,10 +2,10 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.1">
-            <file name="class-death-knight.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/class-death-knight.xml" />
-        </update>
-    </info>
+            <update version="0.0.1">
+                 <file name="class-death-knight.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/class-death-knight.xml" />
+            </update>
+        </info>
     
     <element name="Death Knight Supplement" type="Source" source="Core" id="ID_THEOSC_GMBINDER_SOURCE_DEATH_KNIGHT_SUPPLEMENT">
         <description>
