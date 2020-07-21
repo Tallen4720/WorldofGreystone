@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-    	<update version="0.0.1">
+    	<update version="0.0.2">
         	<file name="Dragoon.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/Dragoon.xml" />
     	</update>
 	</info>
@@ -330,7 +330,7 @@
 		<rules>
 			<stat name="locathah:natural armor" value="13" />
             <stat name="locathah:natural armor" value="dexterity:modifier" />
-            <stat name="ac:calculation" value="locathah:natural armor" bonus="calculation" alt="Natural Armor (Locathah)" />
+            <stat name="ac:calculation" value="Dragoon:natural armor" bonus="calculation" alt="Natural Armor (Dragoon)" />
 		</rules>
 	</element>
 	<element name="Claw Attack" type="Racial Trait" source="Races of Greystone" id="ID_RACIAL_TRAIT_ROG_CLAW_ATTACK">
