@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-            <update version="0.0.1">
+            <update version="0.0.3">
                  <file name="class-death-knight.xml" url="https://raw.githubusercontent.com/Tallen4720/WorldofGreystone/master/world-of-greystone/class-death-knight.xml" />
             </update>
         </info>
@@ -480,7 +480,7 @@
         <description>
             <p>Those who swear the Oath of the North have accepted their fate as an outcast, and embrace the chill of Death. Their blades burn to the touch, heavy with icy rime. Their fortitude, steeled in frozen resolve.</p>
             <div element="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_FROST_PRESENCE" />
-            <div element="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_IMPROVED_TWO_WEAPON_FIGHTING" />
+            <div element="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_IMPROVED_FIGHTING_STYLE" />
             <div element="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_THREAT_OF_THASSARIAN" />
             <div element="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_HORN_OF_WINTER" />
             <div element="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_HOWLING_BLAST" />
@@ -488,7 +488,7 @@
         <sheet display="false" />
         <rules>
             <grant type="Archetype Feature" id="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_FROST_PRESENCE" level="3" />
-            <grant type="Archetype Feature" id="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_IMPROVED_TWO_WEAPON_FIGHTING" level="7" />
+            <grant type="Archetype Feature" id="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_IMPROVED_FIGHTING_STYLE" level="7" />
             <grant type="Archetype Feature" id="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_THREAT_OF_THASSARIAN" level="9" />
             <grant type="Archetype Feature" id="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_HORN_OF_WINTER" level="15" />
             <grant type="Archetype Feature" id="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_HOWLING_BLAST" level="20" />
@@ -506,22 +506,24 @@
                 <stat name="frost-presence:range" value="20" level="18" />
             </rules>
         </element>
-        <element name="Improved Two-Weapon Fighting" type="Archetype Feature" source="Death Knight Supplement" id="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_IMPROVED_TWO_WEAPON_FIGHTING">
+        <element name="Improved Fighting Style" type="Archetype Feature" source="Death Knight Supplement" id="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_IMPROVED_FIGHTING_STYLE">
             <description>
-                <p>At 7th level, you may use Two-Weapon Fighting even when the one handed melee weapons you are wielding aren't light. in addition you may draw two weapons at once during the same interaction. When you engage in Two-Weapon Fighting during your attack action, your attack with your second weapon no longer uses your bonus action. This attack still follows all other rules for Two-Weapon Fighting.</p>
+                <p>At 7th level, your time spent in battlle has made you an even stronger combatant, honing your style to prived additional benifits when fighting</p>
             </description>
-            <sheet>
-                <description>You may use Two-Weapon Fighting even when the one handed melee weapons you are wielding aren't light. in addition you may draw two weapons at once during the same interaction. When you engage in Two-Weapon Fighting during your attack action, your attack with your second weapon no longer uses your bonus action.</description>
-            </sheet>
             <rules>
+               <select type="Archetype Feature" name="Improved Fighting Style" supports="Death Knight Improved Fighting Style" />
             </rules>
         </element>
         <element name="Threat of Thassarian" type="Archetype Feature" source="Death Knight Supplement" id="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_THREAT_OF_THASSARIAN">
             <description>
-                <p>Beginning at 9th level, if you make a rune strike during your attack action, you may use your bonus action to imbue your Two-Weapon Fighting attack with the same rune strike. This rune strike does not require an additional rune charge.</p>
+                <p>Beginning at 9th level, your mastery over the runic force that drives your weapon strikes has improved dramatically allowing for you to draw even more devastating results from your attacks.</p>
             </description>
             <sheet>
-                <description>If you make a rune strike during your attack action, you may use your bonus action to imbue your Two-Weapon Fighting attack with the same rune strike. This rune strike does not require an additional rune charge.</description>
+                <description>
+                <p>If you make a runic attack during your attack action, while you are only holding one weapon, you may use your bonus action to apply the effects of a different runic attack to the attack.</p>
+                
+                <P>If you make a rune strike during your attack action, while you are engaged in two weapon fighting, you may use your bonus action to imbue your Two-Weapon Fighting attack with the same rune strike. This rune strike does not require an additional rune charge.</P>
+                </description>
             </sheet>
             <rules>
             </rules>
@@ -665,21 +667,6 @@
         <supports>Death Knight</supports>
     </append>
     <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
-        <supports>Death Knight</supports>
-    </append>
-    <append id="ID_WOTC_UA_CLASS_FEATURE_FIGHTINGSTYLE_MARINER">
-        <supports>Death Knight</supports>
-    </append>
-    <append id="ID_WOTC_UA2015_CLASS_FEATURE_FIGHTINGSTYLE_TUNNEL_FIGHTER">
-        <supports>Death Knight</supports>
-    </append>
-    <append id="ID_RSQUARED_BLACKGUARD_CLASS_FEATURE_BLACKGUARD_FIGHTINGSTYLE_REPRISAL">
-        <supports>Death Knight</supports>
-    </append>
-    <append id="ID_WOTC_UA20191104_CLASS_FEATURE_FIGHTING_STYLE_BLIND_FIGHTING">
-        <supports>Death Knight</supports>
-    </append>
-    <append id="ID_WOTC_UA20191104_CLASS_FEATURE_FIGHTING_STYLE_SUPERIOR_TECHNIQUE">
         <supports>Death Knight</supports>
     </append>
 
@@ -854,5 +841,52 @@
         <rules>
         </rules>
     </element>
-
+    <element name="Improved Defense" type="Archetype Feature" source="Death Knight Supplement" id="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_IMPROVED_DEFENSE">
+		<supports>Death Knight Improved Fighting Style</supports>
+		<prerequisite>Defense fighting style</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE</requirements>
+		<description>
+			<p><em>Prerequisite: Defense fighting style</em></p>
+			<p>While you are wearing heavy armor, If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can choose to use your constitution instead. If you do, you receive a +2 bonus to the saving throw.</p>
+		</description>
+		<sheet >
+			<description>While you are wearing heavy armor, If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can choose to use your constitution instead. If you do, you receive a +2 bonus to the saving throw.</description>
+		</sheet>
+	</element>
+    <element name="Improved Dueling" type="Archetype Feature" source="Death Knight Supplement" id="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_IMPROVED_DUELING">
+		<supports>Death Knight Improved Fighting Style</supports>
+		<prerequisite>Dueling fighting style</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING</requirements>
+		<description>
+			<p><em>Prerequisite: Dueling fighting style</em></p>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you may ignore the two-handed weapon property. If you are using a versatile weapon you may use the stronger damage die while holding the weapon in one hand.</p>
+		</description>
+		<sheet >
+			<description>When you are wielding a melee weapon in one hand and no other weapons, you may ignore the two-handed weapon property. If you are using a versatile weapon you may use the stronger damage die while holding the weapon in one hand.</description>
+		</sheet>
+	</element>
+    <element name="Improved Great Weapon Fighting" type="Archetype Feature" source="Death Knight Supplement" id="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_IMPROVED_GREAT_WEAPON_FIGHTING">
+		<supports>Death Knight Improved Fighting Style</supports>
+		<prerequisite>Great Weapon fighting style</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING</requirements>
+		<description>
+			<p><em>Prerequisite: Great Weapon fighting style</em></p>
+			<p>When you are wielding a melee weapon with the two-handed or versatile property, you gain a +2 bonus to AC and damage roles with that weapon.</p>
+		</description>
+		<sheet >
+			<description>When you are wielding a melee weapon with the two-handed or versatile property, you gain a +2 bonus to AC and damage roles with that weapon.</description>
+		</sheet>
+	</element>
+    <element name="Improved Two Weapon Fighting" type="Archetype Feature" source="Death Knight Supplement" id="ID_TOSC_DKS_ARCHETYPE_FEATURE_NORTH_OATH_IMPROVED_TWO_WEAPON_FIGHTING">
+		<supports>Death Knight Improved Fighting Style</supports>
+		<prerequisite>Two Weapon fighting style</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING</requirements>
+		<description>
+			<p><em>Prerequisite: Two Weapon fighting style</em></p>
+			<p>You may use two weapon fighting even when the one handed melee weapons you are wielding aren't light. in addition you may draw two weapons at once during the same interaction. When you engage in Two-Weapon Fighting during your attack action, your attack with your second weapon no longer uses your bonus action. This attack still follows all other rules for Two-Weapon Fighting.</p>
+		</description>
+		<sheet >
+			<description>You may use two weapon fighting even when the one handed melee weapons you are wielding aren't light. in addition you may draw two weapons at once during the same interaction. When you engage in Two-Weapon Fighting during your attack action, your attack with your second weapon no longer uses your bonus action. This attack still follows all other rules for Two-Weapon Fighting.</description>
+		</sheet>
+	</element>
 </elements>
